@@ -7,12 +7,12 @@ const Work=()=>{
         
         
         <div class="h-fit bg-[#d1dce7] ">
-            <h3 className="text-5xl font-medium pt-28">How does it work</h3>
+            <h3 className="text-5xl font-medium pt-28">How does it <span className='text-purple-500'>Work</span></h3>
             
          {/* line content */}
          <div className="w-full  flex justify-center mt-8">
          
-            <p className=" border-black border-2 w-20 text-center " ></p>
+         <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
          
          </div>
          

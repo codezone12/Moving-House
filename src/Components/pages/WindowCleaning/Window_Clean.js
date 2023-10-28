@@ -15,10 +15,9 @@ return (
 <Includesection />
 <Work />
 <Faq />
-<Anders />
+{/* <Anders /> */}
 <Cleaningtips />
 <Letus />
-
    </div>
 );
 

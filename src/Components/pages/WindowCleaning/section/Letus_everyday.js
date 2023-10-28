@@ -46,20 +46,27 @@ const Letus = () => {
                         <img src="https://images.ctfassets.net/37vwfxlcawdb/2wM22eQHuAdHeRb24Ie9iA/38c2b29f1ea72b6e16187ae2704988d6/Applen-mark1-1.jpg?q=50&fm=jpg&w=1200" />
                     </div>
 
-                    <div className="py-4 lg:pr-16 text-black text-5xl font-medium font-['Young Serif']  lg:ml-28  xl:ml-24  2xl:ml-36">
+                    <div className="text-start py-4 lg:pr-16 text-black text-5xl font-medium font-['Young Serif']  lg:ml-20  ">
 
-                        <p className="text-start pt-2">How the RUT </p>
+                        <p className=" pt-2">How the RUT </p>
 
-                        <p class="  text-start m-1 ">deduction works</p>
+                        <p class="   m-1 text-green-500">deduction works</p>
 
-                        <p class="  text-start mt-10 text-base"   >It’s actually very simple. If you meet the conditions for RUT, you</p>
-                        <p class="  text-start mt-1 text-base"  >only pay 50 percent of the labor cost. We give you quotes for our</p>
-                        <p class="  text-start mt-1 text-base"  >services, and the prices for household services are always set</p>
-                        <p class="  text-start mt-1 text-base"   >after RUT, so that it is easy for you to see how much the service</p>
-                        <p class="  text-start mt-1 text-base"  >costs after the discount. When you receive the invoice, we will</p>
-                        <p class="  text-start mt-1 text-base"  >arrange everything with the Swedish Tax Agency.</p>
+                        <div className="text-base hover:scale-110 transition duration-500">
+                        <p class="   mt-10 "   >It’s actually very simple. If you meet the conditions for RUT, you</p>
+                        <p class="   mt-1 "  >only pay 50 percent of the labor cost. We give you quotes for our</p>
+                        <p class="   mt-1 "  >services, and the prices for household services are always set</p>
+                        <p class="   mt-1 "   >after RUT, so that it is easy for you to see how much the service</p>
+                        <p class="   mt-1 "  >costs after the discount. When you receive the invoice, we will</p>
+                        <p class="   mt-1 "  >arrange everything with the Swedish Tax Agency.</p>
 
-                        <p className="text-lg text-start mt-10 font-bold">FIND OUT MORE</p>
+                        </div>
+                        <button className="mt-5 px-4 py-2 text-lg font-semibold rounded-lg overflow-hidden relative group cursor-pointer bg-[#044946]  hover:scale-105 duration-[700ms]">
+                            <span className="absolute w-64 h-0 transition-all duration-[700ms] origin-center rotate-45 -translate-x-20 bg-[#1fa299] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                            <span className="relative text-white transition duration-[700ms] group-hover:text-white ease">
+                               FIND OUT MORE
+                            </span>
+                        </button>
                     </div>
 
 

@@ -5,13 +5,11 @@ const Tips = () => {
         <div className="py-28  h-fit   bg-[#f5f4f0]">
 
             <div class="">
-                <h3 className="text-5xl font-medium ">Cleaning tips & news</h3>
+                <h3 className="text-5xl font-medium ">Cleaning <span className=" text-purple-500 ">Tips </span> & <span className='text-sky-400'>News</span> </h3>
 
                 {/* line content */}
-                <div className="w-full  flex  justify-center mt-8">
-
-                    <p className=" border-black border-b w-20 text-center " ></p>
-
+                <div className="w-full mt-8  flex justify-center items-center">
+                    <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
                 </div>
 
 
@@ -21,7 +19,7 @@ const Tips = () => {
 
             <div className="   mt-14  mx-24  h-fit   flex  overflow-hidden pb-24  ">
                 {/* column one */}
-                <div className="flex flex-col justify-between items-start mr-7">
+                <div className="md:w-1/2 flex flex-col gap-4  justify-between items-start mr-7">
 
                     {/* first item */}
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
@@ -48,26 +46,26 @@ const Tips = () => {
 
 
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
-            <div className="relative">
-              <img
-                src="https://images.ctfassets.net/37vwfxlcawdb/tdJ6X2UinI6KpFJcrmpIV/25e8a5955aef33b2d29959056164c965/Badkar-16-9.jpg?q=50&fm=jpg&w=800"
-                className="w-[700px] h-80"
-                alt="Pic"
-              />
-            </div>
+                        <div className="relative">
+                            <img
+                                src="https://images.ctfassets.net/37vwfxlcawdb/tdJ6X2UinI6KpFJcrmpIV/25e8a5955aef33b2d29959056164c965/Badkar-16-9.jpg?q=50&fm=jpg&w=800"
+                                className="w-[700px] h-80"
+                                alt="Pic"
+                            />
+                        </div>
 
-            <div className="overflow-hidden h-0 transition-all duration-800 ease-in-out group-hover:h-[30vh] delay-200 p-8">
-              <div className="flex flex-col items-center">
-                <p className="text-xl font-bold">CLEANING</p>
-                <p className="border-black border-b w-20 text-center mt-4"></p>
-              </div>
+                        <div className="overflow-hidden h-0 transition-all duration-800 ease-in-out group-hover:h-[30vh] delay-200 p-8">
+                            <div className="flex flex-col items-center">
+                                <p className="text-xl font-bold">CLEANING</p>
+                                <p className="border-black border-b w-20 text-center mt-4"></p>
+                            </div>
 
-              <div className="flex items-center justify-center flex-col p-8">
-                <p className="text-3xl font-medium mt-2">Avoid black mold in</p>
-                <p className="text-3xl font-medium mt-2">bathroom</p>
-              </div>
-            </div>
-          </div>
+                            <div className="flex items-center justify-center flex-col p-8">
+                                <p className="text-3xl font-medium mt-2">Avoid black mold in</p>
+                                <p className="text-3xl font-medium mt-2">bathroom</p>
+                            </div>
+                        </div>
+                    </div>
 
 
 
@@ -75,7 +73,7 @@ const Tips = () => {
 
                 {/* column two */}
 
-                <div className="flex flex-col justify-between items-start ">
+                <div className="md:w-1/2 flex flex-col justify-between items-center ">
 
                     {/* first item */}
 
@@ -123,7 +121,7 @@ const Tips = () => {
                             </div>
                         </div>
                     </div>
-                   
+
 
 
 

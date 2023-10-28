@@ -6,14 +6,12 @@ const MovingTips = () => {
         <div className="py-28  h-fit   bg-[#f5f4f0]">
 
             <div class="">
-                <h3 className="text-5xl font-medium ">Cleaning Cleaning & news</h3>
+                <h3 className="text-5xl font-medium ">Cleaning <span className=" text-gray-700 ">Tips </span> & <span className='text-fuchsia-800'>News</span></h3>
 
                 {/* line content */}
-                <div className="w-full  flex  justify-center mt-8">
-
-                    <p className=" border-black border-b w-20 text-center " ></p>
-
-                </div>
+                <div className="w-full mt-8  flex justify-center items-center">
+          <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
+        </div>
 
 
             </div>
@@ -22,7 +20,7 @@ const MovingTips = () => {
 
             <div className="   mt-14  mx-24  h-fit   flex  overflow-hidden pb-24  ">
                 {/* column one */}
-                <div className="flex flex-col justify-between items-start mr-7">
+                <div className="md:w-1/2 flex flex-col gap-4 justify-between items-start mr-7">
 
                     {/* first item */}
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
@@ -51,7 +49,7 @@ const MovingTips = () => {
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
             <div className="relative">
               <img
-                src="https://images.ctfassets.net/37vwfxlcawdb/6YcKFsdnCvokGoU3cbS2A8/83c7397a8fc81d02560bd72fd7877536/MicrosoftTeams-image__6_.png?q=50&fm=jpg&w=800" className="w-[700px] h-80"
+                src="https://images.ctfassets.net/37vwfxlcawdb/6YcKFsdnCvokGoU3cbS2A8/83c7397a8fc81d02560bd72fd7877536/MicrosoftTeams-image__6_.png?q=50&fm=jpg&w=800"
                 className="w-[700px] h-80"
                 alt="Pic"
               />
@@ -77,7 +75,7 @@ const MovingTips = () => {
 
                 {/* column two */}
 
-                <div className="flex flex-col justify-between items-start ">
+                <div className="md:w-1/2  flex flex-col justify-between items-center  ">
 
                     {/* first item */}
 
@@ -106,7 +104,7 @@ const MovingTips = () => {
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
                         <div className="relative">
                             <img
-                                src="https://images.ctfassets.net/37vwfxlcawdb/2U5sXRr86S3NTGvsbTgiHL/79da9aed5d9e41c482e315d209db4a7b/kok-1-1.jpg?q=50&fm=jpg&w=800" className="h-80 w-[700px]" alt="Pic"
+                                src="https://images.ctfassets.net/37vwfxlcawdb/2U5sXRr86S3NTGvsbTgiHL/79da9aed5d9e41c482e315d209db4a7b/kok-1-1.jpg?q=50&fm=jpg&w=800" 
                                 className="w-[700px] h-80"
                                 alt="Pic"
                             />

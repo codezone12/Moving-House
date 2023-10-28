@@ -1,17 +1,18 @@
-const Zipcode=()=>{
+const Zipcode = () => {
 
-    return ( 
+    return (
         <div className=" bg-[#eae8e1] ">
             <div class="flex flex-col-reverse lg:flex-row items-center justify-between relative">
                 <div className="py-4 ml-20 text-black text-5xl font-medium font-['Young Serif']  lg:ml-28  xl:ml-24  2xl:ml-36">
                     <p>Let us help you with </p>
                     <p class="  text-start mt-1 ">everyday life!</p>
                     <div className="flex justify-start w-full">
-                        <input className="bg-white focus:border-none focus:outline-none  w-full text-black text-center text-lg p-3 rounded-md mt-10 placeholder-black font-bold cursor-pointer" placeholder="POSTCODE" />
+                        <input className="bg-white focus:border-none focus:outline-none w-full text-black text-center text-lg p-3 rounded-md mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 hover:shadow-lg hover:shadow-black hover:bg-white transform hover:scale-90 transition-transform delay-200 hover:placeholder-gray-500" placeholder="ENTER ZIPCODE" />
                     </div>
-                    <div className="flex justify-center items-center  w-full bg-opacity-70 hover:shadow-lg hover:shadow-black bg-[#181818] text-lg font-bold mt-4 p-5 rounded-md">
+                    <div className="flex justify-center items-center w-full bg-opacity-80 hover:shadow-lg hover:shadow-black bg-[#1e1e1e] text-lg font-bold mt-4 p-5 rounded-md transform hover:scale-90 transition-transform delay-200">
 
-                        <p className="text-center text-white ">CHOOSE SERVICES</p>
+
+                        <p className="text-center text-white hover:text-green-500">CHOOSE SERVICES</p>
 
                         <p className="text-center text-4xl  self-end absolute end-0 mr-4 "><svg height="20" viewBox="0 0 9 15" width="20" class="csw9N_C5 fiwAtSA" style={{ stroke: "#fff" }}   ><path d="m.958.995 6.51 6.51-6 6" fill="none" stroke-width="2"></path></svg></p>
 
@@ -30,7 +31,7 @@ const Zipcode=()=>{
             </div>
         </div>
     );
- 
+
 
 }
 

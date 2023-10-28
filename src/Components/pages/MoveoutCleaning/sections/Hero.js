@@ -8,8 +8,8 @@ const MHero = () => {
 
                 <p className="text-start">Get help with</p>
 
-                <p class="  text-start mt-1 text-gray-700 ">cleaning when</p>
-                <p class="  text-start mt-1 text-fuchsia-800 ">moving</p>
+                <p class="  text-start mt-1 text-gray-700 ">Cleaning when</p>
+                <p class="  text-start mt-1 text-fuchsia-800 ">Moving</p>
                 <div className="flex justify-start w-1/2 md:w-2/5">
                 <input className="bg-white focus:border-none focus:outline-none w-full text-black text-center text-lg p-3 rounded-md mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 hover:shadow-lg hover:shadow-black hover:bg-white transform hover:scale-90 transition-transform delay-200 hover:placeholder-gray-500" placeholder="ENTER ZIPCODE" />
                 </div>

@@ -30,11 +30,11 @@ const FAQ = () => {
     ];
     return (
         <section id="faq">
-            <div className="relative py-16 bg-gray-100 min-h-full lg:min-h-screen w-full flex flex-col items-center gap-8 ">
+            <div className="relative pt-24 bg-gray-100  w-full flex flex-col items-center gap-8 ">
                 <div>
                     <div className="relative bg-gray-100 min-h-full lg:min-h-screen w-full flex flex-col items-center gap-8 ">
                         <h2 className="font-bold text-5xl mb-3">
-                            FAQ about <span className="text-green-500">window cleaning</span>{" "}
+                            FAQ about <span className="text-green-500">Window </span> <span className='text-cyan-500'>Cleaning</span>{" "}
                         </h2>
                         {faqs.map(({ question, answer }, i) => (
                             <div

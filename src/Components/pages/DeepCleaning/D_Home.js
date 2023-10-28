@@ -16,7 +16,7 @@ const DHome=()=>{
 <Included />
 <Work />
 <FAQ />
-<Sabina />
+{/* <Sabina /> */}
 <Tips />
 <Zipcode />
         </div>

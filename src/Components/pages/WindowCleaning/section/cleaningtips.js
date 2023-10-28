@@ -5,10 +5,10 @@ const CleaningTips = () => {
         <div className="py-28  h-fit   bg-[#f5f4f0]">
 
             <div class="">
-                <h3 className="text-5xl font-medium ">Cleaning <span className="animate-pulse text-green-500 transition duration-300">tips & news</span> </h3>
+                <h3 className="text-5xl font-medium ">Cleaning <span className=" text-green-500 ">Tips </span> & <span className='text-cyan-500'>News</span> </h3>
                 {/* line content */}
                 <div className="w-full  flex  justify-center mt-8">
-                    <p className=" border-black border-b w-20 text-center " ></p>
+                <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
                 </div>
             </div>
 

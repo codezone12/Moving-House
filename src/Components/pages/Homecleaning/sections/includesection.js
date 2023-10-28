@@ -1,5 +1,5 @@
 import './includesection.css'
-import { TbInfoSquareFilled } from 'react-icons/tb'
+import {MdOutlineCleaningServices } from 'react-icons/md'
 import {
   Accordion,
   AccordionItem,
@@ -55,8 +55,8 @@ const Includesection = () => {
   ]
   return (
 
-    <div className="py-14 bg-[#eae8e1] ">
-      <div className="   relative  ">
+    <div className="py-14 bg-[#eae8e1]">
+      <div className=" relative ">
 
         <div className="pt-12 text-5xl font-bold">What is included in our <span className="text-yellow-300">Home</span> <span className='text-orange-600'>Cleaning</span>?</div>
         <div className="w-full mt-8  flex justify-center items-center">
@@ -76,9 +76,9 @@ const Includesection = () => {
             <AccordionItem className='col-span-1 ' key={index}>
               <h2 className='font-xl font-semibold'>
                 <AccordionButton className='group'>
-                  <Box as="span" flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-fuchsia-800'>
+                  <Box as="span" flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
                   <div className='flex '>
-                      <TbInfoSquareFilled className='w-10  pr-2' />
+                      <MdOutlineCleaningServices className='w-10  pr-2' />
                       <h4>{item.heading}</h4>
                     </div>
                   </Box>
@@ -87,7 +87,7 @@ const Includesection = () => {
               </h2>
               <AccordionPanel pb={4}>
                 <h3 className='text-start text-lg pb-1 font-semibold'>{item.title}</h3>
-                <ul className='list-disc text-start text-sl pl-5 space-y-3 text-gray-700'>
+                <ul className='list-disc marker:text-blue-700 text-start  pl-5 space-y-3 text-gray-700'>
                   {item?.description?.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}

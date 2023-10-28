@@ -3,11 +3,11 @@ const Dhero = () => {
     return (
         <div className="bg-cover" style={{ backgroundImage: "url('https://images.ctfassets.net/37vwfxlcawdb/4l8RDAxaEze1utGrkmIWcl/09f98792b2cbbd7f60a59b114ebdfe28/Sta_d-.jpg?q=50&fm=avif&w=1920')" }}>
 
-            <div className=" mr-auto pt-48 md:px-28 px-10 text-white text-5xl font-medium font-['Young Serif'] ">
+            <div className="mr-auto pt-48 md:px-28 px-10 text-white text-5xl font-medium font-['Young Serif'] ">
 
 
-                <p className="text-start">Time for a <span className="text-purple-400">major</span></p>
-                <p class="  text-start mt-1 text-sky-400">cleaning job?</p>
+                <p className="text-start">Time for a <span className="text-purple-400">Major</span></p>
+                <p class="  text-start mt-1 text-sky-400">Cleaning Job?</p>
                 <div className="flex justify-start w-1/2 md:w-2/5">
                     <input className="bg-white focus:border-none focus:outline-none  w-full text-black text-center text-lg p-3 rounded-md mt-10 placeholder-black font-bold cursor-pointer  hover:bg-white transform hover:scale-90 transition-transform delay-200 hover:placeholder-gray-500" placeholder="ZIPCODE" />
                 </div>

@@ -3,9 +3,9 @@ const Todo = () => {
 
         <>
             {/* first content */}
-            <div className=" bg-[#f5f4f0] h-[108vh]">
+            <div className=" bg-[#f5f4f0] ">
 
-                <div class="flex flex-row items-center justify-between relative">
+                <div class="flex flex-col-reverse lg:flex-row items-center justify-between relative">
 
                     <div className="w-1/2 px-6 text-black font-medium font-['Young Serif']  lg:ml-28  xl:ml-16  2xl:ml-36">
 

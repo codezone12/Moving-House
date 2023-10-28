@@ -92,7 +92,7 @@ const Footer = () => {
 
             <div
                 id="footer"
-                className="py-10 px-2 w-full border-y  border-gr1  max-w-6xl  grid lg:grid-cols-4 grid-cols-2 gap-4 text-white"
+                className="text-start py-10 px-2 w-full border-y  border-gr1  max-w-6xl  grid lg:grid-cols-4 grid-cols-2 gap-4 text-white"
             >
                 <div className="col-span-1 flex flex-col gap-5">
                     <h2 className="font-bold text-xl">Services</h2>

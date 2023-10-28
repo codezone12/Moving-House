@@ -1,4 +1,4 @@
-import { TbInfoSquareFilled } from 'react-icons/tb'
+import { MdOutlineCleaningServices } from 'react-icons/md'
 import {
   Accordion,
   AccordionItem,
@@ -49,11 +49,11 @@ const Includesection = () => {
     <div className="py-14 bg-[#eae8e1] ">
       <div className="   relative  ">
 
-        <div className="pt-12 text-5xl font-bold">What is included in our <span className='text-green-500'>window cleaning?</span></div>
+        <div className="pt-12 text-5xl font-bold">What is included in our <span className='text-green-500'>Window </span><span className='text-cyan-500'>Cleaning?</span></div>
         <div className="w-full mt-8  flex justify-center items-center">
-          <p className=" border-black border-2 w-20 text-center" ></p>
+        <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
         </div>
-        <div className="mt-8 text-lg leading-7 ">
+        <div className="mt-8 text-lg leading-7">
           <p>When you wash windows yourself, it’s hard to do it really well. Use our skilled window</p>
           <p>cleaners, armed with squeegees, to remove both splashes and dirt</p>
 
@@ -67,18 +67,18 @@ const Includesection = () => {
             <AccordionItem className='col-span-1 ' key={index}>
               <h2>
                 <AccordionButton>
-                  <Box as="span" flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-fuchsia-800'>
-                    <div className='flex '>
-                      <TbInfoSquareFilled className='w-10  pr-2' />
+                  <Box as="span" flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
+                    <div className='flex font-semibold'>
+                      <MdOutlineCleaningServices className='w-10  pr-2' />
                       <h4>{item.heading}</h4>
                     </div>
                   </Box>
                   <AccordionIcon className="w-12" />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4}>
-                <h3 className='text-start text-xl pb-1'>{item.title}</h3>
-                <ul className='list-disc text-start text-xl pl-5 space-y-3'>
+              <AccordionPanel pb={4} >
+                <h3 className='text-start text-xl pb-1 font-semibold'>{item.title}</h3>
+                <ul className='list-disc marker:text-blue-700 text-start text-md pl-5 space-y-3'>
                   {item?.description?.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}

@@ -2,19 +2,14 @@ const MWork=()=>{
 
     return (
         <div>
-
-
-        
         
         <div class="h-fit bg-[#c4d0c7] ">
-            <h3 className="text-5xl font-medium pt-28">How does it work</h3>
+            <h3 className="text-5xl font-medium pt-28">How does it <span className="text-fuchsia-800">Work</span></h3>
             
          {/* line content */}
-         <div className="w-full  flex justify-center mt-8">
-         
-            <p className=" border-black border-2 w-20 text-center " ></p>
-         
-         </div>
+         <div className="w-full mt-8  flex justify-center items-center">
+          <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
+        </div>
          
          {/* row begins */}
          <div className="   mt-14 mx-24 h-fit    pb-24  ">
