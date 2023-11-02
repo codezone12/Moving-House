@@ -7,6 +7,8 @@
   /* CSS in your stylesheet */
 /* CSS in your stylesheet */
 .square-border {
+    display: flex; /* Make the li element a flex container */
+    align-items: center; /* Center the content vertically */
     padding: 4px; /* Adjust this value to control the width of the border */
     border: 2px solid transparent; /* Create a transparent border */
     transition: padding 700ms; /* Transition the padding property */
@@ -18,7 +20,14 @@
     border: 2px solid #ccc; /* Use the same color for the border on hover */
     border-radius: 10px; /* Slightly round the corners (adjust as needed) */
     transition: background 700ms, padding 700ms, border-radius 700ms; /* Transition the background, padding, and border-radius properties on hover */
-    font-size: bold;
-}
+  }
   
+  .square-border span {
+    flex-grow: 1; /* Allow the text to take up available space */
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  
+  .square-border span:hover {
+    font-weight: bold; /* Add font-weight on hover */
+  }
   
