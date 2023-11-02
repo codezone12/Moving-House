@@ -1,4 +1,6 @@
 import { MdOutlineCleaningServices } from 'react-icons/md'
+import { BiSolidChevronDown } from 'react-icons/bi';
+
 import {
   Accordion,
   AccordionItem,
@@ -18,7 +20,8 @@ const Includesection = () => {
         "We bring all window cleaning equipment and cleaning agents with us.",
         "If you do not have a suitable ladder, we can bring one with us for an additional cost. Please state it when booking.",
         "For best results, we also recommend that you add a frame washer, which means that we wash the window frames and frames.",
-      ]
+      ],
+      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
     },
     {
       heading: "What counts as a window?",
@@ -26,7 +29,8 @@ const Includesection = () => {
         "We perform general cleaning steps, as well as:",
         "If your window has 1 window frame, it counts as one window. Also called 1 sash window.",
         "If your window has 2 frames (one that goes to the right and one that goes to the left), it counts as two windows. Also called 2 sash windows.",
-      ]
+      ],
+      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/NNOembCSzySTh6zEwVfCi/1f035c76c864d50936a3d2e36ee6a3f8/Hemfrid_Piktogram_Sta__dat_och_klart_64x64px-01.svg',
     },
     {
       heading: "Did you know that...",
@@ -35,14 +39,15 @@ const Includesection = () => {
         "We can even clean if it’s raining and snowing (we clean in temperatures down to 15 degrees below zero!)",
         "Our window cleaners are insured and we have liability insurance to cover any damage.",
 
-      ]
+      ],
+      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
     },
     {
       heading: "Our own cleaning products",
       title: "The cleaning service contract also includes our eco-friendly cleaning products which are delivered to your home and refilled when they run out.",
-
+      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
     },
-
+    
   ]
   return (
 
@@ -67,13 +72,19 @@ const Includesection = () => {
             <AccordionItem className='col-span-1 ' key={index}>
               <h2>
                 <AccordionButton>
-                  <Box as="span" flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
-                    <div className='flex font-semibold'>
-                      <MdOutlineCleaningServices className='w-10  pr-2' />
+                <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
+                    <div className='flex hover:shake'>
+                      <img src={item.iconUrl} alt='Icon' className='w-10 pr-2' />
                       <h4>{item.heading}</h4>
                     </div>
                   </Box>
-                  <AccordionIcon className="w-12" />
+
+
+                  <div className='text-3xl group-hover:rotate-180 transition duration-1500 ml-auto'>
+                    <BiSolidChevronDown
+                      className='w-8 h-8 border-2 rounded-full text-green-500 border-green-500 group-hover:border-yellow-400 group-hover:text-yellow-400'
+                    />
+                  </div>
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4} >

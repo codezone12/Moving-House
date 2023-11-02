@@ -18,24 +18,27 @@ const MHero = () => {
                     <p className="text-center text-['#fff'] ">CONTINUE</p>
 
                 </div>
-                <div className="text-2xl mt-10 pb-8 flex items-start font-normal">
-                    <div className="text-xl mt-10 flex items-start font-normal">
-                        <ul>
-                            <li> <svg height="24" width="24" viewBox="0 0 24 24" color='white' class="uiyb_O3 cfwk5OWE inline-block  mr-2" style={{ fill: "white" }}><g><path d="m12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 22.286a10.286 10.286 0 1 1 0-20.572 10.286 10.286 0 0 1 0 20.572z"></path><path d="m17.4 7.114-6.257 6.24-2.828-2.81a.848.848 0 1 0 -1.2 1.2l3.428 3.428a.824.824 0 0 0 1.2 0l6.857-6.858a.849.849 0 0 0 -1.2-1.2z"></path></g></svg>       Window cleaning included  </li>
-                            <li className="mt-4"> <svg height="24" width="24" viewBox="0 0 24 24" color='white' class="uiyb_O3 cfwk5OWE inline-block  mr-2" style={{ fill: "white" }}><g><path d="m12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 22.286a10.286 10.286 0 1 1 0-20.572 10.286 10.286 0 0 1 0 20.572z"></path><path d="m17.4 7.114-6.257 6.24-2.828-2.81a.848.848 0 1 0 -1.2 1.2l3.428 3.428a.824.824 0 0 0 1.2 0l6.857-6.858a.849.849 0 0 0 -1.2-1.2z"></path></g></svg>      Collective agreement &nbsp; &nbsp; &nbsp; &nbsp; </li>
-                            <li className="mt-4 ">    <svg height="24" width="24" viewBox="0 0 24 24" color='white' class="uiyb_O3 cfwk5OWE inline-block mr-3" style={{ fill: "white" }}><g><path d="m12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 22.286a10.286 10.286 0 1 1 0-20.572 10.286 10.286 0 0 1 0 20.572z"></path><path d="m17.4 7.114-6.257 6.24-2.828-2.81a.848.848 0 1 0 -1.2 1.2l3.428 3.428a.824.824 0 0 0 1.2 0l6.857-6.858a.849.849 0 0 0 -1.2-1.2z"></path></g></svg>                Insured &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </li>
+                <div className="text-xl mt-10 flex items-start font-normal">
+                    <div className="mt-5">
+                        <div class="flex items-center">
+                            <svg height="24" width="24" viewBox="0 0 24 24" color="white" class="uiyb_O3 cfwk5OWE" style={{ fill: "white" }} className="hover:shake hover:border-yellow-400"><g><path d="m12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 22.286a10.286 10.286 0 1 1 0-20.572 10.286 10.286 0 0 1 0 20.572z"></path><path d="m17.4 7.114-6.257 6.24-2.828-2.81a.848.848 0 1 0 -1.2 1.2l3.428 3.428a.824.824 0 0 0 1.2 0l6.857-6.858a.849.849 0 0 0 -1.2-1.2z"></path></g>
+                            </svg>
+                            <p class="ml-2">
+                                <span className="animate-bounce text-gray-200 font-bold">Right Now!</span>
+                                <span className="text-orange-200 font-bold ml-2 mr-1">50%</span>
+                            </p>
+                            <p> discount on your first invoice</p>
+                        </div>
+                        <div className="my-6 text-base text-start">
+                            <p>Use the code <span className="font-bold text-black text-lg">OKT50</span>  to activate the offer.</p>
+                        </div>
 
-                        </ul>
+                        <div className="my-6 text-lg text-start hover:shake">
+                            <i><span className="font-bold text-black">Terms:</span>Offer valid for new customers only. Your first home <br /> cleaning must be done no later than November 30,2023. <br />The discount cannot be combined with other promotions or offer. </i>
+                        </div>
                     </div>
-
-
-
-
-
                 </div>
-
             </div>
-
         </div>);
 }
 

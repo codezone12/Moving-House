@@ -1,4 +1,5 @@
 import { MdOutlineCleaningServices } from 'react-icons/md'
+import { BiSolidChevronDown } from 'react-icons/bi';
 
 import {
     Accordion,
@@ -25,7 +26,8 @@ import {
           "Removal of ash from tiled stoves and fireplaces.",
           "Wiping of front doors.",
           "Vacuuming and mopping of floors.",
-        ]
+        ],
+        iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
       },
       {
         heading: "Bathrooms",
@@ -41,8 +43,9 @@ import {
           "Cleaning of the toilet.",
           "Cleaning the exterior of the bathroom appliances and the washing machine’s detergent holder.",
           "Cleaning of the filter in the tumble dryer.",
-          ]
-      },
+          ],
+          iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/NNOembCSzySTh6zEwVfCi/1f035c76c864d50936a3d2e36ee6a3f8/Hemfrid_Piktogram_Sta__dat_och_klart_64x64px-01.svg',
+        },
       {
         heading: "Kitchen",
         title: "We perform general cleaning steps, as well as:",
@@ -58,7 +61,9 @@ import {
           "Empty the rubbish and wipe clean the rubbish bin.",
           "Polish the sink, faucet, stopper, and strainer.",
          
-        ]
+        ],
+        iconUrl:
+        'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
       },
       {
         heading: "Hallways",
@@ -67,8 +72,8 @@ import {
           "Dry dusting of handrails, banisters, and stair rails.",
           "Wiping of the coat rack.",
           "Wiping of fuse cabinet.",
-        ]
-        
+        ],
+        iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',    
       },
   
     ]
@@ -94,13 +99,19 @@ import {
               <AccordionItem className='col-span-1 ' key={index}>
               <h2>
                 <AccordionButton>
-                  <Box as="span" flex='1' textAlign='left' className='text-3xl text-gray-800'>
-                  <div className='flex font-semibold'>
-                      <MdOutlineCleaningServices className='w-10  pr-2' />
+                <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
+                    <div className='flex hover:shake'>
+                      <img src={item.iconUrl} alt='Icon' className='w-10 pr-2' />
                       <h4>{item.heading}</h4>
                     </div>
                   </Box>
-                  <AccordionIcon className="w-12"/>
+
+
+                  <div className='text-3xl group-hover:rotate-180 transition duration-1500 ml-auto'>
+                    <BiSolidChevronDown
+                      className='w-8 h-8 border-2 rounded-full text-green-500 border-green-500 group-hover:border-yellow-400 group-hover:text-yellow-400'
+                    />
+                  </div>
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4} >

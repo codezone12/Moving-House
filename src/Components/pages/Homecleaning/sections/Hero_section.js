@@ -7,7 +7,7 @@ const Hero = () => {
 
             <div className=" mr-auto pt-48 md:px-28 px-10 text-white text-5xl font-medium font-['Young Serif'] ">
 
-                <div className="hover:text-gray-900 ">
+                <div className="hover:text-gray-600 ">
                     <p className="text-start">Get a routine for</p>
 
                     <p class="  text-start mt-1 ">your <span className="text-yellow-300">Home <span className="text-orange-600">Cleaning</span></span></p>

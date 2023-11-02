@@ -1,4 +1,5 @@
 import { MdOutlineCleaningServices } from 'react-icons/md'
+import { BiSolidChevronDown } from 'react-icons/bi';
 
 import {
   Accordion,
@@ -24,7 +25,10 @@ const Included = () => {
         "Mirror polishing.",
         "Empty and wipe rubbish bins.",
         "Vacuuming and mopping of floors.",
-      ]
+      ],
+      iconUrl:
+      'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
+    
     },
     {
       heading: "Kitchen",
@@ -43,7 +47,8 @@ const Included = () => {
         "Cleaning the interior and exterior of the cabinet where the rubbish bin is located.",
         "Empty the rubbish and wipe clean the rubbish bin.",
         "Polish the sink, faucet, stopper, and strainer.",
-      ]
+      ],
+      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
     },
     {
       heading: "Bathrooms",
@@ -60,7 +65,8 @@ const Included = () => {
         "Cleaning the exterior of the bathroom appliances and the washing machine’s detergent holder.",
         "Cleaning of the filter in the tumble dryer.",
         "Wipe off soap bottles.",
-      ]
+      ],
+      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
     },
     {
       heading: "Bedrooms",
@@ -69,8 +75,8 @@ const Included = () => {
         "Making the beds.",
         "Changing of bed linen if clean sheets are provided.",
         "Dry dusting or vacuuming of the headboard/-bed frame.",
-      ]
-
+      ],
+      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/NNOembCSzySTh6zEwVfCi/1f035c76c864d50936a3d2e36ee6a3f8/Hemfrid_Piktogram_Sta__dat_och_klart_64x64px-01.svg',
     },
     {
       heading: "Hallways",
@@ -80,7 +86,8 @@ const Included = () => {
         "Vacuuming and wiping of shoe racks.",
         "Wiping of the coat rack.",
         "Wiping of fuse cabinet.",
-      ]
+      ],
+      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
 
     },
     {
@@ -97,8 +104,8 @@ const Included = () => {
         "Polishing of brass or silver.",
         "Furniture care of leather sofas/chairs.",
         "Ironing.",
-      ]
-
+      ],
+      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
     },
 
   ]
@@ -124,15 +131,18 @@ const Included = () => {
             <AccordionItem className='col-span-1 ' key={index}>
               <h2>
                 <AccordionButton>
-                  <Box as="span" flex='1' textAlign='left' className='text-3xl text-gray-800'>
-                  <div className='flex font-semibold'>
-                      <MdOutlineCleaningServices className='w-10  pr-2' />
+                <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
+                    <div className='flex hover:shake'>
+                      <img src={item.iconUrl} alt='Icon' className='w-10 pr-2' />
                       <h4>{item.heading}</h4>
                     </div>
-                    
                   </Box>
-                  <AccordionIcon className="w-12" />
-                </AccordionButton>
+                  <div className='text-3xl group-hover:rotate-180 transition duration-1500 ml-auto'>
+                    <BiSolidChevronDown
+                      className='w-8 h-8 border-2 rounded-full text-green-500 border-green-500 group-hover:border-yellow-400 group-hover:text-yellow-400'
+                    />
+                  </div>
+                  </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
                 <h3 className='text-start text-xl pb-1 font-semibold'>{item?.title}</h3>
