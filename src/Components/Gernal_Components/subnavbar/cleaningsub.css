@@ -1,0 +1,24 @@
+/* CSS in your stylesheet */
+.hover-border-30:hover {
+    border: 2px solid your-border-color; /* Customize the border color */
+    padding: 5px; /* Add some padding to create a square border */
+    border-radius: 30px; /* Make it rounded with a 30px radius */
+  }
+  /* CSS in your stylesheet */
+/* CSS in your stylesheet */
+.square-border {
+    padding: 4px; /* Adjust this value to control the width of the border */
+    border: 2px solid transparent; /* Create a transparent border */
+    transition: padding 700ms; /* Transition the padding property */
+  }
+  
+  .square-border:hover {
+    background: #ccc; /* Use gray-600 color or #ccc for a gray background on hover */
+    padding: 30px; /* Create a 30px square border on hover by increasing the padding */
+    border: 2px solid #ccc; /* Use the same color for the border on hover */
+    border-radius: 10px; /* Slightly round the corners (adjust as needed) */
+    transition: background 700ms, padding 700ms, border-radius 700ms; /* Transition the background, padding, and border-radius properties on hover */
+    font-size: bold;
+}
+  
+  
