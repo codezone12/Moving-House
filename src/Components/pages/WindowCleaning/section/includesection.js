@@ -71,7 +71,7 @@ const Includesection = () => {
           {cleanmethods.map((item, index) => (
             <AccordionItem className='col-span-1 ' key={index}>
               <h2>
-                <AccordionButton>
+                <AccordionButton className='group'>
                 <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
                     <div className='flex hover:shake'>
                       <img src={item.iconUrl} alt='Icon' className='w-10 pr-2' />

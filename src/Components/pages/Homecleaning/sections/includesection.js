@@ -85,40 +85,34 @@ const [isHovered, setIsHovered] = useState(null);
       <div className='px-2 py-8 flex justify-center'>
         <Accordion allowMultiple className='grid lg:grid-cols-2 w-full max-w-6xl gap-8'>
           {cleanmethods.map((item, index) => 
-           ( 
-            <AccordionItem className='col-span-1 group' key={index}
-            >
-              <h2 className='font-xl font-semibold'>
-                <AccordionButton
-                 className='group'
-                 onMouseEnter={() => handleMouseEnter(index)}
-                 onMouseLeave={handleMouseLeave}
-                  
-                >
-                  <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
-                    <div className='flex hover:shake'>
-                      <img src={item.iconUrl} alt='Icon' className='w-10 font-semibold pr-2' />
-                      <h4>{item.heading}</h4>
-                    </div>
-                  </Box>
-                  <div className='text-3xl group-hover:rotate-180 transition duration-1500 ml-auto'>
-                    <BiSolidChevronDown
-                      className='w-8 h-8 border-2 rounded-full text-green-500 border-green-500 group-hover:border-yellow-400 group-hover:text-yellow-400'
-                    />
-                  </div>
-                </AccordionButton>
-              </h2>
-              <AccordionPanel
-                pb={4}
-                >
-                <h3 className='text-start text-lg pb-1 font-semibold'>{item.title}</h3>
-                <ul className='list-disc marker:text-blue-700 text-start pl-5 space-y-3 text-gray-700'>
-                  {item?.description?.map((desc, i) => (
-                    <li key={i}>{desc}</li> 
-                  ))}
-                </ul>
-              </AccordionPanel>
-            </AccordionItem>
+( 
+<AccordionItem className='col-span-1 accordion-item' key={index} onMouseEnter={setIsHovered}
+onmouseleave={handleMouseLeave}>
+  <h2 className='font-xl font-semibold'>
+    <AccordionButton className='group'>
+      <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
+        <div className='flex hover:shake'>
+          <img src={item.iconUrl} alt='Icon' className='w-10 font-semibold pr-2 hover:scale-95 transition duration-300 ease-in-out' />
+          <h4 className='heading'>{item.heading}</h4>
+        </div>
+      </Box>
+      <div className='text-3xl group-hover:rotate-180 transition duration-1500 ml-auto'>
+        <BiSolidChevronDown
+          className='w-8 h-8 border-2 rounded-full text-green-500 border-green-500 group-hover:border-yellow-400 group-hover:text-yellow-400'
+        />
+      </div>
+    </AccordionButton>
+  </h2>
+  <AccordionPanel pb={4} className='description'>
+    <h3 className='text-start text-lg pb-1 font-semibold'>{item.title}</h3>
+    <ul className='list-disc marker:text-blue-700 text-start pl-5 space-y-3 text-gray-700'>
+      {item?.description?.map((desc, i) => (
+        <li key={i}>{desc}</li> 
+      ))}
+    </ul>
+  </AccordionPanel>
+</AccordionItem>
+
           ))}
         </Accordion>
       </div>
