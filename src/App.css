@@ -11,4 +11,6 @@
   color: white;
 }
 
-
+.react-calendar{
+  width: 60% !important;
+}
