@@ -16,12 +16,13 @@ const Navbar = () => {
     return (
         <>
 
-            <nav className="w-screen bg-[#FFF] h-[75px] mt-[.3px] z-50  flex items-center px-5   justify-between fixed  ">
-                <Link to='/' className="cursor-pointer ">
-                    <p className="text-2xl lg:text-2xl xl:text-2xl "><img
-                        src="https://www.hemfrid.se/_next/static/media/logo-horizontal.225a413c.svg" className="h-10 hover:scale-95 transition duration-300 ease-in-out" alt=""
-                        srcset="" /></p>
-                </Link>
+<nav className="w-screen bg-[#FFF] h-[75px] mt-[.3px] z-50  flex items-center px-5   justify-between fixed">
+<Link to="/" className="cursor-pointer">
+  <img src="/img/LOGO.png" className="custom-height-18 bg-[#FFF] hover:scale-95 transition duration-300 ease-in-out" alt="" srcSet="" />
+</Link>
+
+
+
                 {/* <ul className="hidden lg:flex  cursor-pointer mr-16  lg:text-lg lg:ml-3 xl:text-lg 2xl:text-xl    md:text-sm pr-9 relative">
                     {names.map((item, i) => (
                         <li

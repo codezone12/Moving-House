@@ -30,4 +30,13 @@
   .square-border span:hover {
     font-weight: bold; /* Add font-weight on hover */
   }
+  .custom-height-18 {
+    height: 60px;
+    width: 110px;
+  }
+  .custom-border{
+    border-radius: 5px;
+    box-shadow: #FFF;
+    background-color: #FFF;
+  }
   
