@@ -387,7 +387,7 @@ const Footer = () => {
                 </div>
                 <div className="relative w-full">
                     <p className="text-white text-center">
-                        @copyright2023 IntellSignals.com
+                        @copyright2023 FlyttStäd&Återvinning
                     </p>
                     <p
                         onclick={() => window.open("https://codezoone.netlify.app/")}
