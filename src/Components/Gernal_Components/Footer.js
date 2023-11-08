@@ -346,9 +346,9 @@ const Footer = () => {
 
             <div className="py-10 pl-2 w-full max-w-5xl text-white flex flex-wrap items-center ">
           <img
-            src="/img/LOGO.png"
+            src="/img/logo2.png"
             alt="home"
-            className="custom-border w-40 h-auto hover:bg-[#FFF] hover:scale-95 transition duration-300 ease-in-out"
+            className="w-40 h-auto hover:scale-95 transition duration-300 ease-in-out"
           />  
           <div
             className="text-lg font-semibold rounded-lg py-3 px-4 ml-auto lg:mr-24 bg-sk hover:bg-sk1 transition duration-200"           
