@@ -5,7 +5,7 @@ import rightIcon from '../../../../Assets/images/tick_icon.png'
 import wrongIcon from '../../../../Assets/images/Cross_red_circle.png'
 import Booking from '../../Booking/Booking';
 import { useLocation, useNavigate } from 'react-router';
-const Hero = ({ history }) => {
+const Hero = () => {
   const [text, setText] = useState('');
   const [city, setCity] = useState('')
   const phrases = [' Home', ' Deep', ' Window', ' Move out'];
