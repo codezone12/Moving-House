@@ -1,0 +1,12 @@
+.radio-buttons label {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: Tiempos Headline, serif;
+    font-size: 22px;
+    /* padding: 25px 0; */
+    width: 100%;
+    margin-right: 10px;
+}

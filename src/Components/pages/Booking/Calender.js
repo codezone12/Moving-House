@@ -15,12 +15,13 @@ const CalendarComponent = () => {
     const date = new Intl.DateTimeFormat('en-US', options).format(selectedDate);
     const location = useLocation();
     const navigate = useNavigate()
-    const data = location?.state?.data;
+    console.log('loction', location);
+    const data = location?.state?.data || [];
     const newData = [...data, date, time];
     const handleNavigate = () => {
         navigate('/home_cleaning', {
             state: {
-                data: newData
+                data: newData || []
             }
         });
     }

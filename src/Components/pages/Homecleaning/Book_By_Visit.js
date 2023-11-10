@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useLocation } from 'react-router';
 
-const Home_cleaning_Form = () => {
+const Book_By_Visit = () => {
     const [price, setPrice] = useState('');
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -17,7 +17,7 @@ const Home_cleaning_Form = () => {
 
 
     const location = useLocation();
-    const data  = location?.state?.data;
+    const data = location?.state?.data;
     console.log('data received', data);
     useEffect(() => {
         setCity(data ? data[0] : "")
@@ -39,15 +39,15 @@ const Home_cleaning_Form = () => {
         }
     }, [price]);
 
-const handleSubmit = async () => {
-    const response = await axios.post('/api', {
-        price, firstName, lastName, email, confirmEmail, mobileNumber, street, city, doorCode, campaignCode, agreeToOffers
-    })
-    // Other Operation of our choise like toasts etc
-}
+    const handleSubmit = async () => {
+        const response = await axios.post('/api', {
+            price, firstName, lastName, email, confirmEmail, mobileNumber, street, city, doorCode, campaignCode, agreeToOffers
+        })
+        // Other Operation of our choise like toasts etc
+    }
 
     return (
-        <div className="container">
+        <div className="container  pt-10">
             <div className="pt-20 font-normal text-5xl">Home cleaning</div>
             <div className="w-full mt-8 flex justify-center items-center mb-5">
                 <p className="border-black border w-20 text-center"></p>
@@ -315,26 +315,21 @@ const handleSubmit = async () => {
 
                 </div>
                 <div>
-                    <div style={{ backgroundColor: '#d1dce7', width: '300px', height: '250px' }}>
-                        <div className="d-flex flex-col">
-                            <p className="text-2xl text-left ml-3 mb-1">Summary</p>
+                    <div style={{ backgroundColor: '#d1dce7', width: '300px', height: '350px' }}>
+                        <div className="d-flex flex-col py-5">
+                            <p className="text-left ml-3 mb-1 py-3" style={{ fontSize: '22px', fontFamily: 'Tiempos Headline,serif' }}>Summary</p>
                             <p className="px-3" style={{ display: 'flex', justifyContent: 'space-between' }}>
                                 <span className="text-lg ">Home cleaning</span>
-                                <span className="text-xl">Every week</span>
+                                <span className="text-xl font-medium">Every week</span>
                             </p>
-                            <hr
-                                className="border w-2/3 mx-auto mt-3"
-                                style={{ color: 'black', height: '1px', backgroundColor: '#a3bad0' }}
-                            />
+                            <div className="border-t my-2 border-gray-400 w-4/5 mx-auto"></div>
                             <p className="text-xl font-semibold text-left my-auto pl-3 py-2">Selected start date</p>
                             <p className="text-lg text-left px-5 mt-3">{data ? data[1] : ''}</p>
-                            <hr
-                                className="border w-2/3 mx-auto mt-3"
-                                style={{ color: 'black', height: '1px', backgroundColor: '#a3bad0' }}
-                            />
+                            <div className="border-t my-2 border-gray-400 w-4/5 mx-auto"></div>
                             <p className="text-lg text-left px-5 mt-3">Starting price</p>
                             <p className="text-xs text-left px-5 mt-3">with RUT-deduction</p>
                             {finalPrice ? <p className="text-lg text-left px-5 mt-3">{finalPrice}</p> : ''}
+                            <p className="text-xs text-left px-5 mt-3">*The price is based on the information you have provided.</p>
                         </div>
                     </div>
                 </div>
@@ -342,4 +337,4 @@ const handleSubmit = async () => {
         </div>
     );
 };
-export default Home_cleaning_Form;
+export default Book_By_Visit;
