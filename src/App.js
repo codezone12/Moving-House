@@ -15,6 +15,7 @@ import Calender from './Components/pages/Booking/Calender';
 import WindowCleaning from './Components/pages/WindowCleaning/Window_Clean_Form';
 import Book_By_Visit from './Components/pages/Homecleaning/Book_By_Visit';
 import Book_By_Call from './Components/pages/Homecleaning/Book_By_Call';
+import Contact from './Components/pages/Contact/Contact';
 
 
 
@@ -39,6 +40,7 @@ function App() {
   <Route path='/window_cleaning' element={ <WindowCleaning />} /> 
   <Route path='/Booking' element={ <Booking />} /> 
   <Route path='/calender' element={ <Calender />} /> 
+  <Route path='/contact' element={ <Contact />} /> 
 
   <Route path='*' element={<div>It and error</div>}/>
 
