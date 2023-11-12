@@ -1,9 +1,11 @@
-import axios from 'axios';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useLocation } from 'react-router';
+import emailjs from 'emailjs-com';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from 'react-toastify';
 
 const Book_By_Visit = () => {
-    const [price, setPrice] = useState('');
+    const [price, setPrice] = useState(0);
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -15,7 +17,6 @@ const Book_By_Visit = () => {
     const [campaignCode, setCampaignCode] = useState('');
     const [agreeToOffers, setAgreeToOffers] = useState(false);
 
-
     const location = useLocation();
     const data = location?.state?.data;
     console.log('data received', data);
@@ -23,10 +24,13 @@ const Book_By_Visit = () => {
         setCity(data ? data[0] : "")
     }, [data])
     const finalPrice = useMemo(() => {
-        if (price === "") {
+        if (price <= 0) {
+            setPrice(0)
+        }
+        if (price === "" || price === 0) {
             return null;
         }
-        if (price >= 1 && price <= 39) {
+        else if (price >= 1 && price <= 39) {
             return 1469;
         } else if (price >= 40 && price <= 59) {
             return 1789;
@@ -34,19 +38,62 @@ const Book_By_Visit = () => {
             return 2109;
         } else if (price >= 90 && price <= 139) {
             return 2689;
+        } else if (price >= 140 && price <= 149) {
+            return 3259;
         } else {
-            return 5000;
+            return "The price is based on your home's unique conditions and will be presented during the free meeting.";
         }
     }, [price]);
-
     const handleSubmit = async () => {
-        const response = await axios.post('/api', {
-            price, firstName, lastName, email, confirmEmail, mobileNumber, street, city, doorCode, campaignCode, agreeToOffers
-        })
-        // Other Operation of our choise like toasts etc
-    }
+        if (!firstName || !lastName || !email || !confirmEmail || !mobileNumber || !street || !city) {
+            toast.error('Please fill in all required fields.');
+            return;
+        }
+
+        if (email !== confirmEmail) {
+            toast.error('Email and Confirm Email must match.');
+            return;
+        }
+        try {
+            const messageBody = `
+            New Booking Request:
+        
+            Name: ${firstName} ${lastName}
+            Living Area: ${price}
+            Date: ${data ? data[1] : ''}
+            First Name: ${firstName}
+            Last Name: ${lastName}
+            Email: ${email}
+            Mobile Number: ${mobileNumber}
+            Street: ${street}
+            City: ${city}
+            Door Code: ${doorCode}
+            Campaign Code: ${campaignCode}
+        `;
+            const templateParams = {
+                to_name: `${firstName} ${lastName}`,
+                from_name: 'Code Zone',
+                to_email: email,
+                subject: 'New Booking Request',
+                message: messageBody,
+            };
+            const response = await emailjs.send(
+                'service_m774pph',
+                'template_qsec7n7',
+                templateParams,
+                'rc1ba_PvLbgEIUjbt'
+            );
+            console.log('Email sent successfully:', response);
+
+        } catch (error) {
+            console.error('Error sending email:', error);
+
+        }
+    };
 
     return (
+        <>
+            <ToastContainer position="top-right" autoClose={5000} />
         <div className="container  pt-10">
             <div className="pt-20 font-normal text-5xl">Home cleaning</div>
             <div className="w-full mt-8 flex justify-center items-center mb-5">
@@ -116,19 +163,7 @@ const Book_By_Visit = () => {
                         </div>
                     </div>
 
-                    <div className="bg-white rounded-lg p-4">
-                        <label className="text-sm text-left font-bold mb-2" htmlFor="date">
-                            Date:
-                        </label>
-                        <input
-                            type="date"
-                            id="date"
-                            name="date"
-                            className="block w-full px-4 border py-2 rounded-lg text-gray-700 focus:outline-none focus:bg-white focus:border-blue-500"
-                        />
-                    </div>
-
-                    {/* First Name */}
+                              {/* First Name */}
                     <div className="mb-4">
                         <label
                             htmlFor="firstName"
@@ -315,7 +350,12 @@ const Book_By_Visit = () => {
 
                 </div>
                 <div>
-                    <div style={{ backgroundColor: '#d1dce7', width: '300px', height: '350px' }}>
+                    {/* {alert(typeof(finalPrice))} */}
+                    <div style={{
+                        backgroundColor: '#d1dce7',
+                        width: '300px',
+                        height: typeof finalPrice === 'number' ? '400px' : typeof finalPrice === 'string' ? '450px' : typeof finalPrice === 'object' ? '350px' : '350px'
+                    }}>
                         <div className="d-flex flex-col py-5">
                             <p className="text-left ml-3 mb-1 py-3" style={{ fontSize: '22px', fontFamily: 'Tiempos Headline,serif' }}>Summary</p>
                             <p className="px-3" style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -328,13 +368,18 @@ const Book_By_Visit = () => {
                             <div className="border-t my-2 border-gray-400 w-4/5 mx-auto"></div>
                             <p className="text-lg text-left px-5 mt-3">Starting price</p>
                             <p className="text-xs text-left px-5 mt-3">with RUT-deduction</p>
-                            {finalPrice ? <p className="text-lg text-left px-5 mt-3">{finalPrice}</p> : ''}
-                            <p className="text-xs text-left px-5 mt-3">*The price is based on the information you have provided.</p>
+                            {finalPrice && <> <p className={typeof finalPrice === 'number' ? 'text-xl text-left font-medium px-5 mt-3' : 'text-lg text-left px-5 mt-3'}>
+                                SEK {finalPrice}/month*
+                            </p>
+
+                                {typeof (finalPrice) === 'number' && <p className="text-xs text-left px-5 mt-3">*The price is based on the information you have provided.</p>}
+                            </>}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </>
     );
 };
 export default Book_By_Visit;

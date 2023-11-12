@@ -1,6 +1,6 @@
 import React from 'react'
 import ExclimatryMark from '../../../Assets/images/exclimaterymar.png'
-import PhoneIcon from '../../../Assets/images/phone.svg'
+import '../../../Assets/css/window_cleaning.css'
 import PositiveIcon from '../../../Assets/images/PositiveIcon.png'
 import NegativeIcon from '../../../Assets/images/NegativeIcon.png'
 
@@ -38,62 +38,59 @@ const WindowCleaning = () => {
                     <div className='container mt-4'>
                         <div className='flex border rounded-md mb-4 p-5 border-[#d5d2c4]'>
                             <div className='flex'>
-                                <img src={PhoneIcon} alt="" className='w-6 h-7 self-center' />
+                                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 17 26" width="17"><path d="m13.8461538 24h-12.69230765c-.73478365 0-1.15384615-.447-1.15384615-1.2v-21.6c0-.753.4190625-1.2 1.15384615-1.2h12.69230765c.7347837 0 1.1538462.447 1.1538462 1.2v21.6c0 .753-.4190625 1.2-1.1538462 1.2z" fill="none" stroke="#1e1e1e" stroke-width="1.5" transform="translate(1 1)" /></svg>
                                 <p className='text-xl font-semibold ml-4'>Without mullions</p>
                             </div>
-                            <div className='flex' style={{ marginLeft: 'auto' }}>
+                            <div className='flex items-center' style={{ marginLeft: 'auto' }}>
                                 <a href='#'>
-                                    <img src={NegativeIcon} alt="" className='w-6 h-6 self-center rounded mt-1' />
+                                    <button className='negative-icon opacity-40 '>-</button>
                                 </a>
-                                <p className='text-2xl font-semibold mx-4'>1</p>
+                                <p className='text-2xl font-semibold mx-4 items-center'>1</p>
                                 <a href='#'>
-                                    <img src={PositiveIcon} alt="" className='w-6 h-6 self-center rounded mt-1' />
+                                    <button className='plus-icon bg-black'>+</button>
                                 </a>
                             </div>
                         </div>
                         <div className='flex border rounded-md mb-4 p-5 border-[#d5d2c4]'>
                             <div className='flex'>
-                                <img src={PhoneIcon} alt="" className='w-6 h-7 self-center' />
+                                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 17 26" width="17"><g fill="none" fill-rule="evenodd" stroke="#1e1e1e" stroke-width="1.5" transform="translate(1 1)"><path d="m13.8461538 24h-12.69230765c-.73478365 0-1.15384615-.447-1.15384615-1.2v-21.6c0-.753.4190625-1.2 1.15384615-1.2h12.69230765c.7347837 0 1.1538462.447 1.1538462 1.2v21.6c0 .753-.4190625 1.2-1.1538462 1.2z" /><g stroke-linecap="round"><path d="m0 16.2h12.3699095" /><path d="m0 7.8h15" /><path d="m7.18934911.12307692v23.63076928" /></g></g></svg>
                                 <p className='text-xl font-semibold ml-4'>With mullions</p>
                             </div>
-                            <div className='flex' style={{ marginLeft: 'auto' }}>
+                            <div className='flex items-center' style={{ marginLeft: 'auto' }}>
                                 <a href='#'>
-                                    <img src={NegativeIcon} alt="" className='w-6 h-6 self-center rounded mt-1' />
+                                    <button className='negative-icon opacity-40 '>-</button>
                                 </a>
-                                <p className='text-2xl font-semibold mx-4'>1</p>
+                                <p className='text-2xl font-semibold mx-4 flex items-center'>1</p>
                                 <a href='#'>
-                                    <img src={PositiveIcon} alt="" className='w-6 h-6 self-center rounded mt-1' />
-                                </a>
+                                    <button className='plus-icon bg-black'>+</button>                                </a>
                             </div>
                         </div>
                         <div className='flex border rounded-md mb-4 p-5 border-[#d5d2c4]'>
                             <div className='flex'>
-                                <img src={PhoneIcon} alt="" className='w-6 h-7 self-center' />
+                                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 17 26" width="17"><g fill="none" fill-rule="evenodd" stroke="#1e1e1e" stroke-width="1.5" transform="translate(1 1)"><path d="m13.8461538 24h-12.69230765c-.73478365 0-1.15384615-.447-1.15384615-1.2v-21.6c0-.753.4190625-1.2 1.15384615-1.2h12.69230765c.7347837 0 1.1538462.447 1.1538462 1.2v21.6c0 .753-.4190625 1.2-1.1538462 1.2z" /><path d="m3 7.2h11.3699095" stroke-linecap="round" /></g></svg>
                                 <p className='text-xl font-semibold ml-4'>Overhanged windows</p>
                             </div>
-                            <div className='flex' style={{ marginLeft: 'auto' }}>
+                            <div className='flex items-center' style={{ marginLeft: 'auto' }}>
                                 <a href='#'>
-                                    <img src={NegativeIcon} alt="" className='w-6 h-6 self-center rounded mt-1' />
+                                    <button className='negative-icon opacity-40 '>-</button>
                                 </a>
                                 <p className='text-2xl font-semibold mx-4'>1</p>
                                 <a href='#'>
-                                    <img src={PositiveIcon} alt="" className='w-6 h-6 self-center rounded mt-1' />
-                                </a>
+                                    <button className='plus-icon bg-black'>+</button>                                </a>
                             </div>
                         </div>
                         <div className='flex border rounded-md mb-4 p-5 border-[#d5d2c4]'>
                             <div className='flex'>
-                                <img src={PhoneIcon} alt="" className='w-6 h-7 self-center' />
+                                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 26 26" width="26"><g fill="none" fill-rule="evenodd" stroke="#1e1e1e" stroke-width="1.5" transform="translate(1 1)"><path d="m22.5480862 23.7538462h-21.2194462c-.66658461 0-1.20516923-.5395693-1.20516923-1.2061539v-21.21846153c0-.66658462.53858462-1.20615385 1.20516923-1.20615385h21.2194462c.6665846 0 1.2061538.53956923 1.2061538 1.20615385v21.21846153c0 .6665846-.5395692 1.2061539-1.2061538 1.2061539z" /><g stroke-linecap="round"><path d="m.12307692 14.7692308h23.63076928" /><path d="m8 3.46153846v10.81538464" /><path d="m15.3846154.12307692v14.15384618" /></g></g></svg>
                                 <p className='text-xl font-semibold ml-4'>Glassed Balcony</p>
                             </div>
-                            <div className='flex' style={{ marginLeft: 'auto' }}>
+                            <div className='flex items-center' style={{ marginLeft: 'auto' }}>
                                 <a href='#'>
-                                    <img src={NegativeIcon} alt="" className='w-6 h-6 self-center rounded mt-1' />
+                                    <button className='negative-icon opacity-40 '>-</button>
                                 </a>
                                 <p className='text-2xl font-semibold mx-4'>1</p>
                                 <a href='#'>
-                                    <img src={PositiveIcon} alt="" className='w-6 h-6 self-center rounded mt-1' />
-                                </a>
+                                    <button className='plus-icon bg-black'>+</button>                                </a>
                             </div>
                         </div>
                     </div>
