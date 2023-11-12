@@ -304,7 +304,7 @@ const Book_By_Call = () => {
 
                 </div>
                 <div>
-                    <div style={{ backgroundColor: '#d1dce7', width: '300px', height: '300px' }}>
+                    <div style={{ backgroundColor: '#d1dce7', width: '300px', height: '350px' }}>
                         <div className="d-flex flex-col py-7">
                             <p className="text-left ml-3 mb-1" style={{fontSize:'22px', fontFamily:'Tiempos Headline,serif'}}>Summary</p>
                             <p className="px-3" style={{ display: 'flex', justifyContent: 'space-between' }}>
