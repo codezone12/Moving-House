@@ -60,6 +60,7 @@ const Hero = () => {
   const handleRef = () => {
     zipcodeRef.current.focus()
   }
+  const isButtonDisabled = !city || !code;
   return (
     <div className="bg-cover" style={{ backgroundImage: "url('https://images.ctfassets.net/37vwfxlcawdb/1TfE1UU6y8uJw1qSaSGma6/2ff488f042edf4fe6a7ce60a33c3abca/Startsida.jpg?q=50&fm=avif&w=1200')" }}>
 
@@ -106,7 +107,7 @@ const Hero = () => {
 
         <div className="flex justify-center items-center  w-1/2 md:w-2/5 bg-opacity-80 hover:shadow-lg hover:shadow-black bg-[#1e1e1e] text-lg font-bold mt-4 p-5 rounded-md hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
 
-          <button className="text-center text-['#fff']" onClick={handleNavigate} >CHOOSE SERVICES</button>
+          <button className={`text-center text-['#fff']`} onClick={handleNavigate} disabled={isButtonDisabled} >CHOOSE SERVICES</button>
           <p className="text-center text-4xl  self-end absolute end-0 mr-4 "><svg height="20" viewBox="0 0 9 15" width="20" class="csw9N_C5 fiwAtSA" style={{ stroke: "#fff" }}   ><path d="m.958.995 6.51 6.51-6 6" fill="none" stroke-width="2"></path></svg></p>
 
         </div>
