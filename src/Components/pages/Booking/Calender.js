@@ -36,8 +36,10 @@ const CalendarComponent = () => {
             >
                 <div>
                     <div className="pt-20 font-normal text-5xl">Select date and time</div>
-                    <div className="w-full mt-8 flex justify-center items-center mb-5">
-                        <p className="border-black border w-20 text-center"></p>
+                    <div className="w-full my-8  flex justify-center items-center">
+
+                        <p className=" border-black border w-20 text-center hover:w-[400PX] hover:border-gray-500  transition-all duration-300 transform origin-center scale-100" ></p>
+
                     </div>
                     <div className="w-full mt-8 flex justify-center items-center mb-5">
                         <Calendar className="text-center justify-center" onChange={onChange} value={value} />
@@ -56,7 +58,12 @@ const CalendarComponent = () => {
                             })
                         }
                     </div>
-                    <button className='px-20 py-3 bg-black text-white rounded-lg' onClick={handleNavigate}>Next</button>
+                    <button className='px-20 py-3 bg-black text-white rounded-lg group overflow-hidden relative ' onClick={handleNavigate}>
+                        <span className="absolute w-64 h-0 transition-all duration-[700ms] origin-center rotate-45 -translate-x-16 bg-[#9e478e] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                        <span className="relative text-white transition duration-[700ms] group-hover:text-white ease">
+                            Next
+                        </span>
+                    </button>
                 </div>
                 <div>
                     <div className='mt-20' style={{ backgroundColor: '#d1dce7', width: '300px', height: '300px' }}>

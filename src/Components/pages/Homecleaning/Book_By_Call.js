@@ -112,7 +112,7 @@ const Book_By_Call = () => {
                             type="date"
                             id="date"
                             name="date"
-                            className="block w-full px-4 border py-2 rounded-lg text-gray-700 focus:outline-none focus:bg-white focus:border-blue-500"
+                            className="block w-full px-4 border py-2 rounded-lg text-gray-700 focus:outline-none focus:bg-white focus:border-blue-500 border-gray-400"
                         />
                     </div>
                     <div className="border-t my-2 border-gray-300"></div>
@@ -131,7 +131,7 @@ const Book_By_Call = () => {
                             type="text"
                             id="firstName"
                             name="firstName"
-                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500"
+                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500 border-gray-400"
                         />
                     </div>
 
@@ -149,7 +149,7 @@ const Book_By_Call = () => {
                             type="text"
                             id="lastName"
                             name="lastName"
-                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500"
+                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500 border-gray-400"
                         />
                     </div>
 
@@ -167,7 +167,7 @@ const Book_By_Call = () => {
                             type="email"
                             id="email"
                             name="email"
-                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500"
+                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500 border-gray-400"
                         />
                     </div>
 
@@ -185,7 +185,7 @@ const Book_By_Call = () => {
                             type="email"
                             id="confirmEmail"
                             name="confirmEmail"
-                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500"
+                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500 border-gray-400"
                         />
                     </div>
 
@@ -203,7 +203,7 @@ const Book_By_Call = () => {
                             type="tel"
                             id="mobileNumber"
                             name="mobileNumber"
-                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500"
+                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500 border-gray-400"
                         />
                     </div>
 
@@ -221,7 +221,7 @@ const Book_By_Call = () => {
                             type="text"
                             id="street"
                             name="street"
-                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500"
+                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500 border-gray-400"
                         />
                     </div>
 
@@ -239,7 +239,7 @@ const Book_By_Call = () => {
                             type="text"
                             id="city"
                             name="city"
-                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500"
+                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500 border-gray-400"
                         />
                     </div>
 
@@ -257,7 +257,7 @@ const Book_By_Call = () => {
                             type="text"
                             id="doorCode"
                             name="doorCode"
-                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500"
+                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500 border-gray-400"
                         />
                     </div>
 
@@ -275,23 +275,23 @@ const Book_By_Call = () => {
                             type="text"
                             id="campaignCode"
                             name="campaignCode"
-                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500"
+                            className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500 border-gray-400"
                         />
                     </div>
                     <p className='text-3xl text-left mb-4'>Approval</p>
-                    <div className="mb-4 pr-10 my-auto">
-                        <input
-                            type="checkbox"
-                            id="agreeToOffers"
-                            name="agreeToOffers"
-                            checked={agreeToOffers}
-                            onChange={() => setAgreeToOffers(!agreeToOffers)}
-                            className="mr-2 h-6 w-6"
-                        />
-                        <label htmlFor="agreeToOffers" className="text-xl d-flex justify-left">
-                            I agree to receive custom offers from you based on the <br /> information I have shared.
-                        </label>
-                    </div>
+                        <div className="mb-4 pr-10 my-auto flex">
+                            <input
+                                type="checkbox"
+                                id="agreeToOffers"
+                                name="agreeToOffers"
+                                checked={agreeToOffers}
+                                onChange={() => setAgreeToOffers(!agreeToOffers)}
+                                className="mr-2 h-6 w-6 flex text-start"
+                            />
+                            <label htmlFor="agreeToOffers" className="text-xl flex text-start my-auto">
+                                I agree to receive custom offers from you based on the information I have shared.
+                            </label>
+                        </div>
                     <div className="flex justify-start">
                         {/* "Contact Me" button */}
                         <button
