@@ -17,6 +17,8 @@ import Book_By_Visit from './Components/pages/Homecleaning/Book_By_Visit';
 import Book_By_Call from './Components/pages/Homecleaning/Book_By_Call';
 import Contact from './Components/pages/Contact/Contact';
 import DeepCleaning from './Components/pages/DeepCleaning/Deep_Cleaning';
+import MoveForm from './Components/pages/MoveoutCleaning/Moving_Service';
+import MovingOutService from './Components/pages/MoveoutCleaning/MovingOut_Service';
 
 
 
@@ -41,6 +43,8 @@ function App() {
   <Route path='/deep_cleaning' element={ <DeepCleaning />} /> 
   <Route path='/window_cleaning' element={ <WindowCleaning />} /> 
   <Route path='/Booking' element={ <Booking />} /> 
+  <Route path='/moving_service' element={ <MoveForm />} /> 
+  <Route path='/moving_out_service' element={ <MovingOutService />} /> 
   <Route path='/calender' element={ <Calender />} /> 
   <Route path='/contact' element={ <Contact />} /> 
 

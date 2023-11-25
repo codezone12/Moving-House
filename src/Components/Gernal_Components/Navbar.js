@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import CleaningSub from './subnavbar/CleaningSub';
 import MovingSub from './subnavbar/MovingSub';
+import AboutSub from './subnavbar/AboutSub';
 const Navbar = () => {
     const [isHover, setisHover] = useState('');
     const names = [
@@ -71,6 +72,8 @@ const Navbar = () => {
                     </p>
 
                     <p
+                      onMouseEnter={() => setisHover("About")}
+                      onMouseLeave={() => setisHover("")} 
                         className="inline-block relative  py-3  transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r     before:from-pink-700 before:via-pink-700 before:to-pink-700 hover:before:w-full hover:before:opacity-100 hover:text-pink-700 hover:font-semibold">
                         <li className="mx-2 ">About Hemrfied</li>
                     </p>
@@ -79,6 +82,9 @@ const Navbar = () => {
                 
                 {isHover && isHover === "Cleaning" && (
                     <CleaningSub setisHover={setisHover}/>
+                )}
+                {isHover && isHover === "About" && (
+                    <AboutSub setisHover={setisHover}/>
                 )}
                  {isHover && isHover ==="Moving" && (
                     <MovingSub setisHover={setisHover}/>

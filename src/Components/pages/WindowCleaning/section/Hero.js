@@ -77,9 +77,11 @@ const Hero = () => {
 <p className="text-center text-4xl  self-end absolute end-0 mr-4 "><svg height="20" viewBox="0 0 9 15" width="20" class="csw9N_C5 fiwAtSA" style={{ stroke: "#fff" }}   ><path d="m.958.995 6.51 6.51-6 6" fill="none" stroke-width="2"></path></svg></p>
 
 </div> */}
-                <div onClick={handleNavigate} disabled={isButtonDisabled} className="flex justify-center items-center  w-1/2 md:w-2/5 bg-opacity-80 hover:shadow-lg hover:shadow-black bg-[#1e1e1e] text-lg font-bold mt-4 p-5 rounded-md hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
+                <button onClick={handleNavigate} disabled={isButtonDisabled} className={`flex justify-center items-center w-1/2 md:w-2/5 bg-opacity-80 hover:shadow-lg hover:shadow-black bg-[#1e1e1e] text-lg font-bold mt-4 p-5 rounded-md ${
+          isButtonDisabled ? 'cursor-not-allowed opacity-50' : 'hover:text-green-500 transform hover:scale-90 transition-transform delay-200'
+        }`}>
                     <p className="text-center text-['#fff']">CONTINUE </p>
-                </div>
+                </button>
                 <div className="text-xl mt-10 flex items-start font-normal">
                     <div className="mt-5">
                         <div class="flex items-center">
