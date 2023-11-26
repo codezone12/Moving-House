@@ -45,11 +45,21 @@ const Book_By_Visit = () => {
             return "The price is based on your home's unique conditions and will be presented during the free meeting.";
         }
     }, [price]);
+    const isValidEmail = (email) => {
+        // Email validation regex
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      };
+
     const handleSubmit = async () => {
-        if (!firstName || !lastName || !email || !confirmEmail || !mobileNumber || !street || !city) {
+        if (!firstName || !lastName || !email || !confirmEmail || !mobileNumber || !street || !city || !agreeToOffers) {
             toast.error('Please fill in all required fields.');
             return;
         }
+        if (!isValidEmail(email)) {
+            toast.error('Please enter a valid email address.');
+            return;
+          }
 
         if (email !== confirmEmail) {
             toast.error('Email and Confirm Email must match.');

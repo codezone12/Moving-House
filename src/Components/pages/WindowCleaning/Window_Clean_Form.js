@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ExclimatryMark from '../../../Assets/images/exclimaterymar.png'
 import '../../../Assets/css/window_cleaning.css'
 
@@ -9,13 +9,62 @@ const WindowCleaning = () => {
     const [showWithoutMullions, setShowWithoutMullions] = useState(0);
     const [showWithMullions, setShowWithMullions] = useState(0);
     const [showOverhangedWindows, setShowOverhangedWindows] = useState(0);
+    const [sides, setSides] = useState("Double-sided – 4 sides")
     const [showGlassedBalcony, setShowGlassedBalcony] = useState(0);
     const [handover, setHandover] = useState('');
+    const [totalPrice, setTotalPrice] = useState(0);
+    const [discount, setDiscount] = useState(221);
+    const [windowCleaningPrice, setWindowCleaningPrice] = useState(884)
 
     const handleHandoverChange = (value) => {
         setHandover(value);
       };
       
+      const calculateWindowCleaningPrice = (totalWindows) => {
+        // Initial base price
+        let price = 884;
+      
+        // Check different scenarios
+        if (totalWindows >= 17 && totalWindows <= 19) {
+          price = 1031;
+        } else if (totalWindows >= 20 && totalWindows <= 22) {
+          price = 1178;
+        } else if (totalWindows >= 23 && totalWindows <= 25) {
+          price = 1325;
+        } else if (totalWindows >= 26 && totalWindows <= 28) {
+          price = 1472;
+        } else if (totalWindows >= 29 && totalWindows <= 31) {
+          price = 1620;
+        } else if (totalWindows >= 32 && totalWindows <= 34) {
+          price = 1767;
+        } else if (totalWindows >= 35 && totalWindows <= 37) {
+          price = 1914;
+        } else if (totalWindows >= 38 && totalWindows <= 40) {
+          price = 2061;
+        } else if (totalWindows >= 41 && totalWindows <= 43) {
+          price = 2208;
+        } else if (totalWindows >= 44 && totalWindows <= 46) {
+          price = 2356;
+        } else if (totalWindows >= 47 && totalWindows <= 49) {
+          price = 2503;
+        } else if (totalWindows >= 50 && totalWindows <= 52) {
+          price = 2650;
+        } else if (totalWindows >= 53 && totalWindows <= 55) {
+          price = 2797;
+        }
+        return price;
+      };
+    
+      useEffect(() => {
+        const totalWindows = showGlassedBalcony + showOverhangedWindows + showWithMullions + showWithoutMullions
+        // Calculate the window cleaning price when the number of windows changes
+        const windowCleaningPrice = calculateWindowCleaningPrice(totalWindows);
+        setWindowCleaningPrice(windowCleaningPrice)
+        // Calculate total price by subtracting the discount
+        const total = windowCleaningPrice - discount;
+    
+        setTotalPrice(total);
+      }, [discount, showWithoutMullions, showWithMullions, showOverhangedWindows, showGlassedBalcony]);
     return (
         <div className="container mx-auto my-auto pt-10 mb-20" style={{ maxWidth: "70%" }}>
             <div style={{ display: 'grid', gridTemplateColumns: '70% 30%', gap: '30px' }}>
@@ -60,11 +109,11 @@ const WindowCleaning = () => {
                                 </div>
                                 <div className='flex justify-between'>
                                     <p className='text-lg flex gap-2 font-normal'>
-                                        <input type="radio" name="sides" value={'Double-sided – 4 sides'} className=" w-7 ml-auto" id='double-side' />
+                                        <input type="radio" name="withoutMillonSides" checked value={'Double-sided – 4 sides'} className=" w-7 ml-auto" id='double-side' />
                                         <label className="text-lg cursor-pointer" htmlFor="double-side">{"Double-sided – 4 sides"}</label>
                                     </p>
                                     <p className='text-lg flex gap-2 font-normal'>
-                                        <input type="radio" name="sides" value={'Single-sided – 2 sides'} className="w-7 ml-auto" id='single-side' />
+                                        <input type="radio" name="withoutMillonSides" value={'Single-sided – 2 sides'} className="w-7 ml-auto" id='single-side' />
                                         <label className="text-lg cursor-pointer" htmlFor="single-side"> {"Single-sided – 2 sides"}</label>
                                     </p>
                                 </div>
@@ -92,14 +141,15 @@ const WindowCleaning = () => {
                                     <p className='text-xl text-left font-semibold my-3'>How many sides need cleaning?*</p>
                                 </div>
                                 <div className='flex justify-between'>
-                                    <p className='text-lg flex gap-2 font-normal'>
-                                        <input type="radio" name="sides" value={'Double-sided – 4 sides'} className=" w-7 ml-auto" id='double-side' />
-                                        <label className="text-lg cursor-pointer" htmlFor="double-side">{"Double-sided – 4 sides"}</label>
+                                <p className='text-lg flex gap-2 font-normal'>
+                                    <input type="radio" name="withMillonSides" value={'Double-sided – 4 sides'} checked className="w-7 ml-auto" id='double-side' />
+                                    <label className="text-lg cursor-pointer" htmlFor="double-side">{"Double-sided – 4 sides"}</label>
                                     </p>
                                     <p className='text-lg flex gap-2 font-normal'>
-                                        <input type="radio" name="sides" value={'Single-sided – 2 sides'} className="w-7 ml-auto" id='single-side' />
-                                        <label className="text-lg cursor-pointer" htmlFor="single-side"> {"Single-sided – 2 sides"}</label>
+                                    <input type="radio" name="withMillonSides" value={'Single-sided – 2 sides'} className="w-7 ml-auto" id='single-side' />
+                                    <label className="text-lg cursor-pointer" htmlFor="single-side"> {"Single-sided – 2 sides"}</label>
                                     </p>
+
                                 </div>
                             </div>
                             )}
@@ -126,11 +176,11 @@ const WindowCleaning = () => {
                                 </div>
                                 <div className='flex justify-between'>
                                     <p className='text-lg flex gap-2 font-normal'>
-                                        <input type="radio" name="sides" value={'Double-sided – 4 sides'} className=" w-7 ml-auto" id='double-side' />
+                                        <input type="radio" name="overHangedWindows" checked value={'Double-sided – 4 sides'} className=" w-7 ml-auto" id='double-side' />
                                         <label className="text-lg cursor-pointer" htmlFor="double-side">{"Double-sided – 4 sides"}</label>
                                     </p>
                                     <p className='text-lg flex gap-2 font-normal'>
-                                        <input type="radio" name="sides" value={'Single-sided – 2 sides'} className="w-7 ml-auto" id='single-side' />
+                                        <input type="radio" name="overHangedWindows" value={'Single-sided – 2 sides'} className="w-7 ml-auto" id='single-side' />
                                         <label className="text-lg cursor-pointer" htmlFor="single-side"> {"Single-sided – 2 sides"}</label>
                                     </p>
                                 </div>
@@ -158,11 +208,11 @@ const WindowCleaning = () => {
                                 </div>
                                 <div className='flex justify-between'>
                                     <p className='text-lg flex gap-2 font-normal'>
-                                        <input type="radio" name="sides" value={'Glassed balcony'} className=" w-7 ml-auto" id='Glassed-balcony' />
+                                        <input type="radio" name="glassedBalcony" checked value={'Glassed balcony'} className=" w-7 ml-auto" id='Glassed-balcony' />
                                         <label className="text-lg cursor-pointer" htmlFor="Glassed-balcony">{"Glassed balcony"}</label>
                                     </p>
                                     <p className='text-lg flex gap-2 font-normal'>
-                                        <input type="radio" name="sides" value={'Glass railing only'} className="w-7 ml-auto" id='Galss-railing' />
+                                        <input type="radio" name="glassedBalcony" value={'Glass railing only'} className="w-7 ml-auto" id='Galss-railing' />
                                         <label className="text-lg cursor-pointer" htmlFor="Galss-railing"> {"Glass railing only"}</label>
                                     </p>
                                 </div>
@@ -247,7 +297,7 @@ const WindowCleaning = () => {
 
 
                     <h4 className='font-semibold text-left mb-3 text-xl'>Access*</h4>
-                    <div className='border rounded-md mb-2 p-5 border-[#d5d2c4]'>
+                    <div className='border rounded-md mb-2 p-5 border-[#d5d2c4] bg-white'>
                         {/* Radio Button 1 */}
                         <div className="flex items-center justify-between mb-2">
                             <label htmlFor="open" className="cursor-pointer flex items-center justify-between w-full" >
@@ -365,7 +415,7 @@ const WindowCleaning = () => {
                     </div>
                     <div className='flex mt-5 px-5'>
                         <p className='text-lg text-normal text-[#003b5c] text-left flex-1'>Fönsterputs</p>
-                        <p className='text-gl font-bold text-[#003b5c]'>1105 kr</p>
+                        <p className='text-gl font-bold text-[#003b5c]'>{windowCleaningPrice} kr</p>
                     </div>
                     <div className="w-full mt-3 flex justify-center px-5 items-center mb-5">
 
@@ -395,7 +445,7 @@ const WindowCleaning = () => {
                             <p className='text-lg text-[#003b5c] text-left flex-1'>Total</p>
                             <p className='text-sm text-[#003b5c] text-left flex-1 ms-1'>with RUT-deduction</p>
                         </div>
-                        <p className='text-xl font-semibold text-[#003b5c] my-auto'>-221 kr</p>
+                        <p className='text-xl font-semibold text-[#003b5c] my-auto'>{totalPrice} kr</p>
                     </div>
                     <div className="w-full mt-3 flex justify-center px-5 items-center mb-5">
 

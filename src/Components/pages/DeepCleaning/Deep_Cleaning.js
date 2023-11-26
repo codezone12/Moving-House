@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../../Assets/css/window_cleaning.css";
 
 const DeepCleaning = () => {
@@ -7,6 +7,8 @@ const DeepCleaning = () => {
   const [sqm, setSqm] = useState(0);
   const [ovenCleaning, setOvenCleaning] = useState(0);
   const [fridgeCleaning, setFridgeCleaning] = useState(0);
+const [storstadningPrice, setStorstadningPrice] = useState(2537)
+const [total, setTotal] = useState(0)
   const handleHandoverChange = (value) => {
     setHandover(value);
   };
@@ -14,6 +16,61 @@ const DeepCleaning = () => {
   const handleCleaningChange = (value) => {
     setWantCleaning(value);
   };
+
+  const calculatePrice = (sqm) => {
+    if (sqm >= 1 && sqm <= 50) {
+      return 2537;
+    } else if (sqm >= 51 && sqm <= 55) {
+      return 2785;
+    } else if (sqm >= 56 && sqm <= 65) {
+      return 2905;
+    } else if (sqm >= 66 && sqm <= 70) {
+      return 3147;
+    } else if (sqm >= 71 && sqm <= 75) {
+      return 3394;
+    } else if (sqm >= 76 && sqm <= 80) {
+      return 3515;
+    } else if (sqm >= 81 && sqm <= 90) {
+      return 3756;
+    } else if (sqm >= 91 && sqm <= 100) {
+      return 4061;
+    } else if (sqm >= 101 && sqm <= 105) {
+      return 4303;
+    } else if (sqm >= 106 && sqm <= 120) {
+      return 4492;
+    } else if (sqm >= 121 && sqm <= 140) {
+      return 4803;
+    } else if (sqm >= 141 && sqm <= 150) {
+      return 5102;
+    } else if (sqm >= 151 && sqm <= 160) {
+      return 5320;
+    } else if (sqm >= 161 && sqm <= 180) {
+      return 5775;
+    } else if (sqm >= 181 && sqm <= 200) {
+      return 6028;
+    } else {
+      // Handle cases where sqm is out of defined ranges
+      return 2537; // or any default value
+    }
+  };
+  useEffect(() => {
+    const price = calculatePrice(sqm);
+    const ovenCleaningCost = ovenCleaning * 563;
+    const fridgeCleaningCost = fridgeCleaning * 299;
+
+    const updatedStorstadningPrice = price + ovenCleaningCost + fridgeCleaningCost;
+    setStorstadningPrice(updatedStorstadningPrice);
+  }, [sqm, ovenCleaning, fridgeCleaning])
+  useEffect(() => {
+    const discountCodeValue = 221;
+
+    const ovenCleaningCost = ovenCleaning * 563;
+    const fridgeCleaningCost = fridgeCleaning * 299;
+
+    const total = storstadningPrice + ovenCleaningCost + fridgeCleaningCost - discountCodeValue;
+
+    setTotal(total);
+  }, [storstadningPrice]);
   return (
     <div
       className="container mx-auto my-auto pt-10 mb-20"
@@ -44,7 +101,7 @@ const DeepCleaning = () => {
                 type="number"
                 name="sqm"
                 value={sqm}
-                onChange={(e) => setSqm(e.target.value)}
+                onChange={(e) => setSqm(e.target.value < 0 ? 0 : e.target.value)}
                 id="sqm"
                 className="border w-full rounded-md mb-4 p-5 border-[#d5d2c4]"
               />
@@ -439,7 +496,7 @@ const DeepCleaning = () => {
             <p className="text-lg text-normal text-[#003b5c] text-left flex-1">
               Storstädning
             </p>
-            <p className="text-gl font-bold text-[#003b5c]">2 162 kr</p>
+            <p className="text-gl font-bold text-[#003b5c]">{storstadningPrice} kr</p>
           </div>
           <div className="flex mt-5 px-5">
             <p className="text-lg text-normal text-[#003b5c] text-left flex-1">
@@ -481,7 +538,7 @@ const DeepCleaning = () => {
               </p>
             </div>
             <p className="text-xl font-semibold text-[#003b5c] my-auto">
-              -221 kr
+              {total} kr
             </p>
           </div>
           <div className="w-full mt-3 flex justify-center px-5 items-center mb-5">
