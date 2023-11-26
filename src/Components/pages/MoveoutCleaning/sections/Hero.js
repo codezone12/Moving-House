@@ -27,7 +27,7 @@ const MHero = () => {
   const navigate = useNavigate();
   const handleNavigate = () => {
     // Add your logic here for handling the navigation
-    navigate("/deep_cleaning", {
+    navigate("/moving_out_service", {
       state: {
         data: {
           city,
