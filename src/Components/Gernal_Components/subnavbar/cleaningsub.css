@@ -33,6 +33,7 @@
   .custom-height-18 {
     height: 60px;
     width: 110px;
+    overflow:visible;
   }
   .custom-border{
     border-radius: 5px;
