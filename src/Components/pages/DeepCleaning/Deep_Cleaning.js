@@ -139,6 +139,9 @@ const DeepCleaning = () => {
 </div>
 
 <div className="p-4">
+
+<div className="flex items-center justify-between mb-2">
+      <p className="text-xl font-semibold">Do you want Window Cleaning</p></div>
             <div className="border rounded-md mb-2 p-5 bg-white border-[#d5d2c4]">
               {/* Yes Radio Button */}
               <div className="flex items-center justify-between mb-2">
@@ -179,6 +182,7 @@ const DeepCleaning = () => {
                   className="hidden"
                 />
               </div>
+
 
               <p className="mb-2 border-[#d6d2c4] border"></p>
 
@@ -224,6 +228,8 @@ const DeepCleaning = () => {
               </div>
             </div>
           </div>
+          <div className="flex items-center justify-between mb-2 ml-4">
+      <p className="text-xl font-bold">Anything else?</p></div>
           <div className="flex p-4">
             <div className="flex">
               <p className="text-2xl font-normal">Oven cleaning</p>
