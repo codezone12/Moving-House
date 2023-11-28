@@ -7,8 +7,10 @@ const DeepCleaning = () => {
   const [sqm, setSqm] = useState(0);
   const [ovenCleaning, setOvenCleaning] = useState(0);
   const [fridgeCleaning, setFridgeCleaning] = useState(0);
-const [storstadningPrice, setStorstadningPrice] = useState(2537)
-const [total, setTotal] = useState(0)
+  const [windowCleaning, setWindowCleaning] = useState(false);
+  const [storstadningPrice, setStorstadningPrice] = useState(2537);
+  const [total, setTotal] = useState(0);
+
   const handleHandoverChange = (value) => {
     setHandover(value);
   };
@@ -17,61 +19,70 @@ const [total, setTotal] = useState(0)
     setWantCleaning(value);
   };
 
+
   const calculatePrice = (sqm) => {
     if (sqm >= 1 && sqm <= 50) {
-      return 2537;
+      return 1405;
     } else if (sqm >= 51 && sqm <= 55) {
-      return 2785;
+      return 1620;
     } else if (sqm >= 56 && sqm <= 65) {
-      return 2905;
+      return 1725;
     } else if (sqm >= 66 && sqm <= 70) {
-      return 3147;
+      return 1935;
     } else if (sqm >= 71 && sqm <= 75) {
-      return 3394;
+      return 2150;
     } else if (sqm >= 76 && sqm <= 80) {
-      return 3515;
+      return 2255;
     } else if (sqm >= 81 && sqm <= 90) {
-      return 3756;
+      return 2465;
     } else if (sqm >= 91 && sqm <= 100) {
-      return 4061;
+      return 2730;
     } else if (sqm >= 101 && sqm <= 105) {
-      return 4303;
+      return 2940;
     } else if (sqm >= 106 && sqm <= 120) {
-      return 4492;
+      return 3105;
     } else if (sqm >= 121 && sqm <= 140) {
-      return 4803;
+      return 3375;
     } else if (sqm >= 141 && sqm <= 150) {
-      return 5102;
+      return 3635;
     } else if (sqm >= 151 && sqm <= 160) {
-      return 5320;
+      return 3825;
     } else if (sqm >= 161 && sqm <= 180) {
-      return 5775;
+      return 4220;
     } else if (sqm >= 181 && sqm <= 200) {
-      return 6028;
+      return 4440;
     } else {
       // Handle cases where sqm is out of defined ranges
-      return 2537; // or any default value
+      return 1405; // or any default value
     }
   };
+  const handleWindowCleaningChange = () => {
+    setWindowCleaning(!windowCleaning);
+  };
+
   useEffect(() => {
     const price = calculatePrice(sqm);
-    const ovenCleaningCost = ovenCleaning * 563;
-    const fridgeCleaningCost = fridgeCleaning * 299;
+    const ovenCleaningCost = ovenCleaning * 490;
+    const fridgeCleaningCost = fridgeCleaning * 260;
+    const windowCleaningCost = windowCleaning ? 350 : 0;
 
-    const updatedStorstadningPrice = price + ovenCleaningCost + fridgeCleaningCost;
+    const updatedStorstadningPrice =
+      price + ovenCleaningCost + fridgeCleaningCost + windowCleaningCost;
     setStorstadningPrice(updatedStorstadningPrice);
-  }, [sqm, ovenCleaning, fridgeCleaning])
+  }, [sqm, ovenCleaning, fridgeCleaning, windowCleaning]);
+
   useEffect(() => {
     const discountCodeValue = 221;
 
     const ovenCleaningCost = ovenCleaning * 563;
     const fridgeCleaningCost = fridgeCleaning * 299;
+    const windowCleaningCost = windowCleaning ? 176 : 0;
 
-    const total = storstadningPrice + ovenCleaningCost + fridgeCleaningCost - discountCodeValue;
+    const total =
+      storstadningPrice;
 
     setTotal(total);
-  }, [storstadningPrice]);
-  return (
+  }, [storstadningPrice, windowCleaning]); return (
     <div
       className="container mx-auto my-auto pt-10 mb-20"
       style={{ maxWidth: "70%" }}
@@ -107,23 +118,27 @@ const [total, setTotal] = useState(0)
               />
             </div>
           </div>
-          <div className="mb-4 pr-10 my-auto flex p-4">
-            <input
-              type="checkbox"
-              id="vaccumCleaner"
-              name="vaccumCleaner"
-              className="ms-2 mr-3 h-6 w-6 my-auto flex text-start"
-            />
-            <label
-              htmlFor="vaccumCleaner"
-              style={{ fontFamily: "Tiempos Headline,serif" }}
-              className="text-xl flex text-start"
-            >
-              I do not have a vacuum cleaner (not a portable hand-held vacuum
+
+<div className="mb-4 pr-10 my-auto flex p-4">
+  <input
+    type="checkbox"
+    id="windowCleaning"
+    name="windowCleaning"
+    checked={windowCleaning}
+    onChange={handleWindowCleaningChange}
+    className="ms-2 mr-3 h-6 w-6 my-auto flex text-start"
+  />
+  <label
+    htmlFor="windowCleaning"
+    style={{ fontFamily: "Tiempos Headline,serif" }}
+    className="text-xl flex text-start"
+  >
+  I do not have a vacuum cleaner (not a portable hand-held vacuum
               cleaner), mop, or bucket.
-            </label>
-          </div>
-          <div className="p-4">
+                </label>
+</div>
+
+<div className="p-4">
             <div className="border rounded-md mb-2 p-5 bg-white border-[#d5d2c4]">
               {/* Yes Radio Button */}
               <div className="flex items-center justify-between mb-2">
