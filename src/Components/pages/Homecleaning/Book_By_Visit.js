@@ -54,7 +54,7 @@ const Book_By_Visit = () => {
           return "The price is based on your home's unique conditions and will be presented during the free meeting.";
         }
       
-        const cleaningPrice = wantCleaning === 'yes' ? 1220 : 0;
+        const cleaningPrice = wantCleaning === 'yes' ? 1410 : 0;
         const finalPrice = wantCleaning === "yes" ? (basePrice + cleaningPrice).toString() : basePrice.toString();
       
         console.log("total price", finalPrice);

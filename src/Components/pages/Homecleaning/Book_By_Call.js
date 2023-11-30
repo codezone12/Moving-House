@@ -58,7 +58,7 @@ const handleCleaningChange = (value) => {
           return "The price is based on your home's unique conditions and will be presented during the free meeting.";
         }
       
-        const cleaningPrice = wantCleaning === 'yes' ? 1220 : 0;
+        const cleaningPrice = wantCleaning === 'yes' ? 1410 : 0;
         const finalPrice = wantCleaning === "yes" ? (basePrice + cleaningPrice).toString() : basePrice.toString();
       
         console.log("total price", finalPrice);
@@ -424,7 +424,7 @@ className="hidden"
 
                 </div>
                 <div>
-                    <div style={{ backgroundColor: '#d1dce7', width: '300px', height: '350px' }} className='mr-19'>
+                    <div style={{ backgroundColor: '#d1dce7', width: '300px', height: '350px' }}>
                         <div className="d-flex flex-col py-7">
                             <p className="text-left ml-3 mb-1" style={{fontSize:'22px', fontFamily:'Tiempos Headline,serif'}}>Summary</p>
                             <p className="px-3" style={{ display: 'flex', justifyContent: 'space-between' }}>
