@@ -16,35 +16,52 @@ const Book_By_Visit = () => {
     const [doorCode, setDoorCode] = useState('');
     const [campaignCode, setCampaignCode] = useState('');
     const [agreeToOffers, setAgreeToOffers] = useState(false);
+    const [wantCleaning, setWantCleaning] = useState('');
+
+    const handleCleaningChange = (value) => {
+      setWantCleaning(value);  
+    };
 
     const location = useLocation();
     const data = location?.state?.data;
-    console.log('data received', data);
+    console.log('data received',data);
     useEffect(() => {
         setCity(data ? data[0]?.city : "")
         setPrice(data ? data[0]?.squareMeter : "")
     }, [data])
-    const finalPrice = useMemo(() => {
+    const totalPrice = useMemo(() => {
         if (price <= 0) {
-            setPrice(0)
+          setPrice(0);
         }
+      
         if (price === "" || price === 0) {
-            return null;
+          return null;
         }
-        else if (price >= 1 && price <= 39) {
-            return 1469;
+      
+        let basePrice = 0;
+      
+        if (price >= 1 && price <= 39) {
+          basePrice = 1469;
         } else if (price >= 40 && price <= 59) {
-            return 1789;
+          basePrice = 1789;
         } else if (price >= 60 && price <= 89) {
-            return 2109;
+          basePrice = 2109;
         } else if (price >= 90 && price <= 139) {
-            return 2689;
+          basePrice = 2689;
         } else if (price >= 140 && price <= 149) {
-            return 3259;
+          basePrice = 3259;
         } else {
-            return "The price is based on your home's unique conditions and will be presented during the free meeting.";
+          return "The price is based on your home's unique conditions and will be presented during the free meeting.";
         }
-    }, [price]);
+      
+        const cleaningPrice = wantCleaning === 'yes' ? 1220 : 0;
+        const finalPrice = wantCleaning === "yes" ? (basePrice + cleaningPrice).toString() : basePrice.toString();
+      
+        console.log("total price", finalPrice);
+      
+        return finalPrice;
+      }, [price, wantCleaning]);
+      
     const isValidEmail = (email) => {
         // Email validation regex
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -123,17 +140,17 @@ const Book_By_Visit = () => {
         <>
             <ToastContainer position="top-right" autoClose={5000} />
             <div className="container  pt-10">
-                <div className="pt-20 font-normal text-5xl">Home cleaning</div>
+            <div className="pt-20 pr-80 font-normal text-5xl flex items-center justify-center">Home Cleaning</div>
                 <div className="w-full my-8  flex justify-center items-center">
 
-                    <p className=" border-black border w-20 text-center hover:w-[400PX] hover:border-gray-500  transition-all duration-300 transform origin-center scale-100" ></p>
+                    <p className=" border-black mr-80 border w-20 text-center hover:w-[400PX] hover:border-gray-500  transition-all duration-300 transform origin-center scale-100" ></p>
 
                 </div>
                 <div
                     style={{ display: 'grid', gridTemplateColumns: '70% 30%', gap: '30px' }}
                     className="mx-auto mb-10"
                 >
-                    <div className="mx-auto w-2/3">
+                    <div className="mx-auto w-2/4">
                         <div className="mb-4">
                             <label
                                 htmlFor="sqm"
@@ -151,47 +168,102 @@ const Book_By_Visit = () => {
                             />
                         </div>
 
-                        <div className="mt-3 rounded-lg p-4 w-72">
-                            <p className="text-2xl text-left mb-5">Do you have any pets?</p>
-                            {/* Checkbox for Cat(s) */}
-                            <div className="flex items-center mb-2">
-                                <input
-                                    type="checkbox"
-                                    id="cat"
-                                    name="pets"
-                                    className="mr-2 h-6 w-6"
-                                />
-                                <label className="text-lg" htmlFor="cat">
-                                    Cat(s)
-                                </label>
-                            </div>
+                        <div className="p-4 pl-0 pr-0">
 
-                            {/* Checkbox for Dog(s) */}
-                            <div className="flex items-center mb-2">
-                                <input
-                                    type="checkbox"
-                                    id="dog"
-                                    name="pets"
-                                    className="mr-2 h-6 w-6"
-                                />
-                                <label className="text-lg" htmlFor="dog">
-                                    Dog(s)
-                                </label>
-                            </div>
+<div className="flex items-center justify-between mb-2">
+      <p className="text-xl font-semibold">How Often Do You Want Cleaning</p></div>
+            <div className="border rounded-md mb-2 p-5 bg-white border-[#d5d2c4]">
+              {/* Yes Radio Button */}
+              <div className="flex items-center justify-between mb-2">
+                <label
+                  htmlFor="yes"
+                  className="cursor-pointer flex items-center justify-between w-full"
+                >
+                  <p className="text-xl font-normal">Every Week</p>
+                  <div
+                    className={`w-7 h-7 rounded-full border border-gray-300 flex items-center justify-center ${
+                      wantCleaning === "yes" ? "bg-black" : "bg-white"
+                    }`}
+                  >
+                    {wantCleaning === "yes" && (
+                      <svg
+                        className="w-4 h-4 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                    )}
+                  </div>
+                </label>
+                <input
+                  type="radio"
+                  id="yes"
+                  name="cleaning"
+                  checked={wantCleaning === "yes"}
+                  onChange={() => handleCleaningChange("yes")}
+                  className="hidden"
+                />
+              </div>
 
-                            {/* Checkbox for Other pet(s) */}
-                            <div className="flex items-center">
-                                <input
-                                    type="checkbox"
-                                    id="other"
-                                    name="pets"
-                                    className="mr-2 h-6 w-6"
-                                />
-                                <label className="text-lg" htmlFor="other">
-                                    Other pet(s)
-                                </label>
-                            </div>
-                        </div>
+
+              <p className="mb-2 border-[#d6d2c4] border"></p>
+
+              {/* No Radio Button */}
+              <div className="flex">
+                <label
+                  className="text-xl cursor-pointer flex justify-between items-center mt-1 w-full my-auto font-normal"
+                  htmlFor="no"
+                >
+                  <p className="text-left">Every Other Week</p>
+                  <div
+                    className={`w-7 h-7 rounded-full border border-gray-300 flex items-center justify-center ${
+                      wantCleaning === "no" ? "bg-black" : "bg-white"
+                    }`}
+                  >
+                    {wantCleaning === "no" && (
+                      <svg
+                        className="w-4 h-4 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                    )}
+                  </div>
+                </label>
+                <input
+                  type="radio"
+                  id="no"
+                  name="cleaning"
+                  value={"no"}
+                  checked={wantCleaning === "no"}
+                  onChange={() => handleCleaningChange("no")}
+                  className="hidden"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="w-15 border-2 border-gray-300 flex items-center justify-center font-bold my-4">
+</div>
+
+          <div className="flex items-center justify-between mb-6">
+      <p className="text-xl font-bold">Contact Details</p></div>
+
 
                         {/* First Name */}
                         <div className="mb-4">
@@ -354,7 +426,9 @@ const Book_By_Visit = () => {
                                 className="w-full border rounded-md py-6 bg-white px-5 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-500 border-gray-400"
                             />
                         </div>
-                        <p className='text-3xl text-left mb-4'>Approval</p>
+                        <div className="w-15 border-2 border-gray-300 flex items-center justify-center font-bold my-4 mt-9 md-4">
+</div>
+                        <p className='text-2xl text-left mb-4 font-semibold'>Approval</p>
                         <div className="mb-4 pr-10 my-auto flex">
                             <input
                                 type="checkbox"
@@ -362,19 +436,19 @@ const Book_By_Visit = () => {
                                 name="agreeToOffers"
                                 checked={agreeToOffers}
                                 onChange={() => setAgreeToOffers(!agreeToOffers)}
-                                className="mr-2 h-6 w-6 flex text-start"
+                                className="mr-2 h-8 w-8 flex text-start mt-4"
                             />
-                            <label htmlFor="agreeToOffers" className="text-xl flex text-start">
+                            <label htmlFor="agreeToOffers" className="text-xl flex text-start ml-2 mb-4">
                                 I agree to receive custom offers from you based on the information I have shared.
                             </label>
                         </div>
-                        <div className="flex justify-start">
+                        <div className="flex justify-center">
                             {/* "Contact Me" button */}
                             <button
                                 className="bg-black hover:bg-black text-white font-bold py-4 px-14 rounded relative group overflow-hidden"
                                 onClick={handleSubmit}
                             >
-                                  <span className="absolute w-64 h-0 transition-all duration-[700ms] origin-center rotate-45 -translate-x-16 bg-[#9e478e] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                                  <span className="absolute w-64 h-0 transition-all duration-[700ms] origin-center rotate-45 -translate-x-16 bg-[#9e478e] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease flex justify-center text-center"></span>
                         <span className="relative text-white transition duration-[700ms] group-hover:text-white ease">
                           
                                 Contact Me
@@ -402,12 +476,17 @@ const Book_By_Visit = () => {
                                 <div className="border-t my-2 border-gray-400 w-4/5 mx-auto"></div>
                                 <p className="text-lg text-left px-5 mt-3">Starting price</p>
                                 <p className="text-xs text-left px-5 mt-3">with RUT-deduction</p>
-                                {finalPrice && <> <p className={typeof finalPrice === 'number' ? 'text-xl text-left font-medium px-5 mt-3' : 'text-lg text-left px-5 mt-3'}>
-                                    SEK {finalPrice}/month*
-                                </p>
+                                {totalPrice !== null && (
+  <>
+    <p className={typeof totalPrice === 'number' ? 'text-xl text-left font-medium font-semibold px-5 mt-3' : 'text-lg text-left px-5 mt-3'}>
+      SEK {totalPrice}/month*
+    </p>
+    {typeof totalPrice === 'number' && (
+      <p className="text-xs text-left px-5 mt-3">*The price is based on the information you have provided.</p>
+    )}
+  </>
+)}
 
-                                    {typeof (finalPrice) === 'number' && <p className="text-xs text-left px-5 mt-3">*The price is based on the information you have provided.</p>}
-                                </>}
                             </div>
                         </div>
                     </div>
