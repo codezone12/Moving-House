@@ -90,7 +90,7 @@ const DeepCleaning = () => {
       <div
         style={{ display: "grid", gridTemplateColumns: "70% 30%", gap: "30px" }}
       >
-        <div className="text-center px-2">
+        <div className="text-center px-2 w-2/3">
           <div
             className="pt-20 mt-2 font-normal text-5xl"
             style={{ fontFamily: "Tiempos Headline,serif" }}
@@ -126,7 +126,7 @@ const DeepCleaning = () => {
     name="windowCleaning"
     checked={windowCleaning}
     onChange={handleWindowCleaningChange}
-    className="ms-2 mr-3 h-6 w-6 my-auto flex text-start"
+    className="ms-2 mr-3 h-7 w-7 my-auto flex text-start"
   />
   <label
     htmlFor="windowCleaning"
@@ -295,7 +295,7 @@ const DeepCleaning = () => {
           </div>
 
           <div className="mt-3 rounded-lg p-4">
-            <p className="text-xl text-left mb-5 font-semibold">
+            <p className="text-xl text-left mb-5 font-bold">
               Do you have pets ?
             </p>
             <div className="flex items-center mb-6">
@@ -306,7 +306,7 @@ const DeepCleaning = () => {
                 className="mr-4 h-6 w-6 cursor-pointer border-gray-400 rounded-xl"
               />
               <label className="text-lg cursor-pointer" htmlFor="cat">
-                Cat
+                Cat(s)
               </label>
             </div>
 
@@ -318,7 +318,7 @@ const DeepCleaning = () => {
                 className="mr-4 h-6 w-6 cursor-pointer border-gray-400 rounded-xl"
               />
               <label className="text-lg cursor-pointer" htmlFor="dog">
-                Dog
+                Dog(s)
               </label>
             </div>
             <div className="flex items-center mb-6">
@@ -329,7 +329,7 @@ const DeepCleaning = () => {
                 className="mr-4 h-6 w-6 cursor-pointer border-gray-400 rounded-xl"
               />
               <label className="text-lg cursor-pointer" htmlFor="other">
-                Other animal
+                Other Pet(s)
               </label>
             </div>
           </div>

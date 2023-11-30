@@ -18,6 +18,8 @@ const Book_By_Call = () => {
     const [campaignCode, setCampaignCode] = useState('');
     const [agreeToOffers, setAgreeToOffers] = useState(false);
     const [wantCleaning, setWantCleaning] = useState('');
+    const [HavePets, setHavePets] = useState('');
+
 
 const handleCleaningChange = (value) => {
   setWantCleaning(value);  
@@ -193,6 +195,29 @@ className="hidden"
 </div>
 <div className="w-15 border-2 border-gray-300 flex items-center justify-center font-bold my-4">
 </div>
+<div>
+<div className="flex items-center justify-between mb-2">
+<p className="text-xl font-bold">Do you have any pets?</p></div>
+  <div className="flex flex-col items-start">
+    {/* Checkboxes for Dog, Cat, Other Animal */}
+    <label htmlFor="dog" className="flex items-center">
+      <input type="checkbox" id="dog" name="pet" className='h-7 w-7 flex items-center justify-center mb-3 mt-2' />
+      <span className="ml-2 text-xl ml-6">Dog(s)</span>
+    </label>
+
+    <label htmlFor="cat" className="flex items-center">
+      <input type="checkbox" id="cat" name="pet" className='h-7 w-7 flex items-center justify-center mb-3 mt-2'/>
+      <span className="ml-2 text-xl ml-6">Cat(s)</span>
+    </label>
+
+    <label htmlFor="otherAnimal" className="flex items-center">
+      <input type="checkbox" id="otherAnimal" name="pet" className='h-7 w-7 flex items-center justify-center mb-3 mt-2'/>
+      <span className="ml-2 text-xl ml-6">Other Pets(s)</span>
+    </label>
+  </div>
+</div>
+
+
 
                     <div className="rounded-lg my-5">
                         <label className="text-sm flex text-left font-bold mb-2" htmlFor="date">
@@ -399,7 +424,7 @@ className="hidden"
 
                 </div>
                 <div>
-                    <div style={{ backgroundColor: '#d1dce7', width: '300px', height: '350px' }}>
+                    <div style={{ backgroundColor: '#d1dce7', width: '300px', height: '350px' }} className='mr-19'>
                         <div className="d-flex flex-col py-7">
                             <p className="text-left ml-3 mb-1" style={{fontSize:'22px', fontFamily:'Tiempos Headline,serif'}}>Summary</p>
                             <p className="px-3" style={{ display: 'flex', justifyContent: 'space-between' }}>
