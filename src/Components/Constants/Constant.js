@@ -675,11 +675,992 @@ const ZIPCODES = [
     { city: "Rosersberg", zipcode: 19595 },
     { city: "Rosersberg", zipcode: 19596 },
     {
-        city: "Artillerigatan", zipcode: 11445
-    },
-    {
-        city: "Artillerigatan", zipcode: 11451
-    },
+        city: "Artillerigatan",
+        zipcode: 11445
+      },
+      {
+        city: "Saltsjo-Boo",
+        zipcode: 13203
+      },
+      {
+        city: "Saltsjo-Boo",
+        zipcode: 13205
+      },
+      {
+        city: "Saltsjo-Boo",
+        zipcode: 13285
+      },
+      {
+        city: "Saltsjo-Boo",
+        zipcode: 13220
+      },
+      {
+        city: "Saltsjobaden",
+        zipcode: 13320
+      },
+      {
+        city: "Saltsjobaden",
+        zipcode: 13339
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19300
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19320
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19321
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19322
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19323
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19324
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19328
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19330
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19331
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19332
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19333
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19334
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19335
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19336
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19337
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19340
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19341
+      },
+      {
+        city: "Sigtuna",
+        zipcode: 19391
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12700
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12702
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12703
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12721
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12722
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12723
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12724
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12725
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12726
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12730
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12731
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12732
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12733
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12734
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12735
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12736
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12737
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12738
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12739
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12740
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12741
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12742
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12743
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12744
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12745
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12746
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12747
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12748
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12749
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12751
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12761
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12781
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12785
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12786
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12787
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12720
+      }
+      ,
+      {
+        city: "Artillerigatan",
+        zipcode: 11451
+      },
+      {
+        city: "Skarholmen",
+        zipcode: 12760
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12800
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12821
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12822
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12823
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12824
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12830
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12831
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12832
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12833
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12834
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12835
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12836
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12838
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12839
+      },
+      {
+        city: "Skarpnack",
+        zipcode: 12820
+      },
+      {
+        city: "Skondal",
+        zipcode: 14220
+      },
+      {
+        city: "Skondal",
+        zipcode: 12806
+      },
+      {
+        city: "Skondal",
+        zipcode: 12807
+      },
+      {
+        city: "Skondal",
+        zipcode: 12862
+      },
+      {
+        city: "Skondal",
+        zipcode: 12863
+      },
+      {
+        city: "Skondal",
+        zipcode: 12864
+      },
+      {
+        city: "Skondal",
+        zipcode: 12865
+      },
+      {
+        city: "Skondal",
+        zipcode: 12866
+      },
+      {
+        city: "Skondal",
+        zipcode: 12867
+      },
+      {
+        city: "Skondal",
+        zipcode: 12868
+      },
+      {
+        city: "Skondal",
+        zipcode: 12869
+      },
+      {
+        city: "Skondal",
+        zipcode: 12885
+      },
+      {
+        city: "Sodertalje",
+        zipcode: 15103
+      },
+      {
+        city: "Sodertalje",
+        zipcode: 15105
+      },
+      {
+        city: "Sodertalje",
+        zipcode: 15107
+      },
+      {
+        city: "Sodertalje",
+        zipcode: 15113
+      },
+      {
+        city: "Sodertalje",
+        zipcode: 15120
+      },
+      {
+        city: "Sodertalje",
+        zipcode: 15156
+      },
+      {
+        city: "Sodertalje",
+        zipcode: 15157
+      },
+      {
+        city: "Sodertalje",
+        zipcode: 15167
+      },
+      {
+        city: "Sodertalje",
+        zipcode: 15184
+      },
+      {
+        city: "Sodertalje",
+        zipcode: 15220
+      },
+      {
+        city: "Sodertalje",
+        zipcode: 15228
+      },
+      {
+        city: "Sodertalje",
+        zipcode: 15259
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19100
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19102
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19118
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19120
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19121
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19122
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19123
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19124
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19126
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19127
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19128
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19129
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19131
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19133
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19134
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19135
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19136
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19137
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19138
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19139
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19140
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19141
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19142
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19143
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19144
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19145
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19146
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19147
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19148
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19149
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19150
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19160
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19161
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19162
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19163
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19164
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19181
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19183
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19184
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19185
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19186
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19189
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19190
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19197
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19200
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19205
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19206
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19207
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19208
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19210
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19220
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19221
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19230
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19232
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19248
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19251
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19252
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19253
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19254
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19255
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19256
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19257
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19258
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19259
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19265
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19266
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19267
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19268
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19269
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19270
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19271
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19272
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19273
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19274
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19275
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19276
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19277
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19278
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19279
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19280
+      },
+      {
+        city: "Sollentuna",
+        zipcode: 19281
+      },
+      {
+        city: "Solna",
+        zipcode: 16920
+      },
+      {
+        city: "Solna",
+        zipcode: 16940
+      },
+      {
+        city: "Solna",
+        zipcode: 16974
+      },
+      {
+        city: "Solna",
+        zipcode: 16989
+      },
+      {
+        city: "Solna",
+        zipcode: 17020
+      },
+      {
+        city: "Solna",
+        zipcode: 17084
+      },
+      {
+        city: "Solna",
+        zipcode: 17108
+      },
+      {
+        city: "Solna",
+        zipcode: 17112
+      },
+      {
+        city: "Solna",
+        zipcode: 17120
+      },
+      {
+        city: "Solna",
+        zipcode: 17179
+      },
+      {
+        city: "Solna",
+        zipcode: 17183
+      },
+      {
+        city: "Solna",
+        zipcode: 17188
+      },
+      {
+        city: "Solna",
+        zipcode: 17193
+      },
+      {
+        city: "Solna",
+        zipcode: 17199
+      },
+      {
+        city: "Solna",
+        zipcode: 17330
+      },
+      {
+        city: "Solna",
+        zipcode: 17331
+      },
+      {
+        city: "Spanga",
+        zipcode: 16300
+      },
+      {
+        city: "Spanga",
+        zipcode: 16303
+      },
+      {
+        city: "Spanga",
+        zipcode: 16304
+      },
+      {
+        city: "Spanga",
+        zipcode: 16305
+      },
+      {
+        city: "Spanga",
+        zipcode: 16308
+      },
+      {
+        city: "Spanga",
+        zipcode: 16310
+      },
+      {
+        city: "Spanga",
+        zipcode: 16319
+      },
+      {
+        city: "Spanga",
+        zipcode: 16321
+      },
+      {
+        city: "Spanga",
+        zipcode: 16329
+      },
+      {
+        city: "Spanga",
+        zipcode: 16340
+      },
+      {
+        city: "Spanga",
+        zipcode: 16341
+      },
+      {
+        city: "Spanga",
+        zipcode: 16342
+      },
+      {
+        city: "Spanga",
+        zipcode: 16343
+      },
+      {
+        city: "Spanga",
+        zipcode: 16344
+      },
+      {
+        city: "Spanga",
+        zipcode: 16345
+      },
+      {
+        city: "Spanga",
+        zipcode: 16346
+      },
+      {
+        city: "Spanga",
+        zipcode: 16347
+      },
+      {
+        city: "Spanga",
+        zipcode: 16350
+      },
+      {
+        city: "Spanga",
+        zipcode: 16351
+      },
+      {
+        city: "Spanga",
+        zipcode: 16352
+      },
+      {
+        city: "Spanga",
+        zipcode: 16353
+      },
+      {
+        city: "Spanga",
+        zipcode: 16354
+      },
+      {
+        city: "Spanga",
+        zipcode: 16355
+      },
+      {
+        city: "Spanga",
+        zipcode: 16356
+      },
+      {
+        city: "Spanga",
+        zipcode: 16357
+      },
+      {
+        city: "Spanga",
+        zipcode: 16361
+      },
+      {
+        city: "Spanga",
+        zipcode: 16362
+      },
+      {
+        city: "Spanga",
+        zipcode: 16363
+      },
+      {
+        city: "Spanga",
+        zipcode: 16364
+      },
+      {
+        city: "Spanga",
+        zipcode: 16365
+      },
+      {
+        city: "Spanga",
+        zipcode: 16366
+      },
+      {
+        city: "Spanga",
+        zipcode: 16367
+      },
+      {
+        city: "Spanga",
+        zipcode: 16368
+      },
+      {
+        city: "Spanga",
+        zipcode: 16370
+      },
+      {
+        city: "Spanga",
+        zipcode: 16371
+      },
+      {
+        city: "Spanga",
+        zipcode: 16372
+      },
+      {
+        city: "Spanga",
+        zipcode: 16373
+      },
+      {
+        city: "Spanga",
+        zipcode: 16374
+      },
+      {
+        city: "Spanga",
+        zipcode: 16375
+      },
+      {
+        city: "Spanga",
+        zipcode: 16376
+      },
+      {
+        city: "Spanga",
+        zipcode: 16377
+      },
+      {
+        city: "Spanga",
+        zipcode: 16380
+      },
+      {
+        city: "Spanga",
+        zipcode: 16385
+      },
+      {
+        city: "Spanga",
+        zipcode: 16389
+      },
+      {
+        city: "Spanga",
+        zipcode: 16391
+      },
+      {
+        city: "Spanga",
+        zipcode: 16320
+      },
+      {
+        city: "Spanga",
+        zipcode: 16388
+      }
+      
+,      
     {
         city: "Artillerigatan", zipcode: 11530
     },
@@ -900,7 +1881,843 @@ const ZIPCODES = [
     { city: "Stockholm", zipcode: 11529 },
     { city: "Stockholm", zipcode: 11530 },
     { city: "Stockholm", zipcode: 11531 },
-    { city: "Stockholm", zipcode: 11532 },
+    {
+        city: "Stockholm-Arlanda",
+        zipcode: 19040
+      },
+      {
+        city: "Stockholm-Arlanda",
+        zipcode: 19045
+      },
+      {
+        city: "Stockholm-Arlanda",
+        zipcode: 19046
+      },
+      {
+        city: "Stockholm-Arlanda",
+        zipcode: 19047
+      },
+      {
+        city: "Stockholm-Arlanda",
+        zipcode: 19050
+      },
+      {
+        city: "Stockholm-Arlanda",
+        zipcode: 19060
+      },
+      {
+        city: "Stockholm-Arlanda",
+        zipcode: 19090
+      },
+      {
+        city: "Stockholm-Globen",
+        zipcode: 12126
+      },
+      {
+        city: "Stockholm-Globen",
+        zipcode: 12127
+      },
+      {
+        city: "Stockholm-Globen",
+        zipcode: 12128
+      },
+      {
+        city: "Stockholm-Globen",
+        zipcode: 12188
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17205
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17214
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17215
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17220
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17420
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17441
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17461
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17462
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17463
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17465
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17466
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17486
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17487
+      },
+      {
+        city: "Sundbyberg",
+        zipcode: 17488
+      },
+      {
+        city: "Taby",
+        zipcode: 18310
+      },
+      {
+        city: "Taby",
+        zipcode: 18320
+      },
+      {
+        city: "Taby",
+        zipcode: 18368
+      },
+      {
+        city: "Taby",
+        zipcode: 18715
+      },
+      {
+        city: "Taby",
+        zipcode: 18720
+      },
+      {
+        city: "Taby",
+        zipcode: 18726
+      },
+      {
+        city: "Taby",
+        zipcode: 18727
+      },
+      {
+        city: "Taby",
+        zipcode: 18728
+      },
+      {
+        city: "Taby",
+        zipcode: 18729
+      },
+      {
+        city: "Taby",
+        zipcode: 18730
+      },
+      {
+        city: "Taby",
+        zipcode: 18731
+      },
+      {
+        city: "Taby",
+        zipcode: 18732
+      },
+      {
+        city: "Taby",
+        zipcode: 18733
+      },
+      {
+        city: "Taby",
+        zipcode: 18734
+      },
+      {
+        city: "Taby",
+        zipcode: 18735
+      },
+      {
+        city: "Taby",
+        zipcode: 18736
+      },
+      {
+        city: "Taby",
+        zipcode: 18737
+      },
+      {
+        city: "Taby",
+        zipcode: 18738
+      },
+      {
+        city: "Taby",
+        zipcode: 18740
+      },
+      {
+        city: "Taby",
+        zipcode: 18741
+      },
+      {
+        city: "Taby",
+        zipcode: 18742
+      },
+      {
+        city: "Taby",
+        zipcode: 18743
+      },
+      {
+        city: "Taby",
+        zipcode: 18744
+      },
+      {
+        city: "Taby",
+        zipcode: 18745
+      },
+      {
+        city: "Taby",
+        zipcode: 18746
+      },
+      {
+        city: "Taby",
+        zipcode: 18750
+      },
+      {
+        city: "Taby",
+        zipcode: 18751
+      },
+      {
+        city: "Taby",
+        zipcode: 18752
+      },
+      {
+        city: "Taby",
+        zipcode: 18753
+      },
+      {
+        city: "Taby",
+        zipcode: 18754
+      },
+      {
+        city: "Taby",
+        zipcode: 18762
+      },
+      {
+        city: "Taby",
+        zipcode: 18763
+      },
+      {
+        city: "Taby",
+        zipcode: 18764
+      },
+      {
+        city: "Taby",
+        zipcode: 18765
+      },
+      {
+        city: "Taby",
+        zipcode: 18766
+      },
+      {
+        city: "Taby",
+        zipcode: 18767
+      },
+      {
+        city: "Taby",
+        zipcode: 18768
+      },
+      {
+        city: "Taby",
+        zipcode: 18769
+      },
+      {
+        city: "Taby",
+        zipcode: 18770
+      },
+      {
+        city: "Taby",
+        zipcode: 18772
+      },
+      {
+        city: "Taby",
+        zipcode: 18773
+      },
+      {
+        city: "Taby",
+        zipcode: 18774
+      },
+      {
+        city: "Taby",
+        zipcode: 18775
+      },
+      {
+        city: "Taby",
+        zipcode: 18776
+      },
+      {
+        city: "Taby",
+        zipcode: 18777
+      },
+      {
+        city: "Taby",
+        zipcode: 18780
+      },
+      {
+        city: "Taby",
+        zipcode: 18781
+      },
+      {
+        city: "Taby",
+        zipcode: 19281
+      },
+      {
+        city: "Tomteboda",
+        zipcode: 17307
+      },
+      {
+        city: "Tomteboda",
+        zipcode: 17308
+      },
+      {
+        city: "Tomteboda",
+        zipcode: 17320
+      },
+      {
+        city: "Tomteboda",
+        zipcode: 17323
+      },
+      {
+        city: "Tomteboda",
+        zipcode: 17324
+      },
+      {
+        city: "Tomteboda",
+        zipcode: 17325
+      },
+      {
+        city: "Tomteboda",
+        zipcode: 17326
+      },
+      {
+        city: "Tomteboda",
+        zipcode: 17327
+      },
+      {
+        city: "Tomteboda",
+        zipcode: 17328
+      },
+      {
+        city: "Tomteboda",
+        zipcode: 17329
+      },
+      {
+        city: "Tullinge",
+        zipcode: 14620
+      },
+      {
+        city: "Tumba",
+        zipcode: 14720
+      },
+      {
+        city: "Tumba",
+        zipcode: 14745
+      },
+      {
+        city: "Tyreso",
+        zipcode: 13520
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19400
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19402
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19404
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19405
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19410
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19417
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19418
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19419
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19420
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19421
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19422
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19423
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19426
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19427
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19428
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19429
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19430
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19431
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19432
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19433
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19434
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19435
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19436
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19437
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19438
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19439
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19440
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19441
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19442
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19443
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19444
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19445
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19446
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19447
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19449
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19451
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19452
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19453
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19454
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19455
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19456
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19457
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19460
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19461
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19462
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19463
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19464
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19465
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19466
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19467
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19468
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19469
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19470
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19471
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19472
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19473
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19474
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19475
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19476
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19477
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19478
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19479
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19480
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19481
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19482
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19483
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19484
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19486
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19487
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19488
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19489
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19491
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19492
+      },
+      {
+        city: "Upplands Vasby",
+        zipcode: 19498
+      },
+      {
+        city: "Vallentuna",
+        zipcode: 18620
+      },
+      {
+        city: "Vallentuna",
+        zipcode: 18647
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16200
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16206
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16211
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16212
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16215
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16220
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16243
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16244
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16245
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16246
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16247
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16250
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16251
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16252
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16253
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16254
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16255
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16256
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16257
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16258
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16260
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16261
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16262
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16263
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16264
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16265
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16266
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16267
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16268
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16270
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16271
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16272
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16273
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16274
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16283
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16288
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16201
+      },
+      {
+        city: "Vallingby",
+        zipcode: 16213
+      },
+      {
+        city: "Varby",
+        zipcode: 14346
+      },
+      {
+        city: "Varby",
+        zipcode: 14320
+      },
+      {
+        city: "Varmdo",
+        zipcode: 13900
+      },
+      {
+        city: "Varmdo",
+        zipcode: 13920
+      },
+      {
+        city: "Varmdo",
+        zipcode: 13931
+      },
+      {
+        city: "Vasterhaninge",
+        zipcode: 13720
+      },
+      {
+        city: "Vasterhaninge",
+        zipcode: 13742
+      },
+      {
+        city: "Vaxholm",
+        zipcode: 18520
+      }
+,                  
     { city: "Gothenburg", zipcode: 42438 },
     { city: "Gothenburg", zipcode: 42400 },
     { city: "Gothenburg", zipcode: 42401 },

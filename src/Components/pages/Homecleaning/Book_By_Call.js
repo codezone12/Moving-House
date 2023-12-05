@@ -429,7 +429,10 @@ className="hidden"
                             <p className="text-left ml-3 mb-1" style={{fontSize:'22px', fontFamily:'Tiempos Headline,serif'}}>Summary</p>
                             <p className="px-3" style={{ display: 'flex', justifyContent: 'space-between' }}>
                                 <span className="text-lg ">Home cleaning</span>
-                                <span className="text-xl font-medium">Every week</span>
+                                <span className="text-xl font-medium">
+  {wantCleaning === 'no' ? 'Every Other Week' : 'Every Week'}
+</span>
+
                             </p>
                             <div className="border-t my-2 border-gray-400 w-4/5 mx-auto"></div>
                             <p className="text-xl font-semibold text-left my-auto pl-3 py-2">Selected start date</p>

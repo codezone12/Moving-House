@@ -468,8 +468,9 @@ const Book_By_Visit = () => {
                                 <p className="text-left ml-3 mb-1 py-3" style={{ fontSize: '22px', fontFamily: 'Tiempos Headline,serif' }}>Summary</p>
                                 <p className="px-3" style={{ display: 'flex', justifyContent: 'space-between' }}>
                                     <span className="text-lg ">Home cleaning</span>
-                                    <span className="text-xl font-medium">Every week</span>
-                                </p>
+                                    <span className="text-xl font-medium">
+  {wantCleaning === 'no' ? 'Every Other Week' : 'Every Week'}
+</span>                                </p>
                                 <div className="border-t my-2 border-gray-400 w-4/5 mx-auto"></div>
                                 <p className="text-xl font-semibold text-left my-auto pl-3 py-2">Selected start date</p>
                                 <p className="text-lg text-left px-5 mt-3">{data ? data[1] : ''}</p>
