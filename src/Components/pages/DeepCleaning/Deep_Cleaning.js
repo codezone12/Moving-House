@@ -19,7 +19,6 @@ const DeepCleaning = () => {
     setWantCleaning(value);
   };
 
-
   const calculatePrice = (sqm) => {
     if (sqm >= 1 && sqm <= 50) {
       return 1405;
@@ -78,11 +77,11 @@ const DeepCleaning = () => {
     const fridgeCleaningCost = fridgeCleaning * 299;
     const windowCleaningCost = windowCleaning ? 176 : 0;
 
-    const total =
-      storstadningPrice;
+    const total = storstadningPrice;
 
     setTotal(total);
-  }, [storstadningPrice, windowCleaning]); return (
+  }, [storstadningPrice, windowCleaning]);
+  return (
     <div
       className="container mx-auto my-auto pt-10 mb-20"
       style={{ maxWidth: "70%" }}
@@ -90,7 +89,7 @@ const DeepCleaning = () => {
       <div
         style={{ display: "grid", gridTemplateColumns: "70% 30%", gap: "30px" }}
       >
-        <div className="text-center px-2 w-2/3">
+        <div className="text-center px-2 w-2/1">
           <div
             className="pt-20 mt-2 font-normal text-5xl"
             style={{ fontFamily: "Tiempos Headline,serif" }}
@@ -112,36 +111,40 @@ const DeepCleaning = () => {
                 type="number"
                 name="sqm"
                 value={sqm}
-                onChange={(e) => setSqm(e.target.value < 0 ? 0 : e.target.value)}
+                onChange={(e) =>
+                  setSqm(e.target.value < 0 ? 0 : e.target.value)
+                }
                 id="sqm"
                 className="border w-full rounded-md mb-4 p-5 border-[#d5d2c4]"
               />
             </div>
           </div>
 
-<div className="mb-4 pr-10 my-auto flex p-4">
-  <input
-    type="checkbox"
-    id="windowCleaning"
-    name="windowCleaning"
-    checked={windowCleaning}
-    onChange={handleWindowCleaningChange}
-    className="ms-2 mr-3 h-7 w-7 my-auto flex text-start"
-  />
-  <label
-    htmlFor="windowCleaning"
-    style={{ fontFamily: "Tiempos Headline,serif" }}
-    className="text-xl flex text-start"
-  >
-  I do not have a vacuum cleaner (not a portable hand-held vacuum
+          <div className="mb-4 pr-10 my-auto flex p-4">
+            <input
+              type="checkbox"
+              id="windowCleaning"
+              name="windowCleaning"
+              checked={windowCleaning}
+              onChange={handleWindowCleaningChange}
+              className="ms-2 mr-3 h-7 w-7 my-auto flex text-start"
+            />
+            <label
+              htmlFor="windowCleaning"
+              style={{ fontFamily: "Tiempos Headline,serif" }}
+              className="text-xl flex text-start"
+            >
+              I do not have a vacuum cleaner (not a portable hand-held vacuum
               cleaner), mop, or bucket.
-                </label>
-</div>
+            </label>
+          </div>
 
-<div className="p-4">
-
-<div className="flex items-center justify-between mb-2">
-      <p className="text-xl font-semibold">Do you want Window Cleaning</p></div>
+          <div className="p-4">
+            <div className="flex items-center justify-between mb-2">
+              <p className="text-xl font-semibold">
+                Do you want Window Cleaning
+              </p>
+            </div>
             <div className="border rounded-md mb-2 p-5 bg-white border-[#d5d2c4]">
               {/* Yes Radio Button */}
               <div className="flex items-center justify-between mb-2">
@@ -182,7 +185,6 @@ const DeepCleaning = () => {
                   className="hidden"
                 />
               </div>
-
 
               <p className="mb-2 border-[#d6d2c4] border"></p>
 
@@ -229,7 +231,8 @@ const DeepCleaning = () => {
             </div>
           </div>
           <div className="flex items-center justify-between mb-2 ml-4">
-      <p className="text-xl font-bold">Anything else?</p></div>
+            <p className="text-xl font-bold">Anything else?</p>
+          </div>
           <div className="flex p-4">
             <div className="flex">
               <p className="text-2xl font-normal">Oven cleaning</p>
@@ -517,7 +520,9 @@ const DeepCleaning = () => {
             <p className="text-lg text-normal text-[#003b5c] text-left flex-1">
               Storstädning
             </p>
-            <p className="text-gl font-bold text-[#003b5c]">{storstadningPrice} kr</p>
+            <p className="text-gl font-bold text-[#003b5c]">
+              {storstadningPrice} kr
+            </p>
           </div>
           <div className="flex mt-5 px-5">
             <p className="text-lg text-normal text-[#003b5c] text-left flex-1">
