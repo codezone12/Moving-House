@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "../../../Assets/css/window_cleaning.css";
+import CrossIcon from "../../Gernal_Components/CrossIcon";
+import { useNavigate } from "react-router";
 
 const MovingOutService = () => {
+  const navigate = useNavigate()
   const [handover, setHandover] = useState("open");
   const [wantCleaning, setWantCleaning] = useState("yes");
   const [sqm, setSqm] = useState(0);
@@ -23,8 +26,11 @@ const MovingOutService = () => {
         style={{ display: "grid", gridTemplateColumns: "70% 30%", gap: "30px" }}
       >
         <div className="text-center px-2">
+          <div className="flex justify-end">
+            <CrossIcon  handleClickCrossIcon={() => navigate("/Moving_Home")}/>
+          </div>
           <div
-            className="pt-20 mt-2 font-normal text-5xl"
+            className=" mt-2 font-normal text-5xl"
             style={{ fontFamily: "Tiempos Headline,serif" }}
           >
            Move Out Cleaning
