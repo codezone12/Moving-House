@@ -1,10 +1,13 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { useLocation } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import emailjs from "emailjs-com";
 import "react-toastify/dist/ReactToastify.css";
 import { toast, ToastContainer } from "react-toastify";
+import CrossIcon from "../../Gernal_Components/CrossIcon";
+import goBackIcon from "../../Gernal_Components/GoBackIcon";
 
 const Book_By_Visit = () => {
+  const navigate = useNavigate();
   const [price, setPrice] = useState(0);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -151,7 +154,45 @@ const Book_By_Visit = () => {
     <>
       <ToastContainer position="top-right" autoClose={5000} />
       <div className="container  pt-10">
-        <div className="pt-20 pr-80 font-normal text-5xl flex items-center justify-center">
+        <div className=" d-flex  ">
+          <div className="icons_bodyByVisit ">
+            <span
+              className="cross_icon_box"
+              onClick={() => navigate("/Booking")}
+            >
+              <svg
+                height="15"
+                viewBox="0 0 9 15"
+                width="15"
+                className="csbbM95O hiH3WVS irER7"
+              >
+                <path
+                  d="m.958.995 6.51 6.51-6 6"
+                  fill="none"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </span>
+
+            <span
+              className="cross_icon_box"
+              onClick={() => navigate("/Home_clean")}
+            >
+              <svg viewBox="0 0 60 60" class="csbbM95O hiH3WVS">
+                <g
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="8"
+                >
+                  <path d="m5 5 50 50"></path>
+                  <path d="m5 55 50-50"></path>
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div className=" pr-80 font-normal text-5xl flex items-center justify-center">
           Home Cleaning
         </div>
         <div className="w-full my-8  flex justify-center items-center">
