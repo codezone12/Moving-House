@@ -7,21 +7,18 @@ import Included from "./Sections/included";
 import Tips from "./Sections/tips&news";
 import Work from "./Sections/work";
 
-const DHome=()=>{
+const DHome = () => {
+  return (
+    <div>
+      <DHero />
+      <Included />
+      <Work />
+      <FAQ />
+      {/* <Sabina /> */}
+      <Tips />
+      <Zipcode />
+    </div>
+  );
+};
 
-
-    return (
-        <div>
-<DHero />
-<Included />
-<Work />
-<FAQ />
-{/* <Sabina /> */}
-<Tips />
-<Zipcode />
-        </div>
-    );
-
-}
-
-export default  DHome;
+export default DHome;

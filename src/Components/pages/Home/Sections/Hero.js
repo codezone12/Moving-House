@@ -2,7 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import { ZIPCODES } from "../../../Constants/Constant";
 import Booking from "../../Booking/Booking";
 import { useNavigate } from "react-router";
+import Image1 from "../../../../Assets/images/New Images/Cleaning_9.jpeg";
+import Image2 from "../../../../Assets/images/New Images/Moving_8.jpeg";
+import Image3 from "../../../../Assets/images/New Images/Cleaning_2.jpeg";
+import Image4 from "../../../../Assets/images/New Images/Cleaning_3.jpeg";
 
+const silderImages = [Image1, Image2, Image3, Image4  ];
 const Hero = () => {
   const [text, setText] = useState("");
   const [city, setCity] = useState("");
@@ -14,6 +19,7 @@ const Hero = () => {
   const [showSquareMeterInput, setShowSquareMeterInput] = useState(false);
   const [squareMeter, setSquareMeter] = useState("");
   const zipcodeRef = useRef();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   let currentIndex = 0;
   const colorMapping = {
     " Home": "white",
@@ -38,6 +44,18 @@ const Hero = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Change to the next image
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex + 1) % silderImages.length
+      );
+    }, 5000); // Change image every 3 seconds
+
+    // Clear the interval when the component unmounts or the array changes
+    return () => clearInterval(interval);
+  }, [silderImages]);
 
   const handleInputChange = (e) => {
     const enteredZipCode = e.target.value;
@@ -74,9 +92,8 @@ const Hero = () => {
     zipcodeRef.current.focus();
   };
   const handleNavigate = () => {
-    
     let route = "/Booking"; // Default route for Home Cleaning
-  
+
     switch (selectedService) {
       case "Home Cleaning":
         route = "/Booking";
@@ -94,7 +111,7 @@ const Hero = () => {
         // Default to /Booking if the selected service is not recognized
         route = "/Booking";
     }
-  
+
     navigate(route, {
       state: {
         data: {
@@ -105,15 +122,13 @@ const Hero = () => {
       },
     });
   };
-  
 
   const isButtonDisabled = !city || !code;
   return (
     <div
       className="bg-cover"
       style={{
-        backgroundImage:
-          "url('https://images.ctfassets.net/37vwfxlcawdb/1TfE1UU6y8uJw1qSaSGma6/2ff488f042edf4fe6a7ce60a33c3abca/Startsida.jpg?q=50&fm=avif&w=1200')",
+        backgroundImage: `url(${silderImages[currentImageIndex]})`,
       }}
     >
       <div className="text-start mr-auto pt-40 md:px-28 px-10 text-white text-5xl font-medium font-['Young Serif'] ">
@@ -170,22 +185,20 @@ const Hero = () => {
                   </>
                 )}
               </div>
-              
             </div>
-            <div className="w-2/5 border-0" style={{marginTop:'-10px'}}>
-            {!show && code.length >= 1 && code.length <= 4 && (
-                  <p className="text-red-500 text-xs text-center mt-2">
-                    This is not a valid zip code.
-                  </p>
-                )}
+            <div className="w-2/5 border-0" style={{ marginTop: "-10px" }}>
+              {!show && code.length >= 1 && code.length <= 4 && (
+                <p className="text-red-500 text-xs text-center mt-2">
+                  This is not a valid zip code.
+                </p>
+              )}
 
-                {!show && code.length === 5 && (
-                  <p className="text-red-500 text-xs text-center mt-2">
-                    Unfortunately, none of our services are available in the
-                    area.
-                  </p>
-                )}
-                </div>
+              {!show && code.length === 5 && (
+                <p className="text-red-500 text-xs text-center mt-2">
+                  Unfortunately, none of our services are available in the area.
+                </p>
+              )}
+            </div>
             <div className="flex justify-center items-center  w-1/2 md:w-2/5 bg-opacity-80 hover:shadow-lg hover:shadow-black bg-[#1e1e1e] text-lg font-bold mt-4 p-5 rounded-md hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
               <button
                 className={`text-center text-['#fff']`}

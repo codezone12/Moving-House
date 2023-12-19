@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 import { Button, Select } from "@chakra-ui/react";
 import { Input } from "@chakra-ui/react";
 import SelectArrow from "../../../Gernal_Components/SelectArrow";
+import MovingHome from "../../../../Assets/images/New Images/Moving_8.jpeg";
 const MHero = () => {
   const [text, setText] = useState("");
   const navigate = useNavigate();
@@ -40,7 +41,6 @@ const MHero = () => {
 
   const handleChangesqmValue = (event) => {
     setSqmValue(event.target.value);
-    console.log(event.target.value, "handleChangesqmValuehandleChangesqmValue");
   };
 
   const handelClickContinue = () => {
@@ -67,8 +67,7 @@ const MHero = () => {
     <div
       className="bg-cover"
       style={{
-        backgroundImage:
-          "url('https://images.ctfassets.net/37vwfxlcawdb/69hHyQMNuGaEhmbFyirlC6/2e0e16f5ea1ed0bcc81df72e8e50ef68/Badrum-handfat-16-9.jpg?q=60&fm=jpg&w=2560')",
+        backgroundImage: `url(${MovingHome})`,
       }}
     >
       <div className=" mr-auto pt-48 md:px-28  text-white text-5xl font-medium font-['Young Serif'] ">

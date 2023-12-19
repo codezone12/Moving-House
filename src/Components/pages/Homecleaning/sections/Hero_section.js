@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { ZIPCODES } from "../../../Constants/Constant";
 import { useNavigate } from "react-router";
+import Image1 from "../../../../Assets/images/New Images/Cleaning_9.jpeg";
 const Hero = () => {
   const [text, setText] = useState("");
   const [city, setCity] = useState("");
@@ -41,7 +42,7 @@ const Hero = () => {
       className="bg-cover"
       style={{
         backgroundImage:
-          "url('https://images.ctfassets.net/37vwfxlcawdb/46LQQCY2RWA0EiWBlFxQyR/54772a23ef600af281aecae28cdd5160/home-cleaning1.jpg?q=50&fm=avif&w=1200')",
+          `url(${Image1})`,
       }}
     >
       <div className=" mr-auto pt-48 md:px-28 px-10 text-white text-5xl font-medium font-['Young Serif'] ">

@@ -1,4 +1,3 @@
-
 import Includesection from "./section/includesection";
 import Anders from "./section/Anderstaby";
 import Hero from "./section/Hero";
@@ -7,20 +6,18 @@ import Letus from "./section/Letus_everyday";
 import Cleaningtips from "./section/cleaningtips";
 import Faq from "./section/Faq";
 
-const W_Home=()=>{
+const W_Home = () => {
+  return (
+    <div>
+      <Hero />
+      <Includesection />
+      <Work />
+      <Faq />
+      {/* <Anders /> */}
+      <Cleaningtips />
+      <Letus />
+    </div>
+  );
+};
 
-return (
-   <div>
-<Hero/>
-<Includesection />
-<Work />
-<Faq />
-{/* <Anders /> */}
-<Cleaningtips />
-<Letus />
-   </div>
-);
-
-}
-
-export default  W_Home;
+export default W_Home;
