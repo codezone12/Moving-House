@@ -117,3 +117,14 @@
 .csbbM95O {
   stroke: #1e1e1e;
 }
+/* Customize the autoplay indicator styles */
+.swiper-pagination-bullet {
+  background-color: #007bff; /* Change the color as desired */
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0056b3; /* Change the color as desired */
+}

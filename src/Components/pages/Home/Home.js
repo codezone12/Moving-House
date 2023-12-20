@@ -1,4 +1,3 @@
-
 import Hero from "../Home/Sections/Hero";
 import TimeforSimple from "./Sections/TimeforSimpler";
 import Tipsinsp from "./Sections/Tips&Insp";
@@ -10,25 +9,22 @@ import HelpWith from "./Sections/help_with";
 import Review from "./Sections/review";
 import WorkAtHemfird from "./Sections/workatHemfird";
 
-const Home=()=>{
-
-return(
+const Home = () => {
+  return (
     <>
-    <div >
-
-    <Hero />
-    <HelpWith />
-    <WhyHermified />
-    <Review />
-    {/* <Appsection /> */}
-    <Tipsinsp />
-    <WorkAtHemfird />
-    <Cleaningtoloc />
-    <TimeforSimple />
-    </div>
+      <div>
+        <Hero />
+        <HelpWith />
+        <WhyHermified />
+        <Review />
+        {/* <Appsection /> */}
+        <Tipsinsp />
+        <WorkAtHemfird />
+        <Cleaningtoloc />
+        <TimeforSimple />
+      </div>
     </>
-);
-
+  );
 };
 
 export default Home;

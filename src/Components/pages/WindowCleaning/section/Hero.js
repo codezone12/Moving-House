@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { ZIPCODES } from "../../../Constants/Constant";
 import { useNavigate } from "react-router";
-import WindowClean from "../../../../Assets/images/New Images/Cleaning_3.jpeg";
+import WindowClean from "../../../../Assets/images/New Images/Cleaning_3.jpg";
 const Hero = () => {
   const [text, setText] = useState("");
   const [city, setCity] = useState("");
