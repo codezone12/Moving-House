@@ -45,11 +45,11 @@ const Hero = () => {
     >
       <div className=" mr-auto pt-48 md:px-28 px-10 text-white text-5xl font-medium font-['Young Serif'] ">
         <p className="text-start hover:text-gray-900">
-          Time for <span className="text-lime-500">Window</span>
+          Time for <span className="text-lime-200">Window</span>
         </p>
 
-        <p class="  text-start mt-1 text-cyan-500">Cleaning</p>
-        <div className="flex w-1/2 md:w-2/5 hover:shadow-lg hover:shadow-black text-lg font-bold hover:border-none hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
+        <p class="  text-start mt-1 text-cyan-200">Cleaning</p>
+        <div className="flex w-1/2 md:w-2/5  hover:shadow-black text-lg font-bold hover:border-none hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
           <input
             className="flex-1 bg-white focus:border-none focus:outline-none text-black text-right text-lg p-3 rounded-l-lg mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500"
             type="number"
