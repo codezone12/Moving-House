@@ -26,7 +26,7 @@ const MovingTips = () => {
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
                         <div className="relative">
                             <img
-                                src="https://images.ctfassets.net/37vwfxlcawdb/4qhLTEnSWdhB2h0MdsqoPn/8b2510f8ff20190ab4b8c9da7c4f57be/MicrosoftTeams-image__13_.png?q=40&fm=avif&w=800"
+                                src="img/m4.jpeg"
                                 className="w-[700px] h-80"
                                 alt="Pic"
                             />
@@ -49,8 +49,8 @@ const MovingTips = () => {
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
             <div className="relative">
               <img
-                src="https://images.ctfassets.net/37vwfxlcawdb/6YcKFsdnCvokGoU3cbS2A8/83c7397a8fc81d02560bd72fd7877536/MicrosoftTeams-image__6_.png?q=50&fm=jpg&w=800"
-                className="w-[700px] h-80"
+src="img/m2.jpeg"       
+         className="w-[700px] h-80"
                 alt="Pic"
               />
             </div>
@@ -104,8 +104,7 @@ const MovingTips = () => {
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
                         <div className="relative">
                             <img
-                                src="https://images.ctfassets.net/37vwfxlcawdb/2U5sXRr86S3NTGvsbTgiHL/79da9aed5d9e41c482e315d209db4a7b/kok-1-1.jpg?q=50&fm=jpg&w=800" 
-                                className="w-[700px] h-80"
+src="img/m3.jpeg"                                className="w-[700px] h-80"
                                 alt="Pic"
                             />
                         </div>

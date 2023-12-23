@@ -21,7 +21,7 @@ const Includesection = () => {
         "If you do not have a suitable ladder, we can bring one with us for an additional cost. Please state it when booking.",
         "For best results, we also recommend that you add a frame washer, which means that we wash the window frames and frames.",
       ],
-      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
+      iconUrl: 'img/wi.svg',
     },
     {
       heading: "What counts as a window?",
@@ -30,7 +30,7 @@ const Includesection = () => {
         "If your window has 1 window frame, it counts as one window. Also called 1 sash window.",
         "If your window has 2 frames (one that goes to the right and one that goes to the left), it counts as two windows. Also called 2 sash windows.",
       ],
-      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/NNOembCSzySTh6zEwVfCi/1f035c76c864d50936a3d2e36ee6a3f8/Hemfrid_Piktogram_Sta__dat_och_klart_64x64px-01.svg',
+      iconUrl: 'img/wi1.svg',
     },
     {
       heading: "Did you know that...",
@@ -40,14 +40,14 @@ const Includesection = () => {
         "Our window cleaners are insured and we have liability insurance to cover any damage.",
 
       ],
-      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
+      iconUrl: 'img/wi2.svg',
     },
     {
       heading: "Our own cleaning products",
       title: "The cleaning service contract also includes our eco-friendly cleaning products which are delivered to your home and refilled when they run out.",
-      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
+      iconUrl: 'img/wi4.svg',
     },
-    
+
   ]
   return (
 
@@ -56,7 +56,7 @@ const Includesection = () => {
 
         <div className="pt-12 text-5xl font-bold">What is included in our <span className='text-green-500'>Window </span><span className='text-cyan-500'>Cleaning?</span></div>
         <div className="w-full mt-8  flex justify-center items-center">
-        <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
+          <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
         </div>
         <div className="mt-8 text-lg leading-7">
           <p>When you wash windows yourself, it’s hard to do it really well. Use our skilled window</p>
@@ -72,7 +72,7 @@ const Includesection = () => {
             <AccordionItem className='col-span-1 ' key={index}>
               <h2>
                 <AccordionButton className='group'>
-                <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
+                  <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
                     <div className='flex hover:shake'>
                       <img src={item.iconUrl} alt='Icon' className='w-10 pr-2' />
                       <h4>{item.heading}</h4>

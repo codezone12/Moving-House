@@ -42,7 +42,9 @@ const Letus = () => {
                     </div>
 
                     <div class="absolute end-0  top-0">
-                        <img src="https://images.ctfassets.net/37vwfxlcawdb/7fWbcFeBHqqE7AeYxEdPAt/7986be25c26675e0df8913782c56652c/Vikt-tvatt-sang2-1-1.jpg?q=50&fm=jpg&w=1200" className="h-[650px] w-[600px]" />
+                        <img
+                            src="img/m5.jpeg"
+                            className="h-[650px] w-[600px]" />
                     </div>
 
                 </div>

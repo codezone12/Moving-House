@@ -27,8 +27,7 @@ const Included = () => {
         "Vacuuming and mopping of floors.",
       ],
       iconUrl:
-      'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
-    
+        'img/genral.svg'
     },
     {
       heading: "Kitchen",
@@ -48,7 +47,7 @@ const Included = () => {
         "Empty the rubbish and wipe clean the rubbish bin.",
         "Polish the sink, faucet, stopper, and strainer.",
       ],
-      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
+      iconUrl: 'img/kitichen.svg',
     },
     {
       heading: "Bathrooms",
@@ -66,7 +65,8 @@ const Included = () => {
         "Cleaning of the filter in the tumble dryer.",
         "Wipe off soap bottles.",
       ],
-      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
+      iconUrl:
+        'img/bath.svg',
     },
     {
       heading: "Bedrooms",
@@ -76,7 +76,8 @@ const Included = () => {
         "Changing of bed linen if clean sheets are provided.",
         "Dry dusting or vacuuming of the headboard/-bed frame.",
       ],
-      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/NNOembCSzySTh6zEwVfCi/1f035c76c864d50936a3d2e36ee6a3f8/Hemfrid_Piktogram_Sta__dat_och_klart_64x64px-01.svg',
+      iconUrl:
+        'img/ed.svg',
     },
     {
       heading: "Hallways",
@@ -87,8 +88,8 @@ const Included = () => {
         "Wiping of the coat rack.",
         "Wiping of fuse cabinet.",
       ],
-      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
-
+      iconUrl:
+        'img/ha.svg',
     },
     {
       heading: "Additional services",
@@ -105,7 +106,8 @@ const Included = () => {
         "Furniture care of leather sofas/chairs.",
         "Ironing.",
       ],
-      iconUrl:'https://images.ctfassets.net/37vwfxlcawdb/2R9E1GsuoX27qaAe1YO2gB/d6880e276d8f8e5ac2cbed8440a957bb/Hemfrid_Piktogram_Kontorssta__d_64x64px-01.svg',
+      iconUrl:
+        'img/se.svg',
     },
 
   ]
@@ -116,7 +118,7 @@ const Included = () => {
 
         <div className="pt-12 text-5xl font-bold">What is included in our <span className='text-purple-500'>Deep</span> <span className='text-sky-400'>cleaning?</span></div>
         <div className="w-full mt-8  flex justify-center items-center">
-        <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
+          <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
         </div>
         <div className="mt-8 text-lg leading-7  ">
           <p>Sometimes your home needs a thorough overhaul, right down to every little detail. We</p>
@@ -131,7 +133,7 @@ const Included = () => {
             <AccordionItem className='col-span-1 ' key={index}>
               <h2>
                 <AccordionButton className='group'>
-                <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
+                  <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
                     <div className='flex hover:shake'>
                       <img src={item.iconUrl} alt='Icon' className='w-10 pr-2' />
                       <h4>{item.heading}</h4>
@@ -142,7 +144,7 @@ const Included = () => {
                       className='w-8 h-8 border-2 rounded-full text-green-500 border-green-500 group-hover:border-yellow-400 group-hover:text-yellow-400'
                     />
                   </div>
-                  </AccordionButton>
+                </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
                 <h3 className='text-start text-xl pb-1 font-semibold'>{item?.title}</h3>

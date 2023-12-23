@@ -26,7 +26,7 @@ const Todo = () => {
                     </div>
 
                     <div className="">
-                        <img src="https://images.ctfassets.net/37vwfxlcawdb/16YUdur5ggSZzfuOga3WSI/75340c83480f02a92eae1f8f4fb9a3d9/Kok-spis-1-1.jpg?q=50&fm=jpg&w=1200" className="h-[650px] w-[600px]" />
+                        <img src="img/m1.jpeg" className="h-[650px] w-[600px]" />
                     </div>
 
                 </div>

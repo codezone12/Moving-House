@@ -25,7 +25,7 @@ const Tips = () => {
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
                         <div className="relative">
                             <img
-                                src="https://images.ctfassets.net/37vwfxlcawdb/6lC1VncCjKuWEVVB9IvCfE/fd79f5f4a9a1060ad5892c496a62c48b/Tatjana-badrum-16-9.jpg?q=50&fm=jpg&w=800"
+                                src="img/d2.jpeg"
                                 className="w-[700px] h-80"
                                 alt="Pic"
                             />
@@ -48,7 +48,7 @@ const Tips = () => {
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
                         <div className="relative">
                             <img
-                                src="https://images.ctfassets.net/37vwfxlcawdb/tdJ6X2UinI6KpFJcrmpIV/25e8a5955aef33b2d29959056164c965/Badkar-16-9.jpg?q=50&fm=jpg&w=800"
+                                src="img/d1.jpeg"
                                 className="w-[700px] h-80"
                                 alt="Pic"
                             />
@@ -103,7 +103,7 @@ const Tips = () => {
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
                         <div className="relative">
                             <img
-                                src="https://images.ctfassets.net/37vwfxlcawdb/3pdyQZ0ZaS1ZUT70f70fvC/64ed9ea5b7ce17d1665adaa157273971/Stadprodukter-produktion-fabrik.jpg?q=50&fm=jpg&w=800"
+                                src="img/d3.jpeg"
                                 className="w-[700px] h-80"
                                 alt="Pic"
                             />

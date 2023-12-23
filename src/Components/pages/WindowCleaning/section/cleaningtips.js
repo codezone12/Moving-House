@@ -8,7 +8,7 @@ const CleaningTips = () => {
                 <h3 className="text-5xl font-medium ">Cleaning <span className=" text-green-500 ">Tips </span> & <span className='text-cyan-500'>News</span> </h3>
                 {/* line content */}
                 <div className="w-full  flex  justify-center mt-8">
-                <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
+                    <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
                 </div>
             </div>
 
@@ -21,7 +21,7 @@ const CleaningTips = () => {
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
                         <div className="relative">
                             <img
-                                src="https://images.ctfassets.net/37vwfxlcawdb/6YcKFsdnCvokGoU3cbS2A8/83c7397a8fc81d02560bd72fd7877536/MicrosoftTeams-image__6_.png?q=50&fm=jpg&w=800"
+                                src="img/w2.jpeg"
                                 className="w-[700px] h-80"
                                 alt="Pic"
                             />
@@ -44,7 +44,7 @@ const CleaningTips = () => {
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
                         <div className="relative">
                             <img
-                                src="https://images.ctfassets.net/37vwfxlcawdb/3pdyQZ0ZaS1ZUT70f70fvC/64ed9ea5b7ce17d1665adaa157273971/Stadprodukter-produktion-fabrik.jpg?q=50&fm=jpg&w=800"
+                                src="img/w1.jpeg"
                                 className="w-[700px] h-80"
                                 alt="Pic"
                             />
@@ -95,7 +95,7 @@ const CleaningTips = () => {
                     <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh]">
                         <div className="relative">
                             <img
-                                src="https://images.ctfassets.net/37vwfxlcawdb/46QuR2Gk0kJykMplBbOMlZ/612aa580ed59e506dd5ab0347b3dcbec/Golv-matta-16-9.jpg?q=50&fm=jpg&w=800" className="h-80 w-[700px]" alt="Pic"/>
+                                src="https://images.ctfassets.net/37vwfxlcawdb/46QuR2Gk0kJykMplBbOMlZ/612aa580ed59e506dd5ab0347b3dcbec/Golv-matta-16-9.jpg?q=50&fm=jpg&w=800" className="h-80 w-[700px]" alt="Pic" />
                         </div>
 
                         <div className="overflow-hidden h-0 transition-all duration-800 ease-in-out group-hover:h-[30vh] delay-200 p-8">
