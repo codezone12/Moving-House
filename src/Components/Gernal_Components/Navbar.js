@@ -105,7 +105,7 @@ const Navbar = () => {
           </p>
         </div>
 
-        <div class="lg:hidden text-5xl cursor-pointer mr-8">
+        <div className="lg:hidden text-5xl cursor-pointer mr-8">
           <p href="#">&#8801;</p>
         </div>
       </nav>

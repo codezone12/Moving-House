@@ -2,7 +2,7 @@ const Zipcode = () => {
 
     return (
         <div className=" bg-[#eae8e1] ">
-            <div class="flex flex-col-reverse lg:flex-row items-center justify-between relative">
+            <div className="flex flex-col-reverse lg:flex-row items-center justify-between relative">
                 <div className="py-4 ml-20 text-black text-5xl font-medium font-['Young Serif']  lg:ml-28  xl:ml-24  2xl:ml-36">
                     <p>Let us help you with </p>
                     <p class="  text-start mt-1 ">everyday life!</p>

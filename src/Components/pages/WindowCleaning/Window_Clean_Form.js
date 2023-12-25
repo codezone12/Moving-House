@@ -73,17 +73,17 @@ const WindowCleaning = () => {
     navigate("/Window_clean");
   };
 
-  useEffect(() => {
+  useEffect(() => { 
     const totalWindows =
       showGlassedBalcony +
       showOverhangedWindows +
       showWithMullions +
       showWithoutMullions;
     // Calculate the window cleaning price when the number of windows changes
-    const windowCleaningPrice = calculateWindowCleaningPrice(totalWindows);
-    setWindowCleaningPrice(windowCleaningPrice);
+    const windowCleaningFinalPrice = calculateWindowCleaningPrice(totalWindows);
+    setWindowCleaningPrice(windowCleaningFinalPrice);
     // Calculate total price by subtracting the discount
-    const total = windowCleaningPrice - discount;
+    const total = windowCleaningFinalPrice - discount;
 
     setTotalPrice(total);
   }, [
@@ -622,7 +622,7 @@ const WindowCleaning = () => {
                   htmlFor="open"
                   className="cursor-pointer flex items-center justify-between w-full"
                 >
-                  <p className="text-xl font-normal">
+                  <p className="text-md font-normal">
                     I will open the door for Hemfrid
                   </p>
                   <div
@@ -663,10 +663,10 @@ const WindowCleaning = () => {
               {/* Radio Button 2 */}
               <div className="flex items-center justify-between mb-2">
                 <label
-                  className="cursor-pointer flex items-center justify-between w-full"
+                  className="cursor-pointer text-left flex items-center justify-between "
                   htmlFor="leave"
                 >
-                  <p className="text-xl font-normal">
+                  <p className="text-md font-normal">
                     I will leave the keys at the Hemfrid office 12 pm the work
                     day before, at the latest
                   </p>
@@ -709,7 +709,7 @@ const WindowCleaning = () => {
               {/* Radio Button 3 */}
               <div className="flex items-center justify-between mb-2">
                 <label
-                  className="text-xl cursor-pointer flex items-center justify-between w-full font-normal"
+                  className="text-md cursor-pointer flex items-center justify-between w-full font-normal"
                   htmlFor="customer"
                 >
                   <p className="text-left">
@@ -774,7 +774,7 @@ const WindowCleaning = () => {
             style={{
               backgroundColor: "#d1dce7",
               width: "300px",
-              height: "auto",
+              height: "420px"
             }}
           >
             <div className="flex-col mt-5 px-5">

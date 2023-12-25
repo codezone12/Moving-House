@@ -5,7 +5,7 @@ const MovingTips = () => {
 
         <div className="py-28  h-fit   bg-[#f5f4f0]">
 
-            <div class="">
+            <div className="">
                 <h3 className="text-5xl font-medium ">Cleaning <span className=" text-gray-700 ">Tips </span> & <span className='text-fuchsia-800'>News</span></h3>
 
                 {/* line content */}
@@ -81,7 +81,7 @@ src="img/m2.jpeg"
 
                     <div className="h-[60vh] mx-16   w-fit "> {/* main box */}
                         {/* image box */}
-                        <div class="hover:animate-svg">
+                        <div className="hover:animate-svg">
                             <svg viewBox="0 0 280 325" class="cfbIs2Ub ahI90hC" style={{ fill: "#d1dce7" }}>
                                 <path d="M140 0L280 85.0667V242.918L140 324.8L0 242.918L2.77158e-05 82.4067L140 0Z"></path>
                             </svg>

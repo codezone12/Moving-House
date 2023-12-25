@@ -47,7 +47,7 @@ const Dhero = () => {
         <p className="text-start">
           Time for a <span className="text-purple-400">Major</span>
         </p>
-        <p class="  text-start mt-1 text-sky-200">Cleaning Job?</p>
+        <p className="  text-start mt-1 text-sky-200">Cleaning Job?</p>
         <div className="flex w-1/2 md:w-2/5  hover:shadow-black text-lg font-bold hover:border-none hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
           <input
             className="flex-1 bg-white focus:border-none focus:outline-none text-black text-right text-lg p-3 rounded-l-lg mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500"
@@ -70,7 +70,7 @@ const Dhero = () => {
                     height="24"
                     width="24"
                     viewBox="0 0 24 24"
-                    class="fcNb"
+                    className="fcNb"
                     style={{ fill: "green" }}
                   >
                     <g>
@@ -96,7 +96,7 @@ const Dhero = () => {
         </button>
         <div className="text-xl mt-10 flex items-start font-normal">
           <div className="mt-5">
-            <div class="flex items-center">
+            <div className="flex items-center">
               <svg
                 height="24"
                 width="24"
@@ -111,7 +111,7 @@ const Dhero = () => {
                   <path d="m17.4 7.114-6.257 6.24-2.828-2.81a.848.848 0 1 0 -1.2 1.2l3.428 3.428a.824.824 0 0 0 1.2 0l6.857-6.858a.849.849 0 0 0 -1.2-1.2z"></path>
                 </g>
               </svg>
-              <p class="ml-2">
+              <p className="ml-2">
                 <span className="animate-bounce text-gray-200 font-bold">
                   Right Now!
                 </span>

@@ -5,12 +5,12 @@ const Todo = () => {
             {/* first content */}
             <div className=" bg-[#f5f4f0] ">
 
-                <div class="flex flex-col-reverse lg:flex-row items-center justify-between relative">
+                <div className="flex flex-col-reverse lg:flex-row items-center justify-between relative">
 
                     <div className="w-1/2 px-6 text-black font-medium font-['Young Serif']  lg:ml-28  xl:ml-16  2xl:ml-36">
 
-                        <p class="text-start text-5xl mt-1">To do before the move</p>
-                        <p class=" text-start text-5xl mt-1 ">out cleaning</p>
+                        <p className="text-start text-5xl mt-1">To do before the move</p>
+                        <p className=" text-start text-5xl mt-1 ">out cleaning</p>
 
                         <div className="w-3/4 mt-10 flex items-start font-normal">
 

@@ -8,8 +8,8 @@ import Image3 from "../../../../Assets/images/New Images/Cleaning_2.jpeg";
 import Image4 from "../../../../Assets/images/New Images/Cleaning_3.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import 'swiper/css/pagination';
-import "swiper/css/navigation"
+import "swiper/css/pagination";
+// import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // const silderImages = [Image1, Image2, Image3, Image4];
@@ -121,13 +121,17 @@ const Hero = () => {
     <>
       <Swiper
         slidesPerView={1}
-        scrollbar={{ draggable: true }}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
-        modules={[Autoplay, Pagination,Navigation]}
-        navigation={true}
+        modules={[ Pagination, Navigation, Autoplay]}
+        // loop={true}
+        
+        navigation={{
+          prevEl: ".prevButton_swiper",
+          nextEl: ".nextButton_swiper",
+          
+        }}
         pagination={true}
         className="mySwiper"
-
       >
         <SwiperSlide>
           {" "}

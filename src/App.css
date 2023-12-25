@@ -119,7 +119,7 @@
 }
 /* Customize the autoplay indicator styles */
 .swiper-pagination-bullet {
-  background-color: #007bff; /* Change the color as desired */
+  background-color: #fff !important; /* Change the color as desired */
   width: 8px;
   height: 8px;
   margin: 0 2px;
@@ -127,4 +127,21 @@
 
 .swiper-pagination-bullet-active {
   background-color: #0056b3; /* Change the color as desired */
+}
+
+.prevButton_swiper {
+  width: 285px;
+  height: 285px;
+  position: absolute;
+  background-color: #fff !important;
+  top: 20px;
+  position: absolute;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 75% 100%, 52% 48%, 75% 0);
+}
+.nextButton_swiper {
+  width: 285px;
+  height: 285px;
+  position: absolute;
+  background-color: #fff !important;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 75% 100%, 100% 49%, 75% 0);
 }

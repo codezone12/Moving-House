@@ -390,8 +390,8 @@ const Footer = () => {
                         @copyright2023 FlyttStäd&Återvinning
                     </p>
                     <p
-                        onclick={() => window.open("https://codezoone.netlify.app/")}
-                        class="text-xs -mt-4 font-bold bg-white p-1 px-2 rounded-3xl relative md:absolute right-0 md:right-4 hover:cursor-pointer hover:font-bold text-center hover:bg-green-400 hover:text-white hover:scale-x-105 hover:duration-300"
+                        onClick={() => window.open("https://codezoone.netlify.app/")}
+                        className="text-xs -mt-4 font-bold bg-white p-1 px-2 rounded-3xl relative md:absolute right-0 md:right-4 hover:cursor-pointer hover:font-bold text-center hover:bg-green-400 hover:text-white hover:scale-x-105 hover:duration-300"
                     >
                         <a href="https://codezoone.netlify.app/" target="_blank">
                             Developed By CodeZone

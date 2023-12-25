@@ -3,7 +3,7 @@ const MWork=()=>{
     return (
         <div>
         
-        <div class="h-fit bg-[#c4d0c7] ">
+        <div className="h-fit bg-[#c4d0c7] ">
             <h3 className="text-5xl font-medium pt-28">How does it <span className="text-fuchsia-800">Work</span></h3>
             
          {/* line content */}
