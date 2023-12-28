@@ -15,7 +15,7 @@ const Tipsinsp = () => {
           <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh] rounded-3xl">
             <div className="relative">
               <img
-                src="https://images.ctfassets.net/37vwfxlcawdb/1TfE1UU6y8uJw1qSaSGma6/2ff488f042edf4fe6a7ce60a33c3abca/Startsida.jpg?q=50&fm=jpg&w=800"
+                src="img/d.jpeg"
                 className="w-[700px] h-80"
                 alt="Pic"
               />
@@ -39,7 +39,7 @@ const Tipsinsp = () => {
           <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh] rounded-3xl">
             <div className="relative">
               <img
-                src="https://images.ctfassets.net/37vwfxlcawdb/1TfE1UU6y8uJw1qSaSGma6/2ff488f042edf4fe6a7ce60a33c3abca/Startsida.jpg?q=50&fm=jpg&w=800"
+                src="img/do.jpeg"
                 className="w-[700px] h-80"
                 alt="Pic"
               />
@@ -63,7 +63,7 @@ const Tipsinsp = () => {
           <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh] rounded-3xl">
             <div className="relative">
               <img
-                src="https://images.ctfassets.net/37vwfxlcawdb/4l8RDAxaEze1utGrkmIWcl/fd7bd29adbf662cdd8182b695e1973d9/Sta_d-.jpg?q=50&fm=jpg&w=800"
+                src="img/dc.jpeg"
                 className="w-[700px] h-80"
                 alt="Pic"
               />
@@ -92,7 +92,7 @@ const Tipsinsp = () => {
           <div className="group relative overflow-hidden h-[65vh] bg-[#fff] w-fit top-4 transition-all duration-800 ease-in-out hover:h-[80vh] rounded-3xl">
             <div className="relative">
               <img
-                src="https://images.ctfassets.net/37vwfxlcawdb/4l8RDAxaEze1utGrkmIWcl/fd7bd29adbf662cdd8182b695e1973d9/Sta_d-.jpg?q=50&fm=jpg&w=800"
+                src="img/db.jpeg"
                 className="w-[700px] h-80"
                 alt="Pic"
               />
