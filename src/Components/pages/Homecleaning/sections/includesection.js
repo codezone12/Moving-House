@@ -26,8 +26,7 @@ const Includesection = () => {
         'Make the beds.',
         'Empty and wipe rubbish bins.',
       ],
-      iconUrl:
-        'img/genral.svg',
+     iconUrl: 'img/wi.svg',
     },
     {
       heading: 'Bathrooms',
