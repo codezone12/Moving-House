@@ -62,7 +62,7 @@ const Include = () => {
         "Polish the sink, faucet, stopper, and strainer.",
 
       ],
-      iconUrl: 'img/kitichen.svg',
+      iconUrl: 'img/n1.svg',
     },
     {
       heading: "Hallways",
@@ -72,7 +72,7 @@ const Include = () => {
         "Wiping of the coat rack.",
         "Wiping of fuse cabinet.",
       ],
-      iconUrl: 'img/ha.svg',
+      iconUrl: 'img/n.svg',
     },
 
   ]

@@ -26,7 +26,8 @@ const Zipcode = () => {
                     </div>
                 </div>
                 <div class="w-1/2">
-                    <img src="https://images.ctfassets.net/37vwfxlcawdb/291pWZPpWaYfoUN7hYLfxQ/cf9a96b1956bad85f2ff41bcab4ba558/Kadir-1-1.jpg?q=50&fm=jpg&w=1200" />
+                    <img
+                        src="img/img1.jpeg" />
                 </div>
             </div>
         </div>

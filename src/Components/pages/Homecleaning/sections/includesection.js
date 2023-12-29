@@ -52,7 +52,7 @@ const Includesection = () => {
         'Wipe off the kitchen fan and the outside of other appliances.',
         'Emptying the household rubbish.',
       ],
-      iconUrl: 'img/kitichen.svg',
+      iconUrl: 'img/n1.svg',
     }, {
       heading: 'Our own cleaning products',
       title: 'The cleaning service contract also includes our eco-friendly cleaning products which are delivered to your home and refilled when they run out.',

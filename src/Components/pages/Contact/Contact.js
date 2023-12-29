@@ -21,7 +21,7 @@ const Contact = () => {
                 </div>
             </div>
             <div class="grid gap-4 grid-cols-2 max-w-full">
-                <img src={Image1} alt='hemfred-marketing gaurd' />
+                <img src="img/img.jpeg" alt='hemfred-marketing gaurd' />
                 <div className=' ps-9  flex align-center flex-col justify-center'>
                     <div className='text-left text-5xl font-medium' style={{ fontFamily: 'Tiempos Headline,serif' }}>Need to reach us on the <br /> weekend?</div>
                     <div className="w-full mt-8 flex justify-left items-left mb-5">
@@ -44,10 +44,10 @@ const Contact = () => {
                         <svg width="24" height="24" className="saBgkKB cfbsn65t"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 22.286a10.286 10.286 0 1 1 0-20.572 10.286 10.286 0 0 1 0 20.572Z"></path><path d="M10.886 7.971a.849.849 0 0 0-1.2 1.2L12.497 12l-2.811 2.829a.822.822 0 0 0 0 1.2.823.823 0 0 0 1.2 0l3.428-3.429a.822.822 0 0 0 0-1.2l-3.428-3.429Z"></path></svg>
                         <NavLink to='/new-partener' className='font-semibold text-xl ps-2'>FIND OUT MORE</NavLink>.</p>
                 </div>
-                <img src={Image2} style={{ width: '666px', height: '650px' }} alt='hemfred-marketing section 2' />
+                <img src="img/img1.jpeg" style={{ width: '666px', height: '650px' }} alt='hemfred-marketing section 2' />
             </div>
             <div class="grid gap-4 grid-cols-2 max-w-full">
-                <img src={Image3} style={{ width: '666px', height: '650px' }} alt='hemfred-marketing section 2' />
+                <img src="img/d.jpeg" style={{ width: '666px', height: '650px' }} alt='hemfred-marketing section 2' />
                 <div className='ps-9   flex align-center flex-col justify-center'>
                     <div className='text-left text-5xl font-medium' style={{ fontFamily: 'Tiempos Headline,serif' }}>Home cleaning as <br /> salary benefit</div>
                     <div className="w-full mt-8 flex justify-left items-left mb-5">

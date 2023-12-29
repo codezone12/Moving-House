@@ -8,7 +8,7 @@ const ZipeCode = () => {
                     <p>Let us help you with </p>
                     <p class="  text-start mt-1 ">everyday life!</p>
                     <div className="flex justify-start w-full">
-                    <input className="bg-white focus:border-none focus:outline-none w-full text-black text-center text-lg p-3 rounded-md mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 hover:shadow-lg hover:shadow-black hover:bg-white transform hover:scale-90 transition-transform delay-200 hover:placeholder-gray-500" placeholder="ENTER ZIPCODE" />
+                        <input className="bg-white focus:border-none focus:outline-none w-full text-black text-center text-lg p-3 rounded-md mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 hover:shadow-lg hover:shadow-black hover:bg-white transform hover:scale-90 transition-transform delay-200 hover:placeholder-gray-500" placeholder="ENTER ZIPCODE" />
                     </div>
                     <div className="flex justify-center items-center w-full bg-opacity-80 hover:shadow-lg hover:shadow-black bg-[#1e1e1e] text-lg font-bold mt-4 p-5 rounded-md transform hover:scale-90 transition-transform delay-200">
 
@@ -27,7 +27,8 @@ const ZipeCode = () => {
                     </div>
                 </div>
                 <div class="w-1/2">
-                    <img src="https://images.ctfassets.net/37vwfxlcawdb/291pWZPpWaYfoUN7hYLfxQ/cf9a96b1956bad85f2ff41bcab4ba558/Kadir-1-1.jpg?q=50&fm=jpg&w=1200" />
+                    <img
+                        src="img/img.jpeg" />
                 </div>
             </div>
         </div>

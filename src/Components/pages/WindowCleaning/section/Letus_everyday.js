@@ -29,7 +29,8 @@ const Letus = () => {
                         </div>
                     </div>
                     <div class="w-full sm:w-1/2">
-                        <img src="https://images.ctfassets.net/37vwfxlcawdb/7fWbcFeBHqqE7AeYxEdPAt/7986be25c26675e0df8913782c56652c/Vikt-tvatt-sang2-1-1.jpg?q=50&fm=jpg&w=1200" />
+                        <img
+                            src="img/img1.jpeg" />
                     </div>
                 </div>
             </div>
@@ -43,8 +44,8 @@ const Letus = () => {
                 <div class="flex flex-col lg:flex-row items-center justify-between relative">
 
                     <div class="w-full sm:w-1/2">
-                        <img src="https://images.ctfassets.net/37vwfxlcawdb/2wM22eQHuAdHeRb24Ie9iA/38c2b29f1ea72b6e16187ae2704988d6/Applen-mark1-1.jpg?q=50&fm=jpg&w=1200" />
-                    </div>
+                        <img
+                            src="img/img.jpeg" />                    </div>
 
                     <div className="text-start py-4 lg:pr-16 text-black text-5xl font-medium font-['Young Serif']  lg:ml-20  ">
 
@@ -53,18 +54,18 @@ const Letus = () => {
                         <p class="   m-1 text-green-500">deduction works</p>
 
                         <div className="text-base hover:scale-110 transition duration-500">
-                        <p class="   mt-10 "   >It’s actually very simple. If you meet the conditions for RUT, you</p>
-                        <p class="   mt-1 "  >only pay 50 percent of the labor cost. We give you quotes for our</p>
-                        <p class="   mt-1 "  >services, and the prices for household services are always set</p>
-                        <p class="   mt-1 "   >after RUT, so that it is easy for you to see how much the service</p>
-                        <p class="   mt-1 "  >costs after the discount. When you receive the invoice, we will</p>
-                        <p class="   mt-1 "  >arrange everything with the Swedish Tax Agency.</p>
+                            <p class="   mt-10 "   >It’s actually very simple. If you meet the conditions for RUT, you</p>
+                            <p class="   mt-1 "  >only pay 50 percent of the labor cost. We give you quotes for our</p>
+                            <p class="   mt-1 "  >services, and the prices for household services are always set</p>
+                            <p class="   mt-1 "   >after RUT, so that it is easy for you to see how much the service</p>
+                            <p class="   mt-1 "  >costs after the discount. When you receive the invoice, we will</p>
+                            <p class="   mt-1 "  >arrange everything with the Swedish Tax Agency.</p>
 
                         </div>
                         <button className="mt-5 px-4 py-2 text-lg font-semibold rounded-lg overflow-hidden relative group cursor-pointer bg-[#044946]  hover:scale-105 duration-[700ms]">
                             <span className="absolute w-64 h-0 transition-all duration-[700ms] origin-center rotate-45 -translate-x-20 bg-[#1fa299] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
                             <span className="relative text-white transition duration-[700ms] group-hover:text-white ease">
-                               FIND OUT MORE
+                                FIND OUT MORE
                             </span>
                         </button>
                     </div>

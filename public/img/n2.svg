@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d9fd9;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #3a4284;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="cleaning_products" data-name="cleaning products">
+      <g id="Group_24" data-name="Group 24">
+        <path id="Vector_42" data-name="Vector 42" class="cls-2" d="m380,138.74c0-35.23-25.06-65.82-59.6-72.76l-79.24-15.91H110.47v29.77h68.87v75.84l-24.14,21.87v27.45c43.98,17.4,75.17,60.35,75.17,110.44v64.56h149.63v-241.26Zm-43.11,84.24c0,11.69-9.51,21.2-21.2,21.2h-39.85V102.9l34.51,5.87c15.38,2.62,26.54,15.84,26.54,31.44v82.77h0Z"/>
+        <path id="Vector_43" data-name="Vector 43" class="cls-1" d="m19.91,196.66H0v22.2h19.91c19.34,0,35.86-12.23,42.27-29.35l-20.3-9.22c-2.83,9.46-11.6,16.37-21.97,16.37Z"/>
+        <path id="Vector_44" data-name="Vector 44" class="cls-2" d="m130.25,0h69.93v27.87h-69.93V0Z"/>
+        <path id="Vector_45" data-name="Vector 45" class="cls-1" d="m28.42,149.13l59.66,29.14v20.82c7.62-1.55,15.5-2.36,23.57-2.36,7.53,0,14.88.71,22.02,2.06v-30.85l24.14-21.46v-45.12H28.42v13.38H0v22.19h28.42v12.2Z"/>
+        <path id="Vector_46" data-name="Vector 46" class="cls-1" d="m103.03,269.92v-51.28c-33.48,2.96-62.15,22.97-77.22,51.28h77.22Z"/>
+        <path id="Vector_47" data-name="Vector 47" class="cls-1" d="m206,292.11h-80.78v43.12h-22.19v-43.12H17.3c-1.85,7.48-2.84,15.29-2.84,23.33v64.56h194.38v-64.56c0-8.04-.99-15.85-2.84-23.33Z"/>
+        <path id="Vector_48" data-name="Vector 48" class="cls-1" d="m125.22,269.92h72.28c-14.33-26.91-40.93-46.32-72.28-50.71v50.71Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

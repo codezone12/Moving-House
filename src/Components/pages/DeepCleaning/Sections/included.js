@@ -47,7 +47,7 @@ const Included = () => {
         "Empty the rubbish and wipe clean the rubbish bin.",
         "Polish the sink, faucet, stopper, and strainer.",
       ],
-      iconUrl: 'img/kitichen.svg',
+      iconUrl: 'img/n1.svg',
     },
     {
       heading: "Bathrooms",
@@ -77,7 +77,7 @@ const Included = () => {
         "Dry dusting or vacuuming of the headboard/-bed frame.",
       ],
       iconUrl:
-        'img/ed.svg',
+        'img/n2.svg',
     },
     {
       heading: "Hallways",
@@ -89,7 +89,7 @@ const Included = () => {
         "Wiping of fuse cabinet.",
       ],
       iconUrl:
-        'img/ha.svg',
+        'img/n.svg',
     },
     {
       heading: "Additional services",
