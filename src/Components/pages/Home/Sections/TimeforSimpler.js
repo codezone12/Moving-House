@@ -91,7 +91,7 @@ const TimeforSimple = () => {
                     <div>{!hideInitialForm && (
                         <>
                             {" "}
-                            <div className="flex w-1/2 md:w-2/5 hover:shadow-lg hover:shadow-black text-lg font-bold hover:border-none hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
+                            <div className="flex hover:shadow-lg hover:shadow-black text-lg font-bold hover:border-none hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
                                 <input
                                     className="flex-1 bg-white focus:border-none focus:outline-none text-black text-right text-lg p-3 rounded-l-lg mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500"
                                     type="number"
@@ -175,7 +175,7 @@ const TimeforSimple = () => {
                                 <select
                                     value={selectedService}
                                     onChange={(e) => handleServiceSelect(e.target.value)}
-                                    className="flex-1  text-black text-lg p-4 rounded-lg placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500"
+                                    className="flex-1 w-5/6  text-black text-lg p-4 rounded-lg placeholder-black font-bold cursor-pointer bg-opacity-90 transform transition-transform delay-200 hover:placeholder-gray-500"
                                 >
                                     <option value="" disabled>
                                         Select a service
