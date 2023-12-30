@@ -128,6 +128,17 @@
 .swiper-pagination-bullet-active {
   background-color: #0056b3; /* Change the color as desired */
 }
+/* Disable pointer events on hover for the Swiper container */
+/* Disable pointer events on hover for the Swiper container */
+.mySwiper:hover {
+  pointer-events: none;
+}
+
+/* Additional rule to ensure Swiper autoplay continues on hover */
+.swiper-autoplay-fix:hover {
+  pointer-events: auto;
+}
+
 
 .prevButton_swiper {
   width: 285px;

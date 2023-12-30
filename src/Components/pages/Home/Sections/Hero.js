@@ -121,14 +121,14 @@ const Hero = () => {
     <>
       <Swiper
         slidesPerView={1}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
-        modules={[ Pagination, Navigation, Autoplay]}
+        autoplay={{ delay: 10000, disableOnInteraction: false }}
+        modules={[Pagination, Navigation, Autoplay]}
         // loop={true}
-        
+
         navigation={{
           prevEl: ".prevButton_swiper",
           nextEl: ".nextButton_swiper",
-          
+
         }}
         pagination={true}
         className="mySwiper"
@@ -160,7 +160,7 @@ const Hero = () => {
               {!hideInitialForm && (
                 <>
                   {" "}
-                  <div className="flex w-1/2 md:w-2/5 hover:shadow-lg hover:shadow-black text-lg font-bold hover:border-none hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
+                  <div className="fixed-input-container flex w-1/2 md:w-2/5 hover:shadow-lg hover:shadow-black text-lg font-bold hover:border-none hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
                     <input
                       className="flex-1 bg-white focus:border-none focus:outline-none text-black text-right text-lg p-3 rounded-l-lg mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500"
                       type="number"
