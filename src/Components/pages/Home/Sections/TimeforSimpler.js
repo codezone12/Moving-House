@@ -1,0 +1,268 @@
+import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router";
+
+import { ZIPCODES } from "../../../Constants/Constant";
+
+const TimeforSimple = () => {
+    const [city, setCity] = useState("");
+    const [code, setCode] = useState("");
+    const zipcodeRef = useRef();
+    const [hideInitialForm, setHideInitialForm] = useState(false);
+    const [selectedService, setSelectedService] = useState("");
+    const [showSquareMeterInput, setShowSquareMeterInput] = useState(false);
+    const [squareMeter, setSquareMeter] = useState("");
+    const [show, setShow] = useState(false);
+    const handleCitySelection = () => {
+        setHideInitialForm(true);
+    };
+    const handleServiceSelect = (selectedService) => {
+        setSelectedService(selectedService);
+        setShowSquareMeterInput(true);
+    };
+    const navigate = useNavigate();
+    const handleSquareMeterInputChange = (e) => {
+        setSquareMeter(e.target.value);
+    };
+    const handleNavigate = () => {
+        let route = "/Booking"; // Default route for Home Cleaning
+
+        switch (selectedService) {
+            case "Home Cleaning":
+                route = "/Booking";
+                break;
+            case "Window Cleaning":
+                route = "/window_cleaning";
+                break;
+            case "Deep Cleaning":
+                route = "/deep_cleaning";
+                break;
+            case "Move Out Cleaning":
+                route = "/moving_service";
+                break;
+            default:
+                // Default to /Booking if the selected service is not recognized
+                route = "/Booking";
+        }
+
+        navigate(route, {
+            state: {
+                data: {
+                    city,
+                    selectedService,
+                    squareMeter,
+                },
+            },
+        });
+    };
+    const handleInputChange = (e) => {
+        const enteredZipCode = e.target.value;
+        const isValidZipCode = /^[0-9]{1,5}$/.test(enteredZipCode);
+        const filteredCity = ZIPCODES.filter(
+            (item) => item?.zipcode == enteredZipCode
+        );
+        if (filteredCity.length > 0) {
+            setCode(e.target.value);
+            setCity(filteredCity[0]?.city);
+            setShow(true);
+        } else {
+            setCode(e.target.value);
+            setShow(false);
+        }
+    };
+    const handleRef = () => {
+        zipcodeRef.current.focus();
+    };
+
+    const isButtonDisabled = !city || !code;
+
+    return (
+        <div className="  bg-[#eae8e1] overflow-clip font-['Roboto']">
+
+            <div className="flex flex-col-reverse lg:flex-row  items-center ">
+                {/* first content */}
+
+                <div className=" my-20 px-4 lg:px-20  text-black text-5xl font-medium font-['Young Serif']    ">
+                    <p>Time for a simpler</p>
+                    <p class="  text-start mt-1 ">everyday life?</p>
+                    <div className="w-full  flex justify-start mt-8 hover:w-40">
+                        <p className=" border-black border-2 w-20" ></p>
+                    </div>
+
+                    <div>{!hideInitialForm && (
+                        <>
+                            {" "}
+                            <div className="flex w-1/2 md:w-2/5 hover:shadow-lg hover:shadow-black text-lg font-bold hover:border-none hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
+                                <input
+                                    className="flex-1 bg-white focus:border-none focus:outline-none text-black text-right text-lg p-3 rounded-l-lg mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500"
+                                    type="number"
+                                    placeholder="ENTER ZIPCODE"
+                                    value={code}
+                                    maxLength="5"
+                                    ref={zipcodeRef}
+                                    onChange={handleInputChange}
+                                />
+
+                                <div
+                                    onClick={handleRef}
+                                    className="flex-1 flex items-center justify-between bg-white focus:border-none focus:outline-none text-black text-lg p-3 rounded-r-lg mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500"
+                                >
+                                    {show && city && (
+                                        <>
+                                            <p className="text-left">{city} </p>
+                                            <p>
+                                                <svg
+                                                    height="24"
+                                                    width="24"
+                                                    viewBox="0 0 24 24"
+                                                    class="fcNb"
+                                                    style={{ fill: "green" }}
+                                                >
+                                                    <g>
+                                                        <path d="m12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 22.286a10.286 10.286 0 1 1 0-20.572 10.286 10.286 0 0 1 0 20.572z"></path>
+                                                        <path d="m17.4 7.114-6.257 6.24-2.828-2.81a.848.848 0 1 0 -1.2 1.2l3.428 3.428a.824.824 0 0 0 1.2 0l6.857-6.858a.849.849 0 0 0 -1.2-1.2z"></path>
+                                                    </g>
+                                                </svg>
+                                            </p>
+                                        </>
+                                    )}
+                                </div>
+                            </div>
+                            <div
+                                className="w-2/5 border-0"
+                                style={{ marginTop: "-10px" }}
+                            >
+                                {!show && code.length >= 1 && code.length <= 4 && (
+                                    <p className="text-red-500 text-xs text-center mt-2">
+                                        This is not a valid zip code.
+                                    </p>
+                                )}
+
+                                {!show && code.length === 5 && (
+                                    <p className="text-red-500 text-xs text-center mt-2">
+                                        Unfortunately, none of our services are available in the
+                                        area.
+                                    </p>
+                                )}
+                            </div>
+                            <div className="flex justify-center items-center  mt-4 p-5 hover:shadow-lg hover:shadow-black bg-[#1e1e1e] text-lg font-bold  text-white rounded-md hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
+                                <button
+                                    className={`text-center text-['#fff']`}
+                                    onClick={handleCitySelection}
+                                    disabled={isButtonDisabled}
+                                >
+                                    CHOOSE SERVICES
+                                </button>
+                                <p className="text-center text-4xl  self-end absolute end-0 mr-4 ">
+                                    <svg
+                                        height="20"
+                                        viewBox="0 0 9 15"
+                                        width="20"
+                                        class="csw9N_C5 fiwAtSA"
+                                        style={{ stroke: "#fff" }}
+                                    >
+                                        <path
+                                            d="m.958.995 6.51 6.51-6 6"
+                                            fill="none"
+                                            stroke-width="2"
+                                        ></path>
+                                    </svg>
+                                </p>
+                            </div>
+                        </>
+                    )}
+                        {hideInitialForm && (
+                            <div>
+                                <select
+                                    value={selectedService}
+                                    onChange={(e) => handleServiceSelect(e.target.value)}
+                                    className="flex-1  text-black text-lg p-4 rounded-lg placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500"
+                                >
+                                    <option value="" disabled>
+                                        Select a service
+                                    </option>
+                                    <option value="Home Cleaning">Home Cleaning</option>
+                                    <option value="Window Cleaning">Window Cleaning</option>
+                                    <option value="Deep Cleaning">Deep Cleaning</option>
+                                    <option value="Move Out Cleaning">Move Out Cleaning</option>
+                                </select>
+                                {showSquareMeterInput && (
+                                    <div className="flex ">
+                                        <input
+                                            type="number"
+                                            value={squareMeter}
+                                            onChange={handleSquareMeterInputChange}
+                                            className="flex-1 bg-white focus:border-none focus:outline-none text-black text-right text-lg p-3 rounded-l-lg mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500"
+                                            placeholder="Enter Square Meter"
+                                        />
+
+                                        <div className="flex-1 flex items-center justify-between bg-white focus:border-none focus:outline-none text-black text-lg p-3 rounded-r-lg mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500">
+                                            {squareMeter && (
+                                                <>
+                                                    <p className="text-left"> sqm </p>
+                                                    <p className="text-right">
+                                                        <svg
+                                                            height="24"
+                                                            width="24"
+                                                            viewBox="0 0 24 24"
+                                                            class="fcNb"
+                                                            style={{ fill: "green" }}
+                                                        >
+                                                            <g>
+                                                                <path d="m12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 22.286a10.286 10.286 0 1 1 0-20.572 10.286 10.286 0 0 1 0 20.572z"></path>
+                                                                <path d="m17.4 7.114-6.257 6.24-2.828-2.81a.848.848 0 1 0 -1.2 1.2l3.428 3.428a.824.824 0 0 0 1.2 0l6.857-6.858a.849.849 0 0 0 -1.2-1.2z"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </p>
+                                                </>
+                                            )}
+                                        </div>
+                                    </div>
+                                )}
+                                <div className="flex justify-center items-center  bg-opacity-80 hover:shadow-lg hover:shadow-black bg-[#1e1e1e] text-lg font-bold mt-4 p-5 rounded-md hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
+                                    <button
+                                        className={`text-center text-['#fff']`}
+                                        onClick={handleNavigate}
+                                        disabled={!selectedService || !squareMeter}
+                                    >
+                                        CHOOSE SERVICES
+                                    </button>
+                                    <p className="text-center text-4xl  self-end absolute end-0 mr-4 ">
+                                        <svg
+                                            height="20"
+                                            viewBox="0 0 9 15"
+                                            width="20"
+                                            class="csw9N_C5 fiwAtSA"
+                                            style={{ stroke: "#fff" }}
+                                        >
+                                            <path
+                                                d="m.958.995 6.51 6.51-6 6"
+                                                fill="none"
+                                                stroke-width="2"
+                                            ></path>
+                                        </svg>
+                                    </p>
+                                </div>
+                            </div>
+                        )}</div>
+
+                </div>
+
+
+
+
+
+
+                {/* second content */}
+                <div className=" lg:ml-auto w-[50vw] lg:w-[47vw] overflow-hidden">
+                    <img
+                        src="img/img1.jpeg"
+                        className=" w-[100vw]" alt="pic_image" />
+                </div>
+
+            </div>
+        </div>
+
+    );
+
+}
+export default TimeforSimple;

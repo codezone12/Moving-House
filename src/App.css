@@ -1,0 +1,158 @@
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.react-calendar {
+  width: 60% !important;
+}
+
+/* Custom styling for checkboxes */
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.checkbox-input {
+  display: none; /* Hide the default checkbox */
+}
+
+.checkbox-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-size: cover;
+}
+
+/* Custom styles for the tick icon */
+.checkbox-icon.checked {
+  background-image: url("./Assets/images/tick_icon.png"); /* Replace 'path-to-tick-icon.png' with your tick icon image */
+}
+.guideSelector {
+  width: auto;
+  background-color: #fff;
+  display: inline-flex;
+  position: relative;
+  min-height: 40px;
+  align-items: center;
+  /* padding: 20px; */
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.moveOutcleaing_select {
+  background-color: #fff;
+  color: #1e1e1e;
+  display: inline-flex;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  width: auto;
+}
+.hiH3WVS {
+  width: 10px;
+  height: 10px;
+}
+.csbbM95O {
+  stroke: #1e1e1e;
+}
+.cross_icon_box {
+  margin-top: 80px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #eae8e1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.icons_bodyByVisit {
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 38%;
+  margin-left: 220px;
+}
+
+.irER7.irER7 {
+  transform: rotate(-180deg);
+  transform-origin: center;
+}
+.Tiempos-font {
+  font-family: "Tiempos Headline,serif";
+}
+.usVIzJZ .uiyb_O3 {
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.5));
+}
+.cfwk5OWE {
+  fill: #fff;
+}
+.sajmU_X.sajmU_X {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  margin: auto;
+}
+.irQ7jMe.irQ7jMe {
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+.csbbM95O {
+  stroke: #1e1e1e;
+}
+/* Customize the autoplay indicator styles */
+.swiper-pagination-bullet {
+  background-color: #fff !important; /* Change the color as desired */
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0056b3; /* Change the color as desired */
+}
+/* Disable pointer events on hover for the Swiper container */
+/* Disable pointer events on hover for the Swiper container */
+.mySwiper:hover {
+  pointer-events: none;
+}
+
+/* Additional rule to ensure Swiper autoplay continues on hover */
+.swiper-autoplay-fix:hover {
+  pointer-events: auto;
+}
+
+
+.prevButton_swiper {
+  width: 285px;
+  height: 285px;
+  position: absolute;
+  background-color: #fff !important;
+  top: 20px;
+  position: absolute;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 75% 100%, 52% 48%, 75% 0);
+}
+.nextButton_swiper {
+  width: 285px;
+  height: 285px;
+  position: absolute;
+  background-color: #fff !important;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 75% 100%, 100% 49%, 75% 0);
+}

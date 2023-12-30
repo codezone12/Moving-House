@@ -1,0 +1,28 @@
+/* styles.css */
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      fill: #f0c941; /* Change fill color to yellow at start */
+    }
+    100% {
+      transform: rotate(360deg);
+      fill: #ffffff; /* Change fill color to white at the end */
+    }
+  }
+  
+  @keyframes scaleUp {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .hover\:animate-svg:hover svg {
+    animation: spin 2s linear infinite, scaleUp 1s ease-in-out 2s;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  
+  
