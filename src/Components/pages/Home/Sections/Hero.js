@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 import Image1 from "../../../../Assets/images/New Images/Cleaning_9.jpeg";
 import Image2 from "../../../../Assets/images/New Images/Moving_8.jpeg";
 import Image3 from "../../../../Assets/images/New Images/Cleaning_2.jpeg";
-import Image4 from "../../../../Assets/images/New Images/Cleaning_3.jpg";
+import Image4 from "../../../../Assets/images/New Images/Cleaning_1.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
