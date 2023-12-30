@@ -14,7 +14,7 @@ const W_Home = () => {
       <Work />
       <Faq />
       {/* <Anders /> */}
-      <Cleaningtips />
+      {/* <Cleaningtips /> */}
       <Letus />
     </div>
   );

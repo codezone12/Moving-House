@@ -314,7 +314,7 @@ const Hero = () => {
                 </div>
               )}
               <div className="text-2xl mt-10 pb-8 flex items-start font-normal">
-                <ul>
+                {/* <ul>
                   <li className="">
                     {" "}
                     <svg
@@ -367,7 +367,7 @@ const Hero = () => {
                     Insured &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp;
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
@@ -381,12 +381,12 @@ const Hero = () => {
             }}
           >
             <div className="text-start mr-auto pt-40 md:px-28 px-10 text-white text-5xl font-medium font-['Young Serif'] ">
-              <p className="">
+              {/* <p className="">
                 More <span className="text-yellow-500">quality of</span>
               </p>
               <p className=" mt-1">
                 <span className="text-yellow-500">life</span> this fall
-              </p>
+              </p> */}
               <span
                 className="text-left font-bold"
                 style={{ color: colorMapping[text] || "black" }}
@@ -553,7 +553,7 @@ const Hero = () => {
                 </div>
               )}
               <div className="text-2xl mt-10 pb-8 flex items-start font-normal">
-                <ul>
+                {/* <ul>
                   <li className="">
                     {" "}
                     <svg
@@ -606,7 +606,7 @@ const Hero = () => {
                     Insured &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp;
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
@@ -620,12 +620,12 @@ const Hero = () => {
             }}
           >
             <div className="text-start mr-auto pt-40 md:px-28 px-10 text-white text-5xl font-medium font-['Young Serif'] ">
-              <p className="">
+              {/* <p className="">
                 More <span className="text-yellow-500">quality of</span>
               </p>
               <p className=" mt-1">
                 <span className="text-yellow-500">life</span> this fall
-              </p>
+              </p> */}
               <span
                 className="text-left font-bold"
                 style={{ color: colorMapping[text] || "black" }}
@@ -792,7 +792,7 @@ const Hero = () => {
                 </div>
               )}
               <div className="text-2xl mt-10 pb-8 flex items-start font-normal">
-                <ul>
+                {/* <ul>
                   <li className="">
                     {" "}
                     <svg
@@ -845,7 +845,7 @@ const Hero = () => {
                     Insured &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp;
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
@@ -859,12 +859,12 @@ const Hero = () => {
             }}
           >
             <div className="text-start mr-auto pt-40 md:px-28 px-10 text-white text-5xl font-medium font-['Young Serif'] ">
-              <p className="">
+              {/* <p className="">
                 More <span className="text-yellow-500">quality of</span>
               </p>
               <p className=" mt-1">
                 <span className="text-yellow-500">life</span> this fall
-              </p>
+              </p> */}
               <span
                 className="text-left font-bold"
                 style={{ color: colorMapping[text] || "black" }}
@@ -1031,7 +1031,7 @@ const Hero = () => {
                 </div>
               )}
               <div className="text-2xl mt-10 pb-8 flex items-start font-normal">
-                <ul>
+                {/* <ul>
                   <li className="">
                     {" "}
                     <svg
@@ -1084,7 +1084,7 @@ const Hero = () => {
                     Insured &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp;
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>

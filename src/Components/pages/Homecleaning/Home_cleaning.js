@@ -17,7 +17,7 @@ const Home_Cleaning = () => {
       <Premium />
       <AskedSection />
       {/* <Emma /> */}
-      <TNews />
+      {/* <TNews /> */}
       <ZipeCode />
     </div>
   );

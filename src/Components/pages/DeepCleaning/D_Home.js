@@ -15,7 +15,7 @@ const DHome = () => {
       <Work />
       <FAQ />
       {/* <Sabina /> */}
-      <Tips />
+      {/* <Tips /> */}
       <Zipcode />
     </div>
   );

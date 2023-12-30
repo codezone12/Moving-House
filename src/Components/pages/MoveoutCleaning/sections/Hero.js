@@ -220,7 +220,7 @@ const MHero = () => {
             <div className="text-xl mt-10 flex items-start font-normal">
               <div className="mt-5">
                 <div class="flex items-center">
-                  <svg
+                  {/* <svg
                     height="24"
                     width="24"
                     viewBox="0 0 24 24"
@@ -233,8 +233,8 @@ const MHero = () => {
                       <path d="m12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 22.286a10.286 10.286 0 1 1 0-20.572 10.286 10.286 0 0 1 0 20.572z"></path>
                       <path d="m17.4 7.114-6.257 6.24-2.828-2.81a.848.848 0 1 0 -1.2 1.2l3.428 3.428a.824.824 0 0 0 1.2 0l6.857-6.858a.849.849 0 0 0 -1.2-1.2z"></path>
                     </g>
-                  </svg>
-                  <p class="ml-2">
+                  </svg> */}
+                  {/* <p class="ml-2">
                     <span className="animate-bounce text-gray-200 font-bold">
                       Right Now!
                     </span>
@@ -249,10 +249,10 @@ const MHero = () => {
                     Use the code{" "}
                     <span className="font-bold text-black text-lg">OKT50</span>{" "}
                     to activate the offer.
-                  </p>
+                  </p> */}
                 </div>
 
-                <div className="my-6 text-lg text-start hover:shake">
+                {/* <div className="my-6 text-lg text-start hover:shake">
                   <i>
                     <span className="font-bold text-black">Terms:</span>Offer
                     valid for new customers only. Your first home <br />{" "}
@@ -260,7 +260,7 @@ const MHero = () => {
                     The discount cannot be combined with other promotions or
                     offer.{" "}
                   </i>
-                </div>
+                </div> */}
               </div>
             </div>
           </>

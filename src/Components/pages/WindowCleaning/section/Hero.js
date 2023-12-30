@@ -104,7 +104,7 @@ const Hero = () => {
         <div className="text-xl mt-10 flex items-start font-normal">
           <div className="mt-5">
             <div class="flex items-center">
-              <svg
+              {/* <svg
                 height="24"
                 width="24"
                 viewBox="0 0 24 24"
@@ -124,9 +124,9 @@ const Hero = () => {
                 </span>
                 <span className="text-orange-200 font-bold ml-2 mr-1">50%</span>
               </p>
-              <p> discount on your first invoice</p>
+              <p> discount on your first invoice</p> */}
             </div>
-            <div className="my-6 text-base text-start">
+            {/* <div className="my-6 text-base text-start">
               <p>
                 Use the code{" "}
                 <span className="font-bold text-black text-lg">OKT50</span> to
@@ -141,7 +141,7 @@ const Hero = () => {
                 done no later than November 30,2023. <br />
                 The discount cannot be combined with other promotions or offer.{" "}
               </i>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

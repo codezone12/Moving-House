@@ -15,7 +15,7 @@ return (
         <Todo />
         <MWork />
         <Faq />
-        <Movingtip />
+        {/* <Movingtip /> */}
         <Letus />
     </div>
 )
