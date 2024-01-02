@@ -132,9 +132,10 @@ const TimeforSimple = () => {
                                 style={{ marginTop: "-10px" }}
                             >
                                 {!show && code.length >= 1 && code.length <= 4 && (
-                                    <p className="text-red-500 text-xs text-center mt-2">
-                                        This is not a valid zip code.
-                                    </p>
+                                    <p className="text-red-500 text-xs text-center mt-2 flex items-center justify-center me-20px">
+                                    This is not a valid zip code.
+                                </p>
+                                
                                 )}
 
                                 {!show && code.length === 5 && (

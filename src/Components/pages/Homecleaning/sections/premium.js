@@ -24,7 +24,7 @@ const Premium = () => {
                         <p className="text-start">wishes and we will take care of the rest.</p>
                     </div >
                     <div className="text-base text-start">
-                        <p> Read more about <span className="underline font-semibold">Hemfrid Premium.</span> </p>
+                        <p> Read more about <span className="underline font-semibold">FlyttStad&Altervining Premium.</span> </p>
                     </div>
                 </div>
 

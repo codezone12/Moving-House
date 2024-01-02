@@ -4,7 +4,7 @@ const WhyHermified = () => {
     return (
 
         <div class="h-fit bg-[#e2c6bb] font-['Roboto']">
-            <h3 className="text-5xl font-medium pt-28 on ">Why <span className="text-green-500">Hemfrid?</span></h3>
+            <h3 className="text-5xl font-medium pt-28 on ">Why <span className="text-green-500">SFA?</span></h3>
 
             {/* line content */}
             <div class="w-full flex justify-center mt-8 relative group ">

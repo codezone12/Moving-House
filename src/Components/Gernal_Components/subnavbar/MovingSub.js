@@ -17,7 +17,7 @@ const MovingSub = ({setisHover}) => {
                                <IoIosArrowForward className='ml-auto w-9 h-9'/>
                                </Link>
 <ul className='grid grid-cols-2 gap-8 text-xl'>
-  <Link to='/Home_clean' className='col-span-1 border-b-2 border-gr1 py-2 flex hover:border-rounded'>
+  <Link to='/Moving_Home' className='col-span-1 border-b-2 border-gr1 py-2 flex hover:border-rounded'>
     <li className="square-border hover:font-semibold">Moving Service</li>
     <IoIosArrowForward className='ml-auto w-7 h-7' />
   </Link>

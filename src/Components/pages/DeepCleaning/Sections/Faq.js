@@ -9,7 +9,7 @@ const FAQ = () => {
         {
             question: "Do I get a guarantee on the deep cleaning?",
             answer:
-                "Of course! You always get a (2) two-day guarantee on Deep cleaning from Hemfrid."
+                "Of course! You always get a (2) two-day guarantee on Deep cleaning from FlyttStad&Altervining."
         },
         {
             question: "Do I need to prepare anything before the deep cleaning?",

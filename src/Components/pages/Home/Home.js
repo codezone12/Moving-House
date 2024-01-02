@@ -18,7 +18,7 @@ const Home = () => {
         <WhyHermified />
         <Review />
         {/* <Appsection /> */}
-        <Tipsinsp />
+        {/* <Tipsinsp /> */}
         <WorkAtHemfird />
         <Cleaningtoloc />
         <TimeforSimple />
