@@ -49,7 +49,7 @@ const FAQ = () => {
                 <div>
                     <div className="relative bg-gray-100 min-h-full lg:min-h-screen w-full flex flex-col items-center gap-8 ">
                         <h2 className="font-bold text-5xl mb-3">
-                            FAQ about <span className="text-gray-700">Move Out </span> <span className='text-fuchsia-800'>Cleaning</span>{" "}
+                            FAQ about <span className="text-red-600">Move Out </span> <span className='text-red-600'>Cleaning</span>{" "}
                         </h2>
                         {faqs.map(({ question, answer }, i) => (
                             <div

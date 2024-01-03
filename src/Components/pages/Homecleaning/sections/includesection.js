@@ -26,7 +26,7 @@ const Includesection = () => {
         'Make the beds.',
         'Empty and wipe rubbish bins.',
       ],
-     iconUrl: 'img/wi.svg',
+      iconUrl: 'img/wi.svg',
     },
     {
       heading: 'Bathrooms',
@@ -37,7 +37,7 @@ const Includesection = () => {
         'Wipe off bathroom cabinets and appliances.',
       ],
       iconUrl:
-        'img/bath.svg',
+        'img/ha.svg',
     },
 
     {
@@ -51,11 +51,11 @@ const Includesection = () => {
         'Wipe off the kitchen fan and the outside of other appliances.',
         'Emptying the household rubbish.',
       ],
-      iconUrl: 'img/n1.svg',
+      iconUrl: 'img/de2.svg',
     }, {
       heading: 'Our own cleaning products',
       title: 'The cleaning service contract also includes our eco-friendly cleaning products which are delivered to your home and refilled when they run out.',
-      iconUrl: 'img/product.svg',
+      iconUrl: 'img/wi.svg',
     },];
   const [isHovered, setIsHovered] = useState(null);
 
@@ -70,7 +70,7 @@ const Includesection = () => {
     <div className='py-14 bg-[#eae8e1]'>
       <div className=' relative'>
         <div className='pt-12 text-5xl font-bold text-red-800'>
-          What is included in our <span className='text-yellow-300'>Home</span> <span className='text-green-600'>Cleaning</span>?
+          What is included in our <span className='text-orange-600'>Home</span> <span className='text-orange-600'>Cleaning</span>?
         </div>
         <div className='w-full mt-8 flex justify-center items-center'>
           <p className='border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400'></p>

@@ -45,7 +45,7 @@ const Includesection = () => {
     {
       heading: "Our own cleaning products",
       title: "The cleaning service contract also includes our eco-friendly cleaning products which are delivered to your home and refilled when they run out.",
-      iconUrl: 'img/wi4.svg',
+      iconUrl: 'img/n.svg',
     },
 
   ]
@@ -54,7 +54,7 @@ const Includesection = () => {
     <div className="py-14 bg-[#eae8e1] ">
       <div className="   relative  ">
 
-        <div className="pt-12 text-5xl font-bold">What is included in our <span className='text-green-500'>Window </span><span className='text-cyan-500'>Cleaning?</span></div>
+        <div className="pt-12 text-5xl font-bold">What is included in our <span className='text-orange-600'>Window </span><span className='text-orange-600'>Cleaning?</span></div>
         <div className="w-full mt-8  flex justify-center items-center">
           <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
         </div>
@@ -74,7 +74,7 @@ const Includesection = () => {
                 <AccordionButton className='group'>
                   <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
                     <div className='flex hover:shake'>
-                      <img src={item.iconUrl} alt='Icon' className='w-10 pr-2 h-7' />
+                      <img src={item.iconUrl} alt='Icon' className='pr-2 h-12' />
                       <h4>{item.heading}</h4>
                     </div>
                   </Box>

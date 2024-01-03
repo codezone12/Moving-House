@@ -47,7 +47,7 @@ const Included = () => {
         "Empty the rubbish and wipe clean the rubbish bin.",
         "Polish the sink, faucet, stopper, and strainer.",
       ],
-      iconUrl: 'img/n1.svg',
+      iconUrl: 'img/wi.svg',
     },
     {
       heading: "Bathrooms",
@@ -66,7 +66,7 @@ const Included = () => {
         "Wipe off soap bottles.",
       ],
       iconUrl:
-        'img/bath.svg',
+        'img/wi1.svg',
     },
     {
       heading: "Bedrooms",
@@ -89,7 +89,7 @@ const Included = () => {
         "Wiping of fuse cabinet.",
       ],
       iconUrl:
-        'img/n.svg',
+        'img/de3.svg',
     },
     {
       heading: "Additional services",
@@ -107,7 +107,7 @@ const Included = () => {
         "Ironing.",
       ],
       iconUrl:
-        'img/se.svg',
+        'img/ha.svg',
     },
 
   ]
@@ -116,7 +116,7 @@ const Included = () => {
     <div className="py-14 bg-[#eae8e1] ">
       <div className="   relative  ">
 
-        <div className="pt-12 text-5xl font-bold">What is included in our <span className='text-purple-500'>Deep</span> <span className='text-sky-400'>cleaning?</span></div>
+        <div className="pt-12 text-5xl font-bold">What is included in our <span className='text-red-600'>Deep</span> <span className='text-red-600'>cleaning?</span></div>
         <div className="w-full mt-8  flex justify-center items-center">
           <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
         </div>
@@ -135,7 +135,7 @@ const Included = () => {
                 <AccordionButton className='group'>
                   <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
                     <div className='flex hover:shake'>
-                      <img src={item.iconUrl} alt='Icon' className='w-10 pr-2' />
+                      <img src={item.iconUrl} alt='Icon' className=' pr-2 h-12' />
                       <h4>{item.heading}</h4>
                     </div>
                   </Box>

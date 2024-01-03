@@ -106,7 +106,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Moving_Home">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Everything for your move
@@ -114,7 +114,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Moving_Home">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Everything for your yard
@@ -122,7 +122,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Deep_Clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Everything for your business
@@ -133,7 +133,7 @@ const Footer = () => {
                 </div>
                 <div className="  col-span-1 flex flex-col gap-5">
                     <h2 className="  font-bold text-xl">Where to find us</h2>
-                    <Link to="/">
+                    <Link to="/Window_clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Stockholm
@@ -141,7 +141,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Window_clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Gothenburg
@@ -149,7 +149,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Window_clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Västerås
@@ -157,7 +157,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Window_clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Malmö
@@ -165,7 +165,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Window_clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Uppsala
@@ -173,7 +173,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Window_clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Linköping
@@ -181,7 +181,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Window_clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Norrköping
@@ -189,7 +189,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Window_clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Mälardalen
@@ -201,31 +201,31 @@ const Footer = () => {
                 </div>
                 <div className="  col-span-1 flex flex-col gap-5">
                     <h2 className=" font-bold text-xl ">More information</h2>
-                    <Link to="mailto:intellsignals.entertainment@gmail.com">
+                    {/* <Link to="mailto:intellsignals.entertainment@gmail.com">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Hemfrid App for iPhone
                             </span>
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
-                    </Link>
-                    <Link to="/">
+                    </Link> */}
+                    {/*   <Link to="/">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Hemfrid App for Android
                             </span>
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
-                    </Link>
-                    <Link to="/">
+                    </Link> */}
+                    {/*  <Link to="/">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Hemfrid's cleaning products
                             </span>
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
-                    </Link>
-                    <Link to="/">
+                    </Link> */}
+                    <Link to="/Deep_Clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Tips & inspiration
@@ -233,7 +233,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Deep_Clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Life at Hemfrid
@@ -241,7 +241,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Deep_Clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 About RUT
@@ -249,7 +249,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Deep_Clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Sustainability
@@ -257,7 +257,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Deep_Clean">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Our story
@@ -269,7 +269,7 @@ const Footer = () => {
 
                 <div className="col-span-1 flex flex-col gap-5">
                     <h2 className="font-bold text-xl">About us</h2>
-                    <Link to="/">
+                    <Link to="/Moving_Home">
                         <div className="relative inline-block group">
                             <span className="text-[#8c8c8c] font-semibold relative z-10 group-hover:text-red-500">
                                 Phone: 010-555 85 00
@@ -277,7 +277,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="https://mail.google.com/mail/u/0/#inbox">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 E-mail: info@hemfrid.se
@@ -285,7 +285,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Moving_Home">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Partner
@@ -293,7 +293,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Moving_Home">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Cleaning as salary benefit
@@ -301,7 +301,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Moving_Home">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Careers
@@ -309,7 +309,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Moving_Home">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Whistleblower
@@ -317,7 +317,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Moving_Home">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Contact us
@@ -325,7 +325,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Moving_Home">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Media relations
@@ -333,7 +333,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Moving_Home">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 FAQ’s
@@ -345,17 +345,22 @@ const Footer = () => {
             </div>
 
             <div className="py-10 pl-2 w-full max-w-5xl text-white flex flex-wrap items-center ">
-          <img
-            src="/img/logo2.png"
-            alt="home"
-            className="w-40 h-auto hover:scale-95 transition duration-300 ease-in-out"
-          />  
-          <div
-            className="text-lg font-semibold rounded-lg py-3 px-4 ml-auto lg:mr-24 bg-sk hover:bg-sk1 transition duration-200"           
-          >
-            <button type="submit">Book Now</button>
-          </div>
-        </div>
+                <Link to={"/"}>
+                    <img
+                        src="/img/logo2.png"
+                        alt="home"
+                        className="w-40 h-auto hover:scale-95 transition duration-300 ease-in-out"
+                    />
+                </Link>
+                <div
+                    className="text-lg font-semibold rounded-lg py-3 px-4 ml-auto lg:mr-24 bg-sk hover:bg-sk1 transition duration-200"
+                >
+                    <Link to={'/contact'} >
+                        <button type="submit">Book Now</button>
+                    </Link>
+                </div>
+
+            </div>
 
             <div className="flex flex-col items-center w-full  pt-8  pb-3 bg-[#141617] gap-y-4 ">
                 <div className="flex items-center gap-4">

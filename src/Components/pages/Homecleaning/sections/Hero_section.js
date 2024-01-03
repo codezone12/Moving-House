@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { ZIPCODES } from "../../../Constants/Constant";
 import { useNavigate } from "react-router";
-import Image1 from "../../../../Assets/images/New Images/Cleaning_9.jpeg";
+import Image1 from "../../../../Assets/images/New Images/Resized-1.jpeg";
 const Hero = () => {
   const [text, setText] = useState("");
   const [city, setCity] = useState("");
@@ -51,7 +51,7 @@ const Hero = () => {
 
           <p class="  text-start mt-1 ">
             your{" "}
-            <span className="text-yellow-300">
+            <span className="text-orange-600">
               Home <span className="text-orange-600">Cleaning</span>
             </span>
           </p>

@@ -44,7 +44,7 @@ const Include = () => {
         "Cleaning the exterior of the bathroom appliances and the washing machine’s detergent holder.",
         "Cleaning of the filter in the tumble dryer.",
       ],
-      iconUrl: 'img/bath.svg',
+      iconUrl: 'img/wi1.svg',
     },
     {
       heading: "Kitchen",
@@ -62,7 +62,7 @@ const Include = () => {
         "Polish the sink, faucet, stopper, and strainer.",
 
       ],
-      iconUrl: 'img/n1.svg',
+      iconUrl: 'img/ha.svg',
     },
     {
       heading: "Hallways",
@@ -72,7 +72,7 @@ const Include = () => {
         "Wiping of the coat rack.",
         "Wiping of fuse cabinet.",
       ],
-      iconUrl: 'img/n.svg',
+      iconUrl: 'img/wi2.svg',
     },
 
   ]
@@ -81,7 +81,7 @@ const Include = () => {
     <div className="py-14 bg-[#eae8e1] ">
       <div className="   relative  ">
 
-        <div className="pt-12 text-5xl font-bold">What is included in our <span className='text-gray-700'>Move Out </span> <span className='text-fuchsia-800'>Cleaning?</span></div>
+        <div className="pt-12 text-5xl font-bold">What is included in our <span className='text-red-600'>Move Out </span> <span className='text-red-600'>Cleaning?</span></div>
         <div className="w-full mt-8  flex justify-center items-center">
           <p className=" border-black border-2 w-20 hover:w-[550PX] text-center transition-all duration-300 transform origin-center scale-100 delay-200 hover:border-gray-400" ></p>
         </div>
@@ -100,7 +100,7 @@ const Include = () => {
                 <AccordionButton className='group'>
                   <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
                     <div className='flex hover:shake'>
-                      <img src={item.iconUrl} alt='Icon' className='w-10 pr-2' />
+                      <img src={item.iconUrl} alt='Icon' className=' pr-2 h-12' />
                       <h4>{item.heading}</h4>
                     </div>
                   </Box>

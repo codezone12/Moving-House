@@ -50,7 +50,7 @@ const AskedSection = () => {
                 <div>
                     <div className="relative bg-gray-100 min-h-full lg:min-h-screen w-full flex flex-col items-center gap-8 ">
                         <h2 className="font-bold text-5xl mb-3">
-                            FAQ <span className="font-bold">About <span className="text-yellow-300">Home <span className="text-orange-600">Cleaning</span></span></span>{" "}
+                            FAQ <span className="font-bold">About <span className="text-orange-600">Home <span className="text-orange-600">Cleaning</span></span></span>{" "}
                         </h2>
                         {faqs.map(({ question, answer }, i) => (
                             <div

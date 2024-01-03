@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { ZIPCODES } from "../../../Constants/Constant";
 import Booking from "../../Booking/Booking";
 import { useNavigate } from "react-router";
-import Image1 from "../../../../Assets/images/New Images/Cleaning_9.jpeg";
+import Image1 from "../../../../Assets/images/New Images/resized-2.jpeg";
 import Image2 from "../../../../Assets/images/New Images/Moving_8.jpeg";
 import Image3 from "../../../../Assets/images/New Images/Cleaning_3.jpeg";
 import Image4 from "../../../../Assets/images/New Images/Cleaning_6.jpeg";
@@ -29,8 +29,8 @@ const Hero = () => {
   const colorMapping = {
     " Home": "white",
     " Deep": "indigo",
-    " Window": "gray",
-    " Move out": "pink",
+    " Window": "green",
+    " Move out": "white",
   };
 
   useEffect(() => {
@@ -155,7 +155,7 @@ const Hero = () => {
                 {text}
               </span>
               <div className="">
-                <span className="text-green-600">Cleaning</span>
+                <span className="text-red-600">Cleaning</span>
               </div>
               {!hideInitialForm && (
                 <>
@@ -372,7 +372,7 @@ const Hero = () => {
             </div>
           </div>
         </SwiperSlide>
-        </Swiper>
+      </Swiper>
     </>
   );
 };

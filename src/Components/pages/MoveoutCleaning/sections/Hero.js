@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import { Button, Select } from "@chakra-ui/react";
 import { Input } from "@chakra-ui/react";
 import SelectArrow from "../../../Gernal_Components/SelectArrow";
-import MovingHome from "../../../../Assets/images/New Images/Moving_8.jpeg";
+import MovingHome from "../../../../Assets/images/New Images/Resized-4.jpeg";
 const MHero = () => {
   const [text, setText] = useState("");
   const navigate = useNavigate();
@@ -169,8 +169,8 @@ const MHero = () => {
           <>
             <p className="text-start">Get help with</p>
 
-            <p class="  text-start mt-1 text-gray-700 ">Cleaning when</p>
-            <p class="  text-start mt-1 text-fuchsia-800 ">Moving</p>
+            <p class="  text-start mt-1 text-red-600 ">Cleaning when</p>
+            <p class="  text-start mt-1 text-red-600 ">Moving</p>
             <div className="flex w-1/2 md:w-2/5  text-lg font-bold hover:border-none hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
               <input
                 className="flex-1 bg-white focus:border-none focus:outline-none text-black text-right text-lg p-3 rounded-l-lg mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500"
@@ -209,11 +209,10 @@ const MHero = () => {
             <button
               onClick={handleNavigate}
               disabled={isButtonDisabled}
-              className={`flex justify-center items-center w-1/2 md:w-2/5 bg-opacity-80 hover:shadow-lg hover:shadow-black bg-[#1e1e1e] text-lg font-bold mt-4 p-5 rounded-md ${
-                isButtonDisabled
-                  ? "cursor-not-allowed opacity-50"
-                  : "hover:text-green-500 transform hover:scale-90 transition-transform delay-200"
-              }`}
+              className={`flex justify-center items-center w-1/2 md:w-2/5 bg-opacity-80 hover:shadow-lg hover:shadow-black bg-[#1e1e1e] text-lg font-bold mt-4 p-5 rounded-md ${isButtonDisabled
+                ? "cursor-not-allowed opacity-50"
+                : "hover:text-green-500 transform hover:scale-90 transition-transform delay-200"
+                }`}
             >
               <p className="text-center text-['#fff']">CONTINUE </p>
             </button>

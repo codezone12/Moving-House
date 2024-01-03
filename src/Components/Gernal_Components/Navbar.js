@@ -18,12 +18,12 @@ const Navbar = () => {
     <>
       <nav className="w-screen bg-[#FFF] h-[75px] mt-[.3px] z-50  flex items-center px-5   justify-between fixed">
         <Link to="/" className="cursor-pointer">
-          {/* <img
+          <img
             src="/img/logo2.png"
             className="custom-height-18 bg-[#FFF] hover:scale-95 transition duration-300 ease-in-out"
             alt=""
             srcSet=""
-          /> */}
+          />
         </Link>
 
         {/* <ul className="hidden lg:flex  cursor-pointer mr-16  lg:text-lg lg:ml-3 xl:text-lg 2xl:text-xl    md:text-sm pr-9 relative">
