@@ -25,7 +25,7 @@ const HelpWith = () => {
                     <div className="lg:mr-20  mr-0">
                         <div class=" flex items-start  relative">
                             <a href="/Home_clean">
-                                <img src='img/de3.svg'
+                                <img src='img/ha.svg'
                                     class="h-12 inline-block hover:shake" alt="" />
                             </a>
 
@@ -41,7 +41,7 @@ const HelpWith = () => {
                         <div class=" flex items-start  relative">
                             <a href="/Home_clean">
                                 <img className=" inline-block  h-12"
-                                    src='img/wi2.svg'
+                                    src='img/de3.svg'
                                     class="h-10 inline-block hover:shake" alt="" />
                             </a>
                             <p className="text-2xl inline-block  ml-8">Gardening help</p>
@@ -96,7 +96,7 @@ const HelpWith = () => {
                         <div className="flex items-start relative">
                             <a href="/Window_clean">
                                 <img className="h-12 inline-block"
-                                    src='img/n.svg'
+                                    src='img/wi2.svg'
                                     class="h-10 inline-block hover:shake" alt="" />
                             </a>
                             <p className="inline-block text-2xl ml-8">Window Cleaning</p>
@@ -115,7 +115,7 @@ const HelpWith = () => {
                     <div>
                         <div className="flex items-start relative flex-wrap">
                             <img className="h-10 inline-block"
-                                src='img/n3.svg'
+                                src='img/de1.svg'
                                 class="h-10 inline-block hover:shake" alt="" />
 
                             <p className="text-2xl inline-block ml-8">Moving Services</p>
@@ -133,7 +133,7 @@ const HelpWith = () => {
                     <div className="lg:mr-20 mr-0">
                         <div className="flex items-start relative">
                             <img className="h-12 inline-block"
-                                src='img/ha.svg'
+                                src='img/n.svg'
                                 class="h-10 inline-block hover:shake" alt="" />
                             <p className="text-2xl inline-block ml-8 ">Recycling</p>
                             <p className="text-center text-4xl   absolute end-0 top-2 cursor-pointer"><svg height="24" viewBox="0 0 9 15" width="24" class="csw9N_C5 fiwAtSA" style={{ stroke: "#1e1e1e" }}><path d="m.958.995 6.51 6.51-6 6" fill="none" stroke-width="2"></path></svg></p>
@@ -158,8 +158,25 @@ const HelpWith = () => {
                         <p className="border-[#d5d2c4] border-b-2 w-full my-4 text-center pr-[450px]" ></p>
                     </div>
 
-                </div>
 
+                </div>
+                <div>
+                    <div>
+                        <div class="items-start  relative">
+                            <a href="/Home_clean">
+                                <img src='img/wi4.svg'
+                                    class="h-12 inline-block hover:shake" alt="" />
+                            </a>
+
+
+                            <p className="inline-block text-2xl  ml-8">Office Cleaning</p>
+                            <a href="/Home_clean">
+                                <p className="text-center text-4xl   absolute  end-0 bottom-3  cursor-pointer"><svg height="24" viewBox="0 0 9 15" width="24" class="csw9N_C5 fiwAtSA" style={{ stroke: "#1e1e1e" }}><path d="m.958.995 6.51 6.51-6 6" fill="none" stroke-width="2"></path></svg></p>
+                            </a>
+                        </div>
+                        <p className="border-[#d5d2c4] border-b-2  my-4  pl-[450px]" ></p>
+                    </div>
+                </div>
             </div>
 
         </div>

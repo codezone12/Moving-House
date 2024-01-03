@@ -24,7 +24,7 @@ const WhyHermified = () => {
 
                                 <div className="bg-[hsla(0,0%,100%,.5)]  self-center  hover:bg-white   h-36 w-36 flex items-center justify-center rounded-full rotations">
                                     <img
-                                        src='img/de3.svg'
+                                        src='img/h1.svg'
                                         className="h-12" alt="img_icon" />
                                 </div>
                             </Link>
@@ -40,7 +40,7 @@ const WhyHermified = () => {
                             <Link to={"/Window_clean"} >
                                 <div className="bg-[hsla(0,0%,100%,.5)]  self-center  hover:bg-white   h-36 w-36 flex items-center justify-center rounded-full rotations">
                                     <img
-                                        src='img/wi1.svg' className="h-12" alt="img_icon" />
+                                        src='img/h3.svg' className="h-12" alt="img_icon" />
                                 </div>
                             </Link>
                             <h1 className="font-bold mt-9 text-lg leading-10 ">FAIR TERMS AND CONDITIONS</h1>
@@ -56,7 +56,7 @@ const WhyHermified = () => {
                             <Link to={"/Deep_Clean"} >
                                 <div className="bg-[hsla(0,0%,100%,.5)]  self-center  hover:bg-white   h-36 w-36 flex items-center justify-center rounded-full rotations">
                                     <img
-                                        src='img/n3.svg' className="h-12" alt="img_icon" />
+                                        src='img/de3.svg' className="h-12" alt="img_icon" />
                                 </div>
                             </Link>
                             <h1 className="font-bold mt-9 text-lg leading-10 ">ALWAYS INSURED</h1>

@@ -27,7 +27,7 @@ const StepS = () => {
                             <Link to={'/'} >
                                 <div className="bg-[hsla(0,0%,100%,.4)]  self-center   h-36 w-36 flex items-center justify-center rounded-full hover:bg-white rotations">
                                     <img
-                                        src="img/wi.svg"
+                                        src="img/h3.svg"
                                         className="h-12" alt="img_icon" />
                                 </div>
                             </Link>
@@ -56,7 +56,7 @@ const StepS = () => {
 
 
                                     <img
-                                        src="img/n3.svg"
+                                        src="img/wi.svg"
 
                                         className="h-12" alt="img_icon" />
 
@@ -91,7 +91,7 @@ const StepS = () => {
 
 
                                     <img
-                                        src="img/de1.svg"
+                                        src="img/ha.svg"
                                         className="h-12" />
 
 
