@@ -133,7 +133,7 @@ const Footer = () => {
                 </div>
                 <div className="  col-span-1 flex flex-col gap-5">
                     <h2 className="  font-bold text-xl">Where to find us</h2>
-                    <Link to="/Window_clean">
+                    <Link to="/contact">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Stockholm
@@ -141,7 +141,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/Window_clean">
+                    <Link to="/contact">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Gothenburg
@@ -149,7 +149,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/Window_clean">
+                    <Link to="/contact">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Västerås
@@ -157,7 +157,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/Window_clean">
+                    <Link to="/contact">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Malmö
@@ -165,7 +165,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/Window_clean">
+                    <Link to="/contact">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Uppsala
@@ -173,7 +173,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/Window_clean">
+                    <Link to="/contact">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Linköping
@@ -181,7 +181,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/Window_clean">
+                    <Link to="/contact">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Norrköping
@@ -189,7 +189,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/Window_clean">
+                    <Link to="/contact">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Mälardalen
@@ -317,7 +317,7 @@ const Footer = () => {
                             <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 transition-transform ease-out duration-300 group-hover:scale-x-100"></div>
                         </div>
                     </Link>
-                    <Link to="/Moving_Home">
+                    <Link to="/contact">
                         <div className="relative inline-block group">
                             <span className="text-gr1 font-semibold relative z-10 group-hover:text-red-500">
                                 Contact us
