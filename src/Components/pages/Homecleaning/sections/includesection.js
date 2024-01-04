@@ -55,7 +55,7 @@ const Includesection = () => {
     }, {
       heading: 'Our own cleaning products',
       title: 'The cleaning service contract also includes our eco-friendly cleaning products which are delivered to your home and refilled when they run out.',
-      iconUrl: 'img/hcleaning.svg',
+      iconUrl: 'img/hc.svg',
     },];
   const [isHovered, setIsHovered] = useState(null);
 
