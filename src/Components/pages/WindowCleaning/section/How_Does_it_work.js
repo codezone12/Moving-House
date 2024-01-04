@@ -31,7 +31,7 @@ const Work = () => {
                                 <Link to={"/Home_clean"} >
                                     <div className="bg-[hsla(0,0%,100%,.4)]  self-center   h-36 w-36 flex items-center justify-center rounded-full  hover:bg-white rotations">
                                         <img
-                                            src="img/ha.svg"
+                                            src="img/Book Online.svg"
                                             className="h-12" alt="img_icon" />
                                     </div>
                                 </Link>
@@ -49,7 +49,7 @@ const Work = () => {
                                     <div className="bg-[hsla(0,0%,100%,.4)]  self-center   h-36 w-36 flex items-center justify-center rounded-full  hover:bg-white rotations">
 
                                         <img
-                                            src="img/de2.svg" className="h-12" alt="img_icon" />
+                                            src="img/before.svg" className="h-12" alt="img_icon" />
 
                                     </div>
                                 </Link>
@@ -75,7 +75,7 @@ const Work = () => {
 
 
                                         <img
-                                            src="img/n.svg" className="h-12" alt="img_icon" />
+                                            src="img/wcr.svg" className="h-12" alt="img_icon" />
 
 
                                     </div>

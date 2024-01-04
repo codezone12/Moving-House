@@ -18,7 +18,7 @@ const HelpWith = () => {
                 <p>sofas. We help you with everything from cleaning to easier handy work!</p>
             </div>
 
-            <div className="flex justify-center items-center flex-col xl:mx-10 lg:mx-7 2xl:mx-80 mt-16 h-auto pb-32 ">
+            <div className="flex justify-center items-center flex-col xl:mx-10 lg:mx-7 2xl:mx-80 mt-16 h-auto">
                 <div className="flex flex-col lg:flex-row items-center w-fit" >
 
 
@@ -65,7 +65,7 @@ const HelpWith = () => {
                         <div className="flex items-start relative">
                             <a href="/Deep_Clean">
                                 <img className="h-12 inline-block"
-                                    src='img/wi.svg'
+                                    src='img/f.svg'
                                     class="h-12 inline-block hover:shake" alt="" />
                             </a>
                             <p className="text-2xl inline-block ml-8">Deep Cleaning</p>
@@ -79,7 +79,7 @@ const HelpWith = () => {
 
                         <div className="flex items-end relative">
                             <img className="h-12 inline-block"
-                                src='img/wi1.svg'
+                                src='img/genral.svg'
                                 class="h-10 inline-block hover:shake" alt="" />
                             <p className="text-2xl inline-block ml-8">General handyman</p>
                             <p className="text-center text-4xl   absolute bottom-3 end-0"><svg height="24" viewBox="0 0 9 15" width="24" class="csw9N_C5 fiwAtSA" style={{ stroke: "#1e1e1e" }}><path d="m.958.995 6.51 6.51-6 6" fill="none" stroke-width="2"></path></svg></p>
@@ -115,7 +115,7 @@ const HelpWith = () => {
                     <div>
                         <div className="flex items-start relative flex-wrap">
                             <img className="h-10 inline-block"
-                                src='img/de1.svg'
+                                src='img/t.svg'
                                 class="h-10 inline-block hover:shake" alt="" />
 
                             <p className="text-2xl inline-block ml-8">Moving Services</p>
@@ -146,7 +146,7 @@ const HelpWith = () => {
                         <div className="flex items-start relative">
                             <a href="/Moving_Home">
                                 <img className="h-12 inline-block"
-                                    src='img/de2.svg'
+                                    src='img/n3.svg'
                                     class="h-10 inline-block hover:shake" alt="" />
                             </a>
                             <p className="text-2xl inline-block ml-8">Moving out Cleaning</p>
@@ -161,26 +161,30 @@ const HelpWith = () => {
 
                 </div>
                 <div>
-                    <div>
-                        <div class="items-start  relative">
-                            <a href="/Home_clean">
-                                <img src='img/wi4.svg'
-                                    class="h-12 inline-block hover:shake" alt="" />
-                            </a>
 
-
-                            <p className="inline-block text-2xl  ml-8">Office Cleaning</p>
-                            <a href="/Home_clean">
-                                <p className="text-center text-4xl   absolute  end-0 bottom-3  cursor-pointer"><svg height="24" viewBox="0 0 9 15" width="24" class="csw9N_C5 fiwAtSA" style={{ stroke: "#1e1e1e" }}><path d="m.958.995 6.51 6.51-6 6" fill="none" stroke-width="2"></path></svg></p>
-                            </a>
-                        </div>
-                        <p className="border-[#d5d2c4] border-b-2  my-4  pl-[450px]" ></p>
-                    </div>
                 </div>
+
             </div>
 
-        </div>
+            <div className="flex flex-col lg:flex-row items-center w-fit">
 
+                <div className="lg:mr-20 ml-[33%]">
+                    <div className="flex items-start relative">
+                        <a href="/Home_clean">
+                            <img src='img/wi4.svg'
+                                class="h-12 inline-block hover:shake " alt="" />
+                        </a>
+
+
+                        <p className="inline-block text-2xl  ml-8">Office Cleaning</p>
+                        <a href="/Home_clean">
+                            <p className="text-center text-4xl   absolute  end-0 bottom-3  cursor-pointer"><svg height="24" viewBox="0 0 9 15" width="24" class="csw9N_C5 fiwAtSA" style={{ stroke: "#1e1e1e" }}><path d="m.958.995 6.51 6.51-6 6" fill="none" stroke-width="2"></path></svg></p>
+                        </a>
+                    </div>
+                    <p className="border-[#d5d2c4] border-b-2  my-4  pl-[450px]" ></p>
+                </div>
+            </div>
+        </div>
 
     );
 

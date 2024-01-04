@@ -26,7 +26,7 @@ const Includesection = () => {
         'Make the beds.',
         'Empty and wipe rubbish bins.',
       ],
-      iconUrl: 'img/wi.svg',
+      iconUrl: 'img/hgenral.svg',
     },
     {
       heading: 'Bathrooms',
@@ -37,7 +37,7 @@ const Includesection = () => {
         'Wipe off bathroom cabinets and appliances.',
       ],
       iconUrl:
-        'img/ha.svg',
+        'img/hBathroom.svg',
     },
 
     {
@@ -51,11 +51,11 @@ const Includesection = () => {
         'Wipe off the kitchen fan and the outside of other appliances.',
         'Emptying the household rubbish.',
       ],
-      iconUrl: 'img/de2.svg',
+      iconUrl: 'img/hkitchen.svg',
     }, {
       heading: 'Our own cleaning products',
       title: 'The cleaning service contract also includes our eco-friendly cleaning products which are delivered to your home and refilled when they run out.',
-      iconUrl: 'img/wi.svg',
+      iconUrl: 'img/hcleaning.svg',
     },];
   const [isHovered, setIsHovered] = useState(null);
 

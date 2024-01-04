@@ -27,7 +27,7 @@ const Included = () => {
         "Vacuuming and mopping of floors.",
       ],
       iconUrl:
-        'img/genral.svg'
+        'img/hgenral.svg'
     },
     {
       heading: "Kitchen",
@@ -47,7 +47,7 @@ const Included = () => {
         "Empty the rubbish and wipe clean the rubbish bin.",
         "Polish the sink, faucet, stopper, and strainer.",
       ],
-      iconUrl: 'img/wi.svg',
+      iconUrl: 'img/hkitchen.svg',
     },
     {
       heading: "Bathrooms",
@@ -66,7 +66,7 @@ const Included = () => {
         "Wipe off soap bottles.",
       ],
       iconUrl:
-        'img/wi1.svg',
+        'img/hBathroom.svg',
     },
     {
       heading: "Bedrooms",
@@ -89,7 +89,7 @@ const Included = () => {
         "Wiping of fuse cabinet.",
       ],
       iconUrl:
-        'img/de3.svg',
+        'img/dHallway.svg',
     },
     {
       heading: "Additional services",

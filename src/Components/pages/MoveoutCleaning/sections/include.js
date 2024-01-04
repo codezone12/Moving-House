@@ -27,7 +27,7 @@ const Include = () => {
         "Wiping of front doors.",
         "Vacuuming and mopping of floors.",
       ],
-      iconUrl: 'img/genral.svg',
+      iconUrl: 'img/hgenral.svg',
     },
     {
       heading: "Bathrooms",
@@ -44,7 +44,7 @@ const Include = () => {
         "Cleaning the exterior of the bathroom appliances and the washing machine’s detergent holder.",
         "Cleaning of the filter in the tumble dryer.",
       ],
-      iconUrl: 'img/wi1.svg',
+      iconUrl: 'img/hBathroom.svg',
     },
     {
       heading: "Kitchen",
@@ -62,7 +62,7 @@ const Include = () => {
         "Polish the sink, faucet, stopper, and strainer.",
 
       ],
-      iconUrl: 'img/ha.svg',
+      iconUrl: 'img/hkitchen.svg',
     },
     {
       heading: "Hallways",
@@ -72,7 +72,7 @@ const Include = () => {
         "Wiping of the coat rack.",
         "Wiping of fuse cabinet.",
       ],
-      iconUrl: 'img/wi2.svg',
+      iconUrl: 'img/dHallway.svg',
     },
 
   ]

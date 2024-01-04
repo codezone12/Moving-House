@@ -21,7 +21,7 @@ const Includesection = () => {
         "If you do not have a suitable ladder, we can bring one with us for an additional cost. Please state it when booking.",
         "For best results, we also recommend that you add a frame washer, which means that we wash the window frames and frames.",
       ],
-      iconUrl: 'img/wi.svg',
+      iconUrl: 'img/wac.svg',
     },
     {
       heading: "What counts as a window?",
@@ -30,7 +30,7 @@ const Includesection = () => {
         "If your window has 1 window frame, it counts as one window. Also called 1 sash window.",
         "If your window has 2 frames (one that goes to the right and one that goes to the left), it counts as two windows. Also called 2 sash windows.",
       ],
-      iconUrl: 'img/wi1.svg',
+      iconUrl: 'img/ww.svg',
     },
     {
       heading: "Did you know that...",
@@ -40,12 +40,12 @@ const Includesection = () => {
         "Our window cleaners are insured and we have liability insurance to cover any damage.",
 
       ],
-      iconUrl: 'img/wi2.svg',
+      iconUrl: 'img/wd.svg',
     },
     {
       heading: "Our own cleaning products",
       title: "The cleaning service contract also includes our eco-friendly cleaning products which are delivered to your home and refilled when they run out.",
-      iconUrl: 'img/n.svg',
+      iconUrl: 'img/wcp.svg',
     },
 
   ]
