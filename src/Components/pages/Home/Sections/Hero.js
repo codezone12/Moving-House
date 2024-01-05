@@ -213,9 +213,9 @@ const Hero = () => {
                       </p>
                     )}
                   </div>
-                  <div className="flex justify-center items-center  w-1/2 md:w-2/5 bg-opacity-80 hover:shadow-lg bg-[#1e1e1e] text-lg font-bold mt-4 p-5 rounded-md transform hover:scale-90 transition-transform delay-200">
+                  <div className="flex   w-1/2 md:w-2/5 bg-opacity-80 hover:shadow-lg bg-[#1e1e1e] text-lg font-bold mt-4 p-5 rounded-md transform hover:scale-90 transition-transform delay-200">
                     <button
-                      className={`text-center text-['#fff']`}
+                      className={`ml-24 text-['#fff']`}
                       onClick={handleCitySelection}
                       disabled={isButtonDisabled}
                     >

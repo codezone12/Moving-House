@@ -100,7 +100,7 @@ const Include = () => {
                 <AccordionButton className='group'>
                   <Box as='span' flex='1' textAlign='left' className='text-3xl text-gray-800 hover:text-gray-500'>
                     <div className='flex hover:shake'>
-                      <img src={item.iconUrl} alt='Icon' className=' pr-2 h-12' />
+                      <img src={item.iconUrl} alt='Icon' className=' pr-4 h-8' />
                       <h4>{item.heading}</h4>
                     </div>
                   </Box>

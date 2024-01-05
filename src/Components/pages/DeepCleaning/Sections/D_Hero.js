@@ -50,7 +50,7 @@ const Dhero = () => {
         <p className="  text-start mt-1 text-red-600">Cleaning Job?</p>
         <div className="flex w-1/2 md:w-2/5  hover:shadow-black text-lg font-bold hover:border-none hover:text-green-500 transform hover:scale-90 transition-transform delay-200">
           <input
-            className="flex-1 bg-white focus:border-none focus:outline-none text-black text-right text-lg p-3 rounded-l-lg mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500"
+            className="flex-1  bg-white focus:border-none focus:outline-none text-black text-right  text-lg p-3 rounded-l-lg mt-10 placeholder-black font-bold cursor-pointer bg-opacity-80 transform transition-transform delay-200 hover:placeholder-gray-500"
             type="number"
             placeholder="ENTER ZIPCODE"
             value={code}
@@ -86,12 +86,12 @@ const Dhero = () => {
         <button
           onClick={handleNavigate}
           disabled={isButtonDisabled}
-          className={`flex justify-center items-center w-1/2 md:w-2/5 bg-opacity-80 hover:shadow-lg hover:shadow-black bg-[#1e1e1e] text-lg font-bold mt-4 p-5 rounded-md ${isButtonDisabled
+          className={`flex w-1/2 md:w-2/5 bg-opacity-80 hover:shadow-lg hover:shadow-black bg-[#1e1e1e] text-lg  font-bold mt-4 p-5 rounded-md ${isButtonDisabled
             ? "cursor-not-allowed opacity-50"
             : "hover:text-green-500 transform hover:scale-90 transition-transform delay-200"
             }`}
         >
-          <p className="text-center text-['#fff']">CONTINUE </p>
+          <p className="ml-24 text-['#fff']">CONTINUE </p>
         </button>
         <div className="text-xl mt-10 flex items-start font-normal">
           <div className="mt-5">
